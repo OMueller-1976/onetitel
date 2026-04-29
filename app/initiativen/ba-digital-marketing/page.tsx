@@ -1,96 +1,79 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "BA Digital Marketing – Business Angel & Beratung im Digital-Marketing",
+  title: "BA Digital Marketing – Business Angel für Digital Marketing und AdTech",
   description:
-    "Business Angel Initiative von Oliver M. Müller für digital-affine Start-ups und Wachstumsunternehmen im Marketing-Bereich — Programmatic, KI, Go-to-Market.",
+    "Business Angel für Digital Marketing und AdTech — 25 Jahre Erfahrung, 15 Jahre Programmatic Advertising. Unterstützung für Start-ups als Minderheitsgesellschafter.",
 };
 
-const fokusthemen = [
+const DARK = "#2D2D2D";
+const CREAM = "#FAFAFA";
+
+const wasIchBiete = [
   {
-    title: "Programmatic Advertising & Data-Driven Marketing",
-    description:
-      "Aufbau und Optimierung programmatischer Werbestrategien — von DSP-Selektion bis Creative-Optimierung und Brand Safety.",
+    titel: "Als Generalist und Medienexperte",
+    text: "Mit technologischem Basiswissen berate ich junge Unternehmen und Projekte, liefere lösungsorientierten Support und bringe mein Netzwerk ein.",
   },
   {
-    title: "AI/KI-gestützte Leadgenerierung & Sales-Optimierung",
-    description:
-      "Einsatz intelligenter Automatisierung und datengetriebener Analysen zur Identifikation hochwertiger Zielkunden und Steigerung der Funnel-Performance.",
+    titel: "Beteiligung als Minderheitsgesellschafter",
+    text: "Einbringung als Minderheitsgesellschafter gegen Tagessatz — in der Gründungsphase oder laufenden Umsetzung. Klare, flexible Konditionen.",
   },
   {
-    title: "Aufbau digitaler Vermarktungsstrukturen",
-    description:
-      "Entwicklung skalierbarer Strukturen für digitale Werbevermarktung — von der Strategie bis zur operativen Umsetzung.",
-  },
-  {
-    title: "Go-to-Market-Strategie für Digital-First Unternehmen",
-    description:
-      "Markteintrittsstrategien, Positionierung und Wachstumsplanung für Unternehmen mit digitalem Kerngeschäft.",
-  },
-  {
-    title: "Existenzgründung & Start-up Begleitung",
-    description:
-      "Begleitung von der Idee bis zur Marktreife — operative Unterstützung, Netzwerkzugang und strategisches Sparring.",
+    titel: "Entfesselt Euer Unternehmenspotenzial",
+    text: "Business Angel bieten nicht nur finanzielle Unterstützung, sondern auch wertvolles Wissen, branchenspezifische Einblicke und Zugang zu einem breiten Netzwerk.",
   },
 ];
 
-const angebotsmodell = [
+const expertise = [
   {
-    format: "Advisory / Mentoring",
-    beschreibung:
-      "Regelmäßiges strategisches Sparring für Gründer und Führungskräfte — Erfahrung auf Abruf.",
+    nr: "01",
+    titel: "Podcast Host",
+    text: `Host im Corporate Podcast-Format "Hör mir doch mal zu... der MARKETING Podcast" mit unterschiedlichen Gast-Speakern zu Themen rund um Marketing, Online-Marketing und Hyperpersonalisierung.`,
   },
   {
-    format: "Equity-Beteiligung",
-    beschreibung:
-      "Bei strategischem Fit und überzeugendem Geschäftsmodell: Beteiligung als aktiver Business Angel.",
+    nr: "02",
+    titel: "Buch-Autor",
+    text: `Herausgeber der Buchreihe "Die Digitale Utopie", darunter "Wie Online-Marketing das Paradies auf Erden schafft". Als E-Book auch auf Amazon erhältlich.`,
   },
   {
-    format: "Projekt-Begleitung",
-    beschreibung:
-      "Zeitlich definierte Begleitung konkreter Wachstumsprojekte — hands-on und ergebnisorientiert.",
-  },
-];
-
-const stationen = [
-  {
-    rolle: "Fokusgruppe Programmatic Advertising",
-    org: "BVDW (Bundesverband Digitale Wirtschaft)",
-    zeitraum: "bis 2019",
-  },
-  {
-    rolle: "Key Account Manager",
-    org: "iq digital media marketing GmbH",
-    zeitraum: "",
-  },
-  {
-    rolle: "Interim Manager Leitung Vermarktung Digital",
-    org: "Weser-Kurier Mediengruppe (BTAG)",
-    zeitraum: "2019–2020",
-  },
-  {
-    rolle: "Experte Data-Driven Advertising & Programmatic",
-    org: "OneTitel",
-    zeitraum: "seit 2020",
+    nr: "03",
+    titel: "BVDW Mitgliedschaft",
+    text: `Bis 2019 Mitglied in der Fokusgruppe "Programmatic Advertising" des BVDW e. V. und Mitwirkender am Leitfaden "Daten-Strategie" im Programmatic Advertising.`,
   },
 ];
 
-export default function BaDigitalMarketingPage() {
+const blogVorschau = [
+  {
+    titel: "Herausforderungen der Digitalisierung in Deutschland",
+    teaser: "Eine der größten Herausforderungen der Digitalisierung in Deutschland ist der Ausbau der digitalen Infrastruktur — und die Frage, wer die Transformation wirklich vorantreibt.",
+  },
+  {
+    titel: "Die Zukunft des Online-Marketings – Utopie oder Dystopie?",
+    teaser: "Ethik und Transparenz im Online-Marketing: In einer idealen Zukunft würden sich Online-Marketing-Branche und Nutzerinteressen annähern. Aber wohin geht die Reise wirklich?",
+  },
+  {
+    titel: "SEO-Zauberer und ihre Kristallkugel",
+    teaser: "SEO versus SEA ist ein bisschen wie ein Katz-und-Maus-Spiel, bei dem SEO versucht, organischen Traffic zu generieren — mit Methoden, die sich ständig verschieben.",
+  },
+];
+
+export default function BaHomePage() {
   return (
     <>
-      {/* Hero */}
+      {/* Hero — cremeweiß, zentriert */}
       <section
         style={{
-          padding: "5rem 2rem 4rem",
-          maxWidth: "1200px",
-          margin: "0 auto",
+          background: CREAM,
+          padding: "7rem 2rem 6rem",
+          textAlign: "center",
         }}
       >
         <Link
           href="/initiativen"
           style={{
-            fontSize: "0.7rem",
+            fontSize: "0.65rem",
             letterSpacing: "0.15em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -102,134 +85,168 @@ export default function BaDigitalMarketingPage() {
         >
           ← Initiativen &amp; Ventures
         </Link>
-        <p
-          style={{
-            fontSize: "0.65rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            opacity: 0.4,
-            marginBottom: "1.25rem",
-          }}
-        >
-          Business Angel · Digital Marketing
-        </p>
         <h1
           style={{
-            fontSize: "clamp(3rem, 7vw, 6rem)",
+            fontSize: "clamp(2.5rem, 6vw, 5.5rem)",
             fontWeight: 200,
             letterSpacing: "-0.03em",
-            lineHeight: 1.0,
-            marginBottom: "1.5rem",
+            lineHeight: 1.05,
+            color: DARK,
+            maxWidth: "800px",
+            margin: "0 auto 1.5rem",
           }}
         >
-          Digital Growth.
+          Business Angel für
           <br />
-          <span style={{ opacity: 0.35 }}>Von Experten begleitet.</span>
+          Digital Marketing und AdTech
         </h1>
         <p
           style={{
-            fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+            fontSize: "1.1rem",
             fontWeight: 300,
-            opacity: 0.55,
-            letterSpacing: "-0.01em",
-            maxWidth: "620px",
-            lineHeight: 1.5,
+            fontStyle: "italic",
+            color: "#777",
+            letterSpacing: "0.04em",
           }}
         >
-          Business Angel und Beratung im Digital-Marketing — für Start-ups und
-          Wachstumsunternehmen mit digitalem Fokus.
+          — die Antriebskraft der Innovation —
         </p>
       </section>
 
-      {/* Was ist BA Digital Marketing */}
-      <section style={{ padding: "3rem 2rem 5rem", maxWidth: "1200px", margin: "0 auto" }}>
+      {/* Business Angel Engagement — 2-spaltig */}
+      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: "480px" }}>
+        {/* Linke Spalte — dunkel */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 2fr",
-            gap: "4rem",
-            alignItems: "start",
+            background: DARK,
+            color: "#fff",
+            padding: "4rem",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
           }}
         >
-          <p
-            style={{
-              fontSize: "0.65rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              opacity: 0.4,
-            }}
-          >
-            Die Initiative
-          </p>
           <div>
             <p
               style={{
-                fontSize: "clamp(1rem, 2vw, 1.2rem)",
-                fontWeight: 300,
-                lineHeight: 1.8,
-                opacity: 0.8,
+                fontSize: "0.65rem",
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                opacity: 0.4,
                 marginBottom: "1.5rem",
               }}
             >
-              BA Digital Marketing ist die Business Angel Initiative von Oliver M. Müller für
-              digital-affine Start-ups und Wachstumsunternehmen im Marketing-Bereich. Mit
-              15+ Jahren Erfahrung in Programmatic Advertising, Data-Driven Marketing und
-              digitalem Vertrieb begleite ich Gründer und Teams vom ersten Pitch bis zur Skalierung.
+              Engagement
             </p>
+            <h2
+              style={{
+                fontSize: "clamp(1.3rem, 2.5vw, 2rem)",
+                fontWeight: 300,
+                letterSpacing: "-0.02em",
+                color: "#fff",
+                marginBottom: "2rem",
+                lineHeight: 1.2,
+              }}
+            >
+              Business Angel Digital Marketing Engagement
+            </h2>
+            {[
+              `Ein Business Angel (BA) ist ein Experte, der Existenzgründer unterstützt. Für Start-ups ist es oftmals wichtig, einen erfahrenen Experten einzubinden, ob für mögliche Investoren oder zur Aneignung von Fachwissen.`,
+              `Ich unterstütze im Bereich Digital-Marketing und bringe mich in Verrechnung eines Tagessatzes als Minderheitsgesellschafter ein, ob in der Gründungsphase oder laufenden Umsetzung.`,
+              `Mit 25 Jahren Berufserfahrung, 15 Jahren im Bereich Digital-Marketing, darunter Advertising, Vermarktung, AdTech, Marketing-Automation, Tagging, Monetarisierung oder Data-Driven Advertising, unterstütze ich junge Unternehmen als Gesellschafter oder proaktiv und interimistisch.`,
+            ].map((p, i) => (
+              <p
+                key={i}
+                style={{
+                  fontSize: "1rem",
+                  lineHeight: 1.75,
+                  color: "rgba(255,255,255,0.7)",
+                  marginBottom: "1.25rem",
+                  fontWeight: 300,
+                }}
+              >
+                {p}
+              </p>
+            ))}
           </div>
+          <Link
+            href="/initiativen/ba-digital-marketing/kontakt"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              padding: "0.8rem 1.75rem",
+              background: "#fff",
+              color: DARK,
+              fontSize: "0.78rem",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              textDecoration: "none",
+              alignSelf: "flex-start",
+              marginTop: "1.5rem",
+            }}
+          >
+            Kontakt aufnehmen →
+          </Link>
+        </div>
+
+        {/* Rechte Spalte — Bild */}
+        <div style={{ position: "relative", minHeight: "400px" }}>
+          <Image
+            src="/images/hero-consulting.jpg"
+            alt="Business Angel Consulting"
+            fill
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "rgba(0,0,0,0.25)",
+            }}
+          />
         </div>
       </section>
 
-      {/* Fokusthemen */}
-      <section style={{ padding: "4rem 2rem", background: "var(--fg)", color: "var(--bg)" }}>
+      {/* Was ich biete — 3 Kacheln */}
+      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
               fontSize: "0.65rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              opacity: 0.35,
+              opacity: 0.4,
               marginBottom: "2.5rem",
             }}
           >
-            Fokusthemen
+            Leistungen
           </p>
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "1px",
-              background: "rgba(242,240,235,0.08)",
+              background: "#E0E0E0",
             }}
           >
-            {fokusthemen.map((f, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "rgba(242,240,235,0.03)",
-                  padding: "2.5rem",
-                  display: "grid",
-                  gridTemplateColumns: "2rem 1fr 2fr",
-                  gap: "2rem",
-                  alignItems: "start",
-                }}
-              >
-                <span style={{ fontSize: "0.7rem", opacity: 0.3, fontWeight: 500 }}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+            {wasIchBiete.map((item) => (
+              <div key={item.titel} style={{ background: "#fff", padding: "2.5rem" }}>
                 <h3
                   style={{
-                    fontSize: "1rem",
-                    fontWeight: 400,
+                    fontSize: "1.1rem",
+                    fontWeight: 500,
+                    color: DARK,
                     letterSpacing: "-0.01em",
-                    margin: 0,
-                    color: "var(--bg)",
+                    marginBottom: "1rem",
+                    borderTop: `3px solid ${DARK}`,
+                    paddingTop: "1.25rem",
                   }}
                 >
-                  {f.title}
+                  {item.titel}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
-                  {f.description}
+                <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "#555", margin: 0, fontWeight: 300 }}>
+                  {item.text}
                 </p>
               </div>
             ))}
@@ -237,137 +254,203 @@ export default function BaDigitalMarketingPage() {
         </div>
       </section>
 
-      {/* Angebotsmodell */}
-      <section style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
-        <p
-          style={{
-            fontSize: "0.65rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            opacity: 0.4,
-            marginBottom: "2.5rem",
-          }}
-        >
-          Angebotsmodell
-        </p>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: "1px",
-            background: "var(--border)",
-          }}
-        >
-          {angebotsmodell.map((a) => (
-            <div key={a.format} style={{ background: "var(--bg)", padding: "2.5rem" }}>
-              <h3
-                style={{
-                  fontSize: "1.1rem",
-                  fontWeight: 400,
-                  letterSpacing: "-0.01em",
-                  marginBottom: "1rem",
-                }}
-              >
-                {a.format}
-              </h3>
-              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.65, margin: 0 }}>
-                {a.beschreibung}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Hintergrund */}
-      <section style={{ padding: "5rem 2rem", background: "#EBEBEB" }}>
+      {/* Expertise — dunkel */}
+      <section style={{ padding: "5rem 2rem", background: DARK }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
               fontSize: "0.65rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              opacity: 0.4,
+              color: "rgba(255,255,255,0.35)",
               marginBottom: "2.5rem",
             }}
           >
-            Hintergrund · Oliver M. Müller
+            Expertise
           </p>
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "1px",
-              background: "var(--border)",
+              background: "rgba(255,255,255,0.06)",
             }}
           >
-            {stationen.map((s, i) => (
+            {expertise.map((item) => (
               <div
-                key={i}
-                style={{
-                  background: "#EBEBEB",
-                  padding: "2rem 2.5rem",
-                  display: "grid",
-                  gridTemplateColumns: "1fr 2fr auto",
-                  gap: "2rem",
-                  alignItems: "center",
-                }}
+                key={item.nr}
+                style={{ background: "rgba(255,255,255,0.03)", padding: "2.5rem" }}
               >
-                <h3
+                <span
                   style={{
-                    fontSize: "1.05rem",
-                    fontWeight: 400,
-                    letterSpacing: "-0.01em",
-                    margin: 0,
+                    fontSize: "0.65rem",
+                    fontWeight: 700,
+                    color: "rgba(255,255,255,0.3)",
+                    letterSpacing: "0.1em",
+                    display: "block",
+                    marginBottom: "1.25rem",
                   }}
                 >
-                  {s.rolle}
+                  {item.nr}
+                </span>
+                <h3
+                  style={{
+                    fontSize: "1.1rem",
+                    fontWeight: 400,
+                    color: "#fff",
+                    letterSpacing: "-0.01em",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {item.titel}
                 </h3>
-                <p style={{ fontSize: "0.83rem", opacity: 0.55, margin: 0 }}>{s.org}</p>
-                {s.zeitraum && (
-                  <span
-                    style={{
-                      fontSize: "0.7rem",
-                      opacity: 0.4,
-                      letterSpacing: "0.05em",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {s.zeitraum}
-                  </span>
-                )}
+                <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "rgba(255,255,255,0.6)", margin: 0, fontWeight: 300 }}>
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ padding: "5rem 2rem", textAlign: "center" }}>
-        <h2
-          style={{
-            fontSize: "clamp(2rem, 5vw, 3.5rem)",
-            fontWeight: 200,
-            letterSpacing: "-0.03em",
-            marginBottom: "1.5rem",
-          }}
-        >
-          Anfrage stellen
-        </h2>
-        <p
-          style={{
-            fontSize: "1.05rem",
-            opacity: 0.6,
-            marginBottom: "2.5rem",
-            lineHeight: 1.7,
-            maxWidth: "480px",
-            margin: "0 auto 2.5rem",
-          }}
-        >
-          Pitch, Kooperation oder strategisches Sparring — ich freue mich auf das Gespräch.
-        </p>
-        <Link href="/kontakt" className="btn-primary">
-          Kontakt aufnehmen
-        </Link>
+      {/* Die Macht eines Business Angels */}
+      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
+        <div style={{ maxWidth: "780px", margin: "0 auto" }}>
+          <p
+            style={{
+              fontSize: "0.65rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              color: DARK,
+              fontWeight: 600,
+              opacity: 0.5,
+              marginBottom: "2rem",
+            }}
+          >
+            Business Angel
+          </p>
+          <h2
+            style={{
+              fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
+              fontWeight: 300,
+              color: DARK,
+              letterSpacing: "-0.02em",
+              marginBottom: "2rem",
+            }}
+          >
+            Die Macht eines Business Angels
+          </h2>
+          {[
+            `Stellt Euch vor, Ihr habt einen erfahrenen Partner an Eurer Seite, der nicht nur die Spielregeln des Marktes versteht, sondern auch die Erfahrung und das Netzwerk hat, um Euer Unternehmen auf die Überholspur zu bringen. Das ist die Macht eines Business Angels.`,
+            `Business Angels sind nicht einfach nur Geldgeber. Sie sind Mentoren, Strategen und Türöffner. Mit ihrem fundierten Wissen und ihren wertvollen Kontakten helfen sie Start-ups, die richtigen Entscheidungen zur richtigen Zeit zu treffen — und die häufigsten Fehler junger Unternehmen zu vermeiden.`,
+            `Im Bereich Digital Marketing und AdTech bedeutet das konkret: Zugang zu erprobten Go-to-Market-Strategien, Einblicke in Programmatic-Ökosysteme, DSP-Strategien, Data-Driven Advertising und die richtigen Ansprechpartner bei Publishern, Agenturen und Vermarktern.`,
+            `Ob in der Frühphase oder im Wachstum — ein Business Angel bringt das mit, was kein Investor allein kaufen kann: echte Erfahrung, gelebtes Scheitern und nachhaltigen Erfolg. Ich freue mich auf den Kontakt und die Zusendung eines Pitch-Decks!`,
+          ].map((p, i) => (
+            <p
+              key={i}
+              style={{
+                fontSize: "1.05rem",
+                lineHeight: 1.8,
+                color: i === 0 ? "#222" : "#555",
+                fontWeight: i === 0 ? 400 : 300,
+                marginBottom: "1.5rem",
+              }}
+            >
+              {p}
+            </p>
+          ))}
+          <Link
+            href="/initiativen/ba-digital-marketing/kontakt"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              padding: "0.85rem 2rem",
+              background: DARK,
+              color: "#fff",
+              fontSize: "0.78rem",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              textDecoration: "none",
+              marginTop: "0.5rem",
+            }}
+          >
+            Pitch-Deck einsenden →
+          </Link>
+        </div>
+      </section>
+
+      {/* Blog-Vorschau */}
+      <section style={{ padding: "5rem 2rem", background: CREAM }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "baseline",
+              marginBottom: "2.5rem",
+            }}
+          >
+            <h2
+              style={{
+                fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
+                fontWeight: 300,
+                color: DARK,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Beiträge
+            </h2>
+            <Link
+              href="/initiativen/ba-digital-marketing/blog"
+              style={{ fontSize: "0.78rem", color: DARK, opacity: 0.5, textDecoration: "none", letterSpacing: "0.04em" }}
+            >
+              Alle Beiträge →
+            </Link>
+          </div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "1px",
+              background: "#E0E0E0",
+            }}
+          >
+            {blogVorschau.map((artikel) => (
+              <div key={artikel.titel} style={{ background: CREAM, padding: "2.5rem" }}>
+                <h3
+                  style={{
+                    fontSize: "1.05rem",
+                    fontWeight: 500,
+                    color: DARK,
+                    letterSpacing: "-0.01em",
+                    marginBottom: "0.75rem",
+                    lineHeight: 1.35,
+                  }}
+                >
+                  {artikel.titel}
+                </h3>
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    lineHeight: 1.65,
+                    color: "#666",
+                    marginBottom: "1.25rem",
+                    fontWeight: 300,
+                  }}
+                >
+                  {artikel.teaser}
+                </p>
+                <Link
+                  href="/initiativen/ba-digital-marketing/blog"
+                  style={{ fontSize: "0.78rem", color: DARK, fontWeight: 500, textDecoration: "none", letterSpacing: "0.04em" }}
+                >
+                  Mehr lesen →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );
