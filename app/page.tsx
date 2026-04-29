@@ -437,15 +437,10 @@ export default function Home() {
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "4rem",
-            alignItems: "center",
             position: "relative",
             zIndex: 1,
           }}
         >
-          {/* Links: Topics-Liste */}
           <div>
             <h2
               style={{
@@ -475,17 +470,6 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Rechts: Rotierender Starburst */}
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <Image
-              src="/images/logo-symbol.png"
-              alt=""
-              width={300}
-              height={297}
-              className="animate-spin-slow"
-              style={{ opacity: 0.2, filter: "invert(1)" }}
-            />
-          </div>
         </div>
       </section>
 
