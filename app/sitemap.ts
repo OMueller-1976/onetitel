@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/initiativen/true-dads/leitfaden`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/initiativen/true-dads/kontakt`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.6 },
     { url: `${base}/initiativen/ba-digital-marketing`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/initiativen/ba-digital-marketing/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.6 },
+    { url: `${base}/initiativen/ba-digital-marketing/kontakt`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/initiativen/eritaj`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/initiativen/onematic`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/initiativen/lersi`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
