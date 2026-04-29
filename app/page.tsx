@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import ScrollRevealProvider from "@/components/ScrollRevealProvider";
 
 export const metadata: Metadata = {
   title: "OneTitel – Sales, Consulting und Interim-Management",
@@ -18,31 +20,37 @@ const services = [
     title: "Coaching",
     description:
       "Als Coach unterstütze ich dabei, Ihre Ziele zu definieren, Hindernisse zu überwinden und Ihre persönliche und berufliche Performance zu steigern. Mit einem ganzheitlichen Ansatz begleite ich auf Ihrem Weg zum Erfolg.",
+    bafa: false,
   },
   {
     title: "Interim-Management",
     description:
       "Interim Management bezeichnet den temporären Einsatz von Management-Kräften auf Zeit. Als externe, unabhängige Fachkraft übernehme ich für einen bestimmten Zeitraum Projekte oder fülle Lücken in Ihrer Organisation.",
+    bafa: false,
   },
   {
     title: "Sales",
     description:
       "Maßgeschneiderte Lösungen helfen Ihnen, Ihre Verkaufsziele zu erreichen und Ihren Umsatz zu steigern. Durch innovative Strategien und bewährte Methoden maximieren wir Ihre Verkaufsergebnisse und optimieren Ihre Kundenbindung.",
+    bafa: false,
   },
   {
     title: "Agiles Projekt-/Prozessmanagement",
     description:
       "Als erfahrene Product Owner verstehen wir die Bedürfnisse Ihres Unternehmens und setzen sie konsequent um. Mit agilen Methoden wie Scrum führen wir Ihre Projekte zum Erfolg.",
+    bafa: false,
   },
   {
     title: "Consulting",
     description:
       "Entdecken Sie die transformative Kraft von Consulting mit OneTitel. Maßgeschneiderte Lösungen, um Ihre geschäftlichen Herausforderungen anzugehen und Ihren Erfolg zu maximieren.",
+    bafa: false,
   },
   {
     title: "BAFA Beratungsförderung",
     description:
       "Förderung von Beratungskosten über die BAFA von bis zu 3.500 Euro. Bis 31. Dezember 2026 kann jedes förderfähige Unternehmen maximal fünf Beratungen gefördert bekommen.",
+    bafa: true,
   },
 ];
 
@@ -64,9 +72,21 @@ const topics = [
   "Datenstrategie",
 ];
 
+const referenzLogos = [
+  "Amazon",
+  "Weser Kurier",
+  "Rundschau",
+  "iq digital",
+  "OD Marketing",
+  "AOL/Yahoo!",
+  "BVDW",
+];
+
 export default function Home() {
   return (
     <>
+      <ScrollRevealProvider />
+
       {/* Hero */}
       <section
         style={{
@@ -86,9 +106,10 @@ export default function Home() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "1fr auto 1fr",
             gap: "2rem",
             marginTop: "3rem",
+            alignItems: "stretch",
           }}
         >
           {/* Expertise card */}
@@ -117,6 +138,25 @@ export default function Home() {
             <Link href="/kontakt" className="btn-outline">
               Kostenlose Beratung vereinbaren
             </Link>
+          </div>
+
+          {/* Animated down-arrow */}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              background: "#E0E0E0",
+              borderRadius: "12px",
+              width: "72px",
+            }}
+          >
+            <span
+              className="animate-bounce-down"
+              style={{ fontSize: "3rem", opacity: 0.4, lineHeight: 1 }}
+            >
+              ↓
+            </span>
           </div>
 
           {/* AI card */}
@@ -151,8 +191,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Erfolg / Referenzen — 3-spaltig */}
+      <section
+        className="reveal"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          gap: 0,
+          minHeight: "420px",
+          overflow: "hidden",
+        }}
+      >
+        {/* Linke Spalte: Consulting-Foto */}
+        <div style={{ position: "relative", overflow: "hidden" }}>
+          <Image
+            src="/images/consulting-photo.jpg"
+            alt="Expertise"
+            fill
+            style={{ objectFit: "cover", filter: "grayscale(100%)" }}
+          />
+        </div>
+
+        {/* Mittlere Spalte: Erfolg-Card */}
+        <div
+          style={{
+            background: "#0A0A0A",
+            color: "#F5F5F5",
+            padding: "3rem",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <h2 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 300, marginBottom: "1rem", letterSpacing: "-0.02em" }}>
+            Erfolg
+          </h2>
+          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, opacity: 0.75, marginBottom: "2rem" }}>
+            Als proaktiver und ausgewiesener Experte im Vertrieb und für digitales Marketing
+            biete ich meine Expertise sowie Erfahrungen aus unterschiedlichen Branchen.
+            Diese Expertise bringe ich ebenfalls im Bereich Existenzgründung und Start-ups ein.
+          </p>
+          <Link href="/medienberichte" className="btn-white" style={{ alignSelf: "flex-start" }}>
+            Referenzen
+          </Link>
+        </div>
+
+        {/* Rechte Spalte: OneTitel Logo auf Schwarz */}
+        <div style={{ position: "relative", overflow: "hidden" }}>
+          <Image
+            src="/images/logo-dark.jpg"
+            alt="OneTitel"
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        </div>
+      </section>
+
       {/* Divider section */}
       <section
+        className="reveal reveal-delay-1"
         style={{
           padding: "4rem 2rem",
           background: "var(--fg)",
@@ -247,7 +344,10 @@ export default function Home() {
       </section>
 
       {/* Services grid */}
-      <section style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
+      <section
+        className="reveal"
+        style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}
+      >
         <div style={{ marginBottom: "3rem" }}>
           <p
             style={{
@@ -287,6 +387,15 @@ export default function Home() {
                 padding: "2.5rem",
               }}
             >
+              {s.bafa && (
+                <Image
+                  src="/images/bafa-logo.png"
+                  alt="BAFA"
+                  width={120}
+                  height={67}
+                  style={{ marginBottom: "0.75rem", opacity: 0.6 }}
+                />
+              )}
               <h3
                 style={{
                   fontSize: "1.25rem",
@@ -305,8 +414,94 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Themenfelder — dunkel mit Starburst + Stadtfoto */}
+      <section
+        className="reveal reveal-delay-1"
+        style={{
+          background: "#0A0A0A",
+          color: "#F5F5F5",
+          padding: "5rem 2rem",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* Stadtfoto oben rechts */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            right: 0,
+            width: "40%",
+            height: "200px",
+          }}
+        >
+          <Image
+            src="/images/city-skyline.jpg"
+            alt=""
+            fill
+            style={{ objectFit: "cover", opacity: 0.4 }}
+          />
+        </div>
+
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: "4rem",
+            alignItems: "center",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          {/* Links: Topics-Liste */}
+          <div>
+            <h2
+              style={{
+                fontSize: "clamp(2rem, 4vw, 3rem)",
+                fontWeight: 300,
+                letterSpacing: "-0.02em",
+                marginBottom: "2rem",
+              }}
+            >
+              Themenfelder
+            </h2>
+            <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+              {topics.map((t) => (
+                <li
+                  key={t}
+                  style={{
+                    fontSize: "1.125rem",
+                    opacity: 0.75,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                  }}
+                >
+                  <span style={{ opacity: 0.4 }}>·</span> {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Rechts: Rotierender Starburst */}
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <Image
+              src="/images/logo-symbol.png"
+              alt=""
+              width={300}
+              height={297}
+              className="animate-spin-slow"
+              style={{ opacity: 0.2, filter: "invert(1)" }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Strategie / Ausführung */}
       <section
+        className="reveal"
         style={{
           padding: "5rem 2rem",
           background: "#EBEBEB",
@@ -322,6 +517,13 @@ export default function Home() {
           }}
         >
           <div>
+            <Image
+              src="/images/logo-symbol.png"
+              alt=""
+              width={80}
+              height={79}
+              style={{ marginBottom: "1rem", opacity: 0.7 }}
+            />
             <h3
               style={{
                 fontSize: "1.5rem",
@@ -359,42 +561,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Topics */}
-      <section style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
+      {/* Kunden-Logos Marquee */}
+      <section
+        style={{
+          padding: "4rem 0",
+          overflow: "hidden",
+          borderTop: "1px solid var(--border)",
+          borderBottom: "1px solid var(--border)",
+        }}
+      >
         <p
           style={{
+            textAlign: "center",
             fontSize: "0.75rem",
-            letterSpacing: "0.2em",
+            letterSpacing: "0.15em",
             textTransform: "uppercase",
             opacity: 0.4,
             marginBottom: "2rem",
           }}
         >
-          Themenfelder
+          Kunden &amp; Referenzen
         </p>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-          {topics.map((t) => (
-            <span
-              key={t}
-              style={{
-                padding: "0.4rem 0.9rem",
-                border: "1px solid var(--border)",
-                fontSize: "0.875rem",
-                letterSpacing: "0.04em",
-                color: "var(--muted)",
-              }}
-            >
-              {t}
-            </span>
-          ))}
+        <div style={{ overflow: "hidden", width: "100%" }}>
+          <div
+            className="animate-marquee"
+            style={{
+              display: "flex",
+              gap: "4rem",
+              width: "max-content",
+              alignItems: "center",
+            }}
+          >
+            {[...Array(2)].map((_, i) =>
+              referenzLogos.map((logo) => (
+                <span
+                  key={logo + i}
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: 500,
+                    opacity: 0.35,
+                    whiteSpace: "nowrap",
+                    letterSpacing: "0.05em",
+                    textTransform: "uppercase",
+                    flexShrink: 0,
+                  }}
+                >
+                  {logo}
+                </span>
+              ))
+            )}
+          </div>
         </div>
       </section>
 
       {/* Testimonial */}
       <section
+        className="reveal reveal-delay-2"
         style={{
           padding: "5rem 2rem",
-          borderTop: "1px solid var(--border)",
           borderBottom: "1px solid var(--border)",
         }}
       >

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Medienberichte",
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
     "Presseartikel und Medienberichte über OneTitel und Oliver M. Müller – Experte für Programmatic Advertising, Digital Marketing und Sales.",
 };
 
-const berichte = [
+const berichte: { quelle: string; titel: string; zitat: string | null; beschreibung: string; thumbnail?: boolean }[] = [
   {
     quelle: "Marconomy",
     titel: "Warum lohnt sich programmatisches Drucken?",
@@ -42,6 +43,7 @@ const berichte = [
     zitat: null,
     beschreibung:
       "Das Urteil des Europäischen Gerichtshofs, das Arbeitgeber zur Zeiterfassung verpflichtet, schlägt hohe Wellen. Widerspricht es flexiblen Arbeitsmodellen oder unterstützt es sie?",
+    thumbnail: true,
   },
   {
     quelle: "SocialOne / Marconomy",
@@ -91,6 +93,24 @@ export default function MedienberishtePage() {
                 padding: "3rem",
               }}
             >
+              {b.thumbnail && (
+                <div
+                  style={{
+                    position: "relative",
+                    height: "160px",
+                    marginBottom: "1rem",
+                    overflow: "hidden",
+                    borderRadius: "4px",
+                  }}
+                >
+                  <Image
+                    src="/images/media-clock.jpg"
+                    alt="Zeiterfassung"
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              )}
               <p
                 style={{
                   fontSize: "0.75rem",
