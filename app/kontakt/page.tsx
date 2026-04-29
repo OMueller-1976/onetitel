@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import KontaktForm from "@/components/KontaktForm";
 
 export const metadata: Metadata = {
-  title: "Kontakt",
+  title: "Kontakt – Kostenlose Erstberatung anfragen",
   description:
-    "Kostenlose Erstberatung anfragen. Kontaktieren Sie Oliver M. Müller – Sales, Consulting und Interim-Management.",
+    "Kontaktieren Sie Oliver M. Müller für eine kostenlose Erstberatung zu Sales-Consulting, Interim-Management oder Digital-Marketing. BAFA-förderfähig.",
+  alternates: { canonical: "https://www.onetitel.de/kontakt" },
+  openGraph: {
+    url: "https://www.onetitel.de/kontakt",
+    title: "Kontakt – Kostenlose Erstberatung | OneTitel",
+  },
 };
 
 export default function KontaktPage() {

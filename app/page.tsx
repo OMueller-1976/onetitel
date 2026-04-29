@@ -4,14 +4,15 @@ import Image from "next/image";
 import ScrollRevealProvider from "@/components/ScrollRevealProvider";
 
 export const metadata: Metadata = {
-  title: "OneTitel – Sales, Consulting und Interim-Management",
+  title: "Sales, Consulting & Interim-Management",
   description:
-    "Oliver M. Müller – Experte für Sales, Digital-Marketing, KI-Automatisierung und Interim-Management. Maßgeschneiderte Lösungen für nachhaltiges Wachstum.",
+    "OneTitel – Oliver M. Müller bietet Sales-Consulting, Interim-Management, Digital-Marketing und KI-Automatisierung. BAFA-förderbar. Kostenlose Erstberatung anfragen.",
+  alternates: { canonical: "https://www.onetitel.de" },
   openGraph: {
-    title: "OneTitel – Sales, Consulting und Interim-Management",
-    description:
-      "Oliver M. Müller – Experte für Sales, Digital-Marketing, KI-Automatisierung und Interim-Management.",
     url: "https://www.onetitel.de",
+    title: "OneTitel – Sales, Consulting & Interim-Management",
+    description:
+      "Oliver M. Müller: Sales-Consulting, Interim-Management und Digital-Marketing. BAFA-förderbar.",
   },
 };
 

@@ -3,9 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Service – Lösungen",
+  title: "Service & Lösungen – Interim-Management, Sales-Consulting, Coaching",
   description:
-    "Sales-Consulting, Digital-Marketing, Interim-Management und agiles Projektmanagement — maßgeschneiderte Lösungen für Ihr Unternehmen.",
+    "Sales-Consulting, Digital-Marketing-Beratung, Interim-Management und systemisches Coaching von Oliver M. Müller. BAFA-Beratungsförderung bis 3.500 €.",
+  alternates: { canonical: "https://www.onetitel.de/loesungen" },
+  openGraph: {
+    url: "https://www.onetitel.de/loesungen",
+    title: "Service & Lösungen | OneTitel",
+  },
 };
 
 const leistungen = [

@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Beiträge",
+  title: "Beiträge & Fachbeiträge – Sales, Marketing & Interim-Management",
   description:
     "Kurze, prägnante Fachbeiträge zu Sales, Interim-Management, Digital-Marketing und KI-Automatisierung von Oliver M. Müller.",
+  alternates: { canonical: "https://www.onetitel.de/beitraege" },
+  openGraph: {
+    url: "https://www.onetitel.de/beitraege",
+    title: "Beiträge | OneTitel",
+  },
 };
 
 const beitraege = [

@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Medienberichte",
+  title: "Medienberichte & Presseartikel – Oliver M. Müller",
   description:
-    "Presseartikel und Medienberichte über OneTitel und Oliver M. Müller – Experte für Programmatic Advertising, Digital Marketing und Sales.",
+    "Presseartikel und Medienberichte über Oliver M. Müller und OneTitel – Experte für Programmatic Advertising, Digital Marketing und Sales-Consulting.",
+  alternates: { canonical: "https://www.onetitel.de/medienberichte" },
+  openGraph: {
+    url: "https://www.onetitel.de/medienberichte",
+    title: "Medienberichte | OneTitel",
+  },
 };
 
 const berichte: { quelle: string; titel: string; zitat: string | null; beschreibung: string; thumbnail?: boolean }[] = [

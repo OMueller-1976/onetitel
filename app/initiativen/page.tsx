@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Initiativen & Ventures – OneTitel",
+  title: "Initiativen & Ventures – ERITAJ, Lersi, True Dads, BA Digital Marketing",
   description:
-    "Initiativen und digitale Eigenentwicklungen von Oliver M. Müller — von Väterrechten über Programmatic Advertising bis zur Kinder-Lern-App.",
+    "Initiativen und Ventures von Oliver M. Müller: ERITAJ (Erbrecht), Lersi App, ONEmatic, ADHASI, True Dads Deutschland und BA Digital Marketing.",
+  alternates: { canonical: "https://www.onetitel.de/initiativen" },
+  openGraph: {
+    url: "https://www.onetitel.de/initiativen",
+    title: "Initiativen & Ventures | OneTitel",
+  },
 };
 
 const initiativen = [
