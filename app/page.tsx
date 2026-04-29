@@ -191,12 +191,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Erfolg / Referenzen — 3-spaltig */}
+      {/* Erfolg / Referenzen — 2-spaltig */}
       <section
         className="reveal"
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateColumns: "1fr 1fr",
           gap: 0,
           minHeight: "420px",
           overflow: "hidden",
@@ -212,7 +212,7 @@ export default function Home() {
           />
         </div>
 
-        {/* Mittlere Spalte: Erfolg-Card */}
+        {/* Rechte Spalte: Erfolg-Card */}
         <div
           style={{
             background: "#0A0A0A",
@@ -234,16 +234,6 @@ export default function Home() {
           <Link href="/medienberichte" className="btn-white" style={{ alignSelf: "flex-start" }}>
             Referenzen
           </Link>
-        </div>
-
-        {/* Rechte Spalte: OneTitel Logo auf Schwarz */}
-        <div style={{ position: "relative", overflow: "hidden" }}>
-          <Image
-            src="/images/logo-dark.jpg"
-            alt="OneTitel"
-            fill
-            style={{ objectFit: "cover" }}
-          />
         </div>
       </section>
 
