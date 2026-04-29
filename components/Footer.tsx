@@ -78,6 +78,8 @@ export default function Footer() {
                 { href: "/medienberichte", label: "Medienberichte" },
                 { href: "/beitraege", label: "Beiträge" },
                 { href: "/kontakt", label: "Kontakt" },
+                { href: "/interim-management", label: "Interim Management" },
+                { href: "/interim-management-sales-digital", label: "Interim Management Sales & Digital" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link

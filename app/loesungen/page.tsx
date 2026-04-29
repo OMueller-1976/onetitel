@@ -278,6 +278,38 @@ export default function LoesungenPage() {
         </div>
       </section>
 
+      {/* Mehr zum Thema */}
+      <section style={{ padding: "3rem 2rem", background: "#EBEBEB" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <p
+            style={{
+              fontSize: "0.75rem",
+              fontWeight: 700,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              color: "#888",
+              marginBottom: "1rem",
+            }}
+          >
+            Mehr zum Thema
+          </p>
+          <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
+            <Link
+              href="/interim-management"
+              style={{ fontSize: "1.125rem", color: "#0A0A0A", textDecoration: "none", fontWeight: 400 }}
+            >
+              → Was ist Interim Management?
+            </Link>
+            <Link
+              href="/interim-management-sales-digital"
+              style={{ fontSize: "1.125rem", color: "#0A0A0A", textDecoration: "none", fontWeight: 400 }}
+            >
+              → Interim Management für Sales & Digital
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ padding: "5rem 2rem", textAlign: "center" }}>
         <h2
