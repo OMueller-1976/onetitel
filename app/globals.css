@@ -150,3 +150,43 @@ hr {
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ─── MOBILE RESET ─── */
+@media (max-width: 768px) {
+
+  /* Basis */
+  body { font-size: 16px; }
+
+  /* Display-Texte verkleinern */
+  .display {
+    font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  /* Buttons full-width auf Mobile */
+  .btn-primary, .btn-outline, .btn-white {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Marquee-Animation verlangsamen auf Mobile */
+  .animate-marquee { animation-duration: 20s; }
+
+  /* Social Bar ausblenden */
+  .social-bar { display: none !important; }
+
+  /* Hero 3-Spalten-Grid auf Mobile ausblenden (Pfeil) */
+  .hero-arrow { display: none !important; }
+}
+
+/* ─── MOBILE BURGER MENU ─── */
+@media (max-width: 900px) {
+  .mobile-nav-links { display: none !important; }
+  .mobile-burger { display: flex !important; }
+}
+
+@media (min-width: 901px) {
+  .mobile-burger { display: none !important; }
+}

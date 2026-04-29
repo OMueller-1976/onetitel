@@ -36,7 +36,7 @@ export default function KontaktPage() {
           maxWidth: "1200px",
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "2fr 1fr",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
           gap: "4rem",
           alignItems: "start",
         }}

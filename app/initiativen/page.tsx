@@ -102,7 +102,7 @@ export default function InitiativenPage() {
             maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))",
             gap: "3rem",
             alignItems: "start",
           }}

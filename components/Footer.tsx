@@ -6,7 +6,7 @@ export default function Footer() {
       style={{
         background: "var(--fg)",
         color: "var(--bg)",
-        padding: "4rem 2rem 2rem",
+        padding: "clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem) 1.5rem",
         marginTop: "6rem",
       }}
     >
@@ -15,7 +15,7 @@ export default function Footer() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))",
             gap: "3rem",
             paddingBottom: "3rem",
             borderBottom: "1px solid rgba(242,240,235,0.15)",

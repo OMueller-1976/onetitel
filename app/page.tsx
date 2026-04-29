@@ -91,7 +91,7 @@ export default function Home() {
       {/* Hero */}
       <section
         style={{
-          padding: "5rem 2rem 4rem",
+          padding: "clamp(2rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem) 4rem",
           maxWidth: "1200px",
           margin: "0 auto",
         }}
@@ -107,7 +107,7 @@ export default function Home() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr auto 1fr",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
             gap: "2rem",
             marginTop: "3rem",
             alignItems: "stretch",
@@ -143,6 +143,7 @@ export default function Home() {
 
           {/* Animated down-arrow */}
           <div
+            className="hero-arrow"
             style={{
               display: "flex",
               justifyContent: "center",
@@ -197,7 +198,7 @@ export default function Home() {
         className="reveal"
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
           gap: 0,
           minHeight: "420px",
           overflow: "hidden",
@@ -242,7 +243,7 @@ export default function Home() {
       <section
         className="reveal reveal-delay-1"
         style={{
-          padding: "4rem 2rem",
+          padding: "clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem)",
           background: "var(--fg)",
           color: "var(--bg)",
         }}
@@ -252,7 +253,7 @@ export default function Home() {
             maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
             gap: "4rem",
             alignItems: "center",
           }}
@@ -294,7 +295,7 @@ export default function Home() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
                 gap: "1px",
                 background: "rgba(242,240,235,0.1)",
               }}
@@ -337,7 +338,7 @@ export default function Home() {
       {/* Services grid */}
       <section
         className="reveal"
-        style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}
+        style={{ padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)", maxWidth: "1200px", margin: "0 auto" }}
       >
         <div style={{ marginBottom: "3rem" }}>
           <p
@@ -411,7 +412,7 @@ export default function Home() {
         style={{
           background: "#0A0A0A",
           color: "#F0F0F0",
-          padding: "5rem 2rem",
+          padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
           position: "relative",
           overflow: "hidden",
         }}
@@ -478,7 +479,7 @@ export default function Home() {
       <section
         className="reveal"
         style={{
-          padding: "5rem 2rem",
+          padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
           background: "#F0F0F0",
         }}
       >
@@ -487,7 +488,7 @@ export default function Home() {
             maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
             gap: "4rem",
           }}
         >
@@ -586,7 +587,7 @@ export default function Home() {
       <section
         className="reveal reveal-delay-2"
         style={{
-          padding: "5rem 2rem",
+          padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
           borderBottom: "1px solid var(--border)",
         }}
       >
@@ -631,7 +632,7 @@ export default function Home() {
       {/* CTA */}
       <section
         style={{
-          padding: "6rem 2rem",
+          padding: "clamp(3.5rem, 7vw, 6rem) clamp(1rem, 4vw, 2rem)",
           textAlign: "center",
           maxWidth: "800px",
           margin: "0 auto",

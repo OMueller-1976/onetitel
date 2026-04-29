@@ -61,9 +61,11 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            padding: "0 2rem",
+            padding: "0 clamp(0.5rem, 3vw, 2rem)",
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-between",
+            overflowX: "auto",
             alignItems: "center",
           }}
         >
@@ -77,7 +79,7 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
                   href={link.href}
                   style={{
                     padding: "0.7rem 1rem",
-                    fontSize: "0.78rem",
+                    fontSize: "0.7rem",
                     fontWeight: active ? 600 : 400,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",

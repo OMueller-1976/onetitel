@@ -124,7 +124,7 @@ export default function InterimManagementPage() {
             maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
             gap: "4rem",
             alignItems: "start",
           }}
@@ -164,7 +164,7 @@ export default function InterimManagementPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
               gap: "1px",
               background: "#D0D0D0",
             }}

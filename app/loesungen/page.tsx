@@ -50,7 +50,7 @@ export default function LoesungenPage() {
       <section
         style={{
           position: "relative",
-          minHeight: "400px",
+          minHeight: "clamp(280px, 50vw, 480px)",
           display: "flex",
           alignItems: "flex-end",
           overflow: "hidden",
@@ -197,7 +197,7 @@ export default function LoesungenPage() {
                 background: "var(--bg)",
                 padding: "2.5rem",
                 display: "grid",
-                gridTemplateColumns: "1fr 2fr",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
                 gap: "3rem",
                 alignItems: "start",
               }}

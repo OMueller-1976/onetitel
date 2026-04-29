@@ -29,14 +29,16 @@ export default function BaLayout({ children }: { children: React.ReactNode }) {
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            padding: "0 2rem",
+            padding: "0 clamp(0.5rem, 3vw, 2rem)",
             display: "flex",
+            flexWrap: "wrap",
             justifyContent: "space-between",
             alignItems: "center",
+            overflowX: "auto",
           }}
         >
           {/* Logo + Links */}
-          <div style={{ display: "flex", alignItems: "center", gap: "0" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0" }}>
             <Link
               href="/initiativen/ba-digital-marketing"
               style={{
@@ -65,7 +67,7 @@ export default function BaLayout({ children }: { children: React.ReactNode }) {
                   href={link.href}
                   style={{
                     padding: "0.8rem 1rem",
-                    fontSize: "0.875rem",
+                    fontSize: "0.7rem",
                     fontWeight: active ? 500 : 300,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
