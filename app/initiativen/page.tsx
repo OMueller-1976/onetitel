@@ -16,12 +16,12 @@ const initiativen = [
   {
     href: "/initiativen/true-dads",
     title: "True Dads Deutschland",
-    description: "Unabhängige Initiative für Väterrechte und Umgangsrecht",
+    description: "Unabhängige Initiative für Väterrechte und Umgangsrecht in Deutschland.",
   },
   {
     href: "/initiativen/ba-digital-marketing",
     title: "BA Digital Marketing",
-    description: "Business Angel und Beratung im Digital-Marketing",
+    description: "Business Angel und Beratung im Bereich Digital-Marketing und Performance.",
   },
 ];
 
@@ -82,9 +82,20 @@ export default function InitiativenPage() {
           <br />
           <span style={{ opacity: 0.35 }}>Ventures</span>
         </h1>
+        <p
+          style={{
+            fontSize: "clamp(1.1rem, 2.5vw, 1.4rem)",
+            fontWeight: 300,
+            opacity: 0.55,
+            maxWidth: "600px",
+            lineHeight: 1.7,
+          }}
+        >
+          Gesellschaftliche Initiativen und unternehmerische Projekte im Entstehen.
+        </p>
       </section>
 
-      {/* Two-column grid */}
+      {/* Two-column card layout */}
       <section style={{ padding: "1rem 2rem 6rem" }}>
         <div
           style={{
@@ -92,133 +103,115 @@ export default function InitiativenPage() {
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            gap: "1px",
-            background: "var(--border)",
+            gap: "3rem",
             alignItems: "start",
           }}
         >
           {/* LEFT — Initiativen */}
-          <div style={{ background: "var(--bg)", padding: "3rem" }}>
-            <p
+          <div>
+            <h2
               style={{
-                fontSize: "0.62rem",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                opacity: 0.4,
-                marginBottom: "2rem",
+                fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                fontWeight: 300,
+                letterSpacing: "-0.02em",
+                marginBottom: "1.5rem",
+                paddingBottom: "1rem",
+                borderBottom: "2px solid #0A0A0A",
               }}
             >
               Initiativen
-            </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1px" }}>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {initiativen.map((item) => (
-                <Link
+                <div
                   key={item.href}
-                  href={item.href}
                   style={{
-                    display: "block",
-                    background: "var(--fg)",
-                    color: "var(--bg)",
-                    padding: "2.5rem",
-                    textDecoration: "none",
-                    transition: "opacity 0.15s",
+                    background: "#FFFFFF",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "8px",
+                    boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
+                    padding: "2rem",
                   }}
                 >
-                  <div
+                  <h3
                     style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "flex-start",
-                      marginBottom: "1rem",
+                      fontSize: "1.25rem",
+                      fontWeight: 400,
+                      letterSpacing: "-0.01em",
+                      marginBottom: "0.75rem",
+                      marginTop: 0,
                     }}
                   >
-                    <h2
-                      style={{
-                        fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)",
-                        fontWeight: 300,
-                        letterSpacing: "-0.02em",
-                        color: "var(--bg)",
-                        margin: 0,
-                      }}
-                    >
-                      {item.title}
-                    </h2>
-                    <span style={{ fontSize: "1.2rem", opacity: 0.4, flexShrink: 0 }}>→</span>
-                  </div>
+                    {item.title}
+                  </h3>
                   <p
                     style={{
-                      fontSize: "0.83rem",
+                      fontSize: "1rem",
                       lineHeight: 1.7,
-                      opacity: 0.55,
+                      opacity: 0.6,
                       margin: 0,
-                      color: "var(--bg)",
+                      marginBottom: "1.25rem",
                     }}
                   >
                     {item.description}
                   </p>
-                </Link>
+                  <Link href={item.href} className="btn-outline">
+                    Mehr erfahren
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
 
           {/* RIGHT — Ventures */}
-          <div style={{ background: "var(--bg)", padding: "3rem" }}>
-            <p
+          <div>
+            <h2
               style={{
-                fontSize: "0.62rem",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                opacity: 0.4,
-                marginBottom: "2rem",
+                fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                fontWeight: 300,
+                letterSpacing: "-0.02em",
+                marginBottom: "1.5rem",
+                paddingBottom: "1rem",
+                borderBottom: "2px solid #0A0A0A",
               }}
             >
               Ventures
-            </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "1px" }}>
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {ventures.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   style={{
-                    display: "block",
-                    background: "#EBEBEB",
-                    border: "1px solid var(--border)",
-                    padding: "1.75rem 2rem",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    background: "#FFFFFF",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: "6px",
+                    boxShadow: "0 1px 6px rgba(0,0,0,0.04)",
+                    padding: "1.25rem 1.5rem",
                     textDecoration: "none",
-                    transition: "background 0.15s",
+                    transition: "box-shadow 0.15s, border-color 0.15s",
                   }}
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      marginBottom: "0.4rem",
-                    }}
-                  >
-                    <h3
+                  <div>
+                    <div
                       style={{
-                        fontSize: "1.125rem",
+                        fontSize: "1.1rem",
                         fontWeight: 400,
-                        letterSpacing: "-0.01em",
                         color: "var(--fg)",
-                        margin: 0,
+                        letterSpacing: "-0.01em",
+                        marginBottom: "0.2rem",
                       }}
                     >
                       {item.title}
-                    </h3>
-                    <span style={{ fontSize: "1.2rem", opacity: 0.35, flexShrink: 0 }}>→</span>
+                    </div>
+                    <div style={{ fontSize: "0.85rem", opacity: 0.5, color: "var(--fg)" }}>
+                      {item.description}
+                    </div>
                   </div>
-                  <p
-                    style={{
-                      fontSize: "0.78rem",
-                      opacity: 0.5,
-                      margin: 0,
-                      color: "var(--fg)",
-                    }}
-                  >
-                    {item.description}
-                  </p>
+                  <span style={{ fontSize: "1.2rem", opacity: 0.35, flexShrink: 0, marginLeft: "1rem" }}>→</span>
                 </Link>
               ))}
             </div>

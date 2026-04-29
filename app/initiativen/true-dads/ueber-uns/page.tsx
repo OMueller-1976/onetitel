@@ -128,7 +128,7 @@ export default function UeberUnsPage() {
             {/* Ziel-Box */}
             <div
               style={{
-                background: "#F5F5F5",
+                background: "#FFFFFF",
                 borderLeft: `4px solid ${NAVY}`,
                 padding: "1.75rem 2rem",
               }}
@@ -156,7 +156,7 @@ export default function UeberUnsPage() {
       </section>
 
       {/* Vision */}
-      <section style={{ padding: "5rem 2rem", background: "#F5F5F5" }}>
+      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2
             style={{

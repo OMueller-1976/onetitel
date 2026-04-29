@@ -112,7 +112,7 @@ export default function SituationPage() {
       </section>
 
       {/* Kurzprofil */}
-      <section style={{ padding: "5rem 2rem", background: "#F5F5F5" }}>
+      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div
             style={{
@@ -162,7 +162,7 @@ export default function SituationPage() {
                   { label: "Berufserfahrung", wert: "25+ Jahre Digital & Marketing" },
                   { label: "Initiative", wert: "True Dads Deutschland (Gründer)" },
                 ].map((item) => (
-                  <div key={item.label} style={{ background: "#F5F5F5", padding: "1.5rem" }}>
+                  <div key={item.label} style={{ background: "#FFFFFF", padding: "1.5rem" }}>
                     <p style={{ fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", margin: "0 0 0.35rem" }}>
                       {item.label}
                     </p>

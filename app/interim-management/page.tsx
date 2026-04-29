@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const DARK = "#0A0A0A";
-const GRAY = "#EBEBEB";
+const GRAY = "#FFFFFF";
 const ACCENT = "#2D5A3D";
 
 const einsatzfelder = [
@@ -201,7 +201,7 @@ export default function InterimManagementPage() {
       </section>
 
       {/* Wann sinnvoll — dunkel, 6 Kacheln */}
-      <section style={{ padding: "5rem 2rem", background: DARK, color: "#F5F5F5" }}>
+      <section style={{ padding: "5rem 2rem", background: DARK, color: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2
             style={{
@@ -422,7 +422,7 @@ export default function InterimManagementPage() {
       </section>
 
       {/* Kosten & BAFA — dunkel */}
-      <section style={{ padding: "5rem 2rem", background: DARK, color: "#F5F5F5" }}>
+      <section style={{ padding: "5rem 2rem", background: DARK, color: "#FFFFFF" }}>
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <h2
             style={{

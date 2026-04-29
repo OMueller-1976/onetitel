@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const DARK = "#0A0A0A";
-const GRAY = "#EBEBEB";
+const GRAY = "#FFFFFF";
 const ACCENT = "#2D5A3D";
 
 const einsatzfelder = [
@@ -79,7 +79,7 @@ export default function InterimManagementSalesDigitalPage() {
       <section
         style={{
           background: DARK,
-          color: "#F5F5F5",
+          color: "#FFFFFF",
           padding: "7rem 2rem 6rem",
           position: "relative",
           overflow: "hidden",
@@ -441,7 +441,7 @@ export default function InterimManagementSalesDigitalPage() {
         style={{
           padding: "6rem 2rem",
           background: DARK,
-          color: "#F5F5F5",
+          color: "#FFFFFF",
           textAlign: "center",
         }}
       >

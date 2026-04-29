@@ -207,7 +207,7 @@ export default function EritajPage() {
       </section>
 
       {/* Sonderleistungen */}
-      <section style={{ padding: "5rem 2rem", background: "#EBEBEB" }}>
+      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
@@ -231,7 +231,7 @@ export default function EritajPage() {
             {sonderleistungen.map((s) => (
               <div
                 key={s.label}
-                style={{ background: "#EBEBEB", padding: "2rem" }}
+                style={{ background: "#FFFFFF", padding: "2rem" }}
               >
                 <p style={{ fontSize: "0.875rem", opacity: 0.5, marginBottom: "0.75rem", margin: "0 0 0.5rem" }}>
                   {s.label}

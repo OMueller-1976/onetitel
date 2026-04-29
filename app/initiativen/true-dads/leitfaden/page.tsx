@@ -121,7 +121,7 @@ export default function LeitfadenPage() {
       </section>
 
       {/* Kapitelstruktur */}
-      <section style={{ padding: "5rem 2rem", background: "#F5F5F5" }}>
+      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2
             style={{

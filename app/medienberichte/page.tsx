@@ -164,7 +164,7 @@ export default function MedienberishtePage() {
           style={{
             marginTop: "3rem",
             padding: "2.5rem",
-            background: "#EBEBEB",
+            background: "#FFFFFF",
           }}
         >
           <p

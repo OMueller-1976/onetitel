@@ -199,7 +199,7 @@ export default function TrueDadsHomePage() {
       </section>
 
       {/* Section 3 — Rechtlicher Rahmen */}
-      <section style={{ padding: "5rem 2rem", background: "#F5F5F5" }}>
+      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <h2
             style={{
@@ -366,7 +366,7 @@ export default function TrueDadsHomePage() {
               <div
                 key={h.nr}
                 style={{
-                  background: "#F5F5F5",
+                  background: "#FFFFFF",
                   padding: "2.5rem",
                   borderTop: `3px solid ${NAVY}`,
                 }}

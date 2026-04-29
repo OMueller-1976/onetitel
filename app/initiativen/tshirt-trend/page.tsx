@@ -170,7 +170,7 @@ export default function TshirtTrendPage() {
       </section>
 
       {/* Sortiment */}
-      <section style={{ padding: "4rem 2rem", background: "#EBEBEB" }}>
+      <section style={{ padding: "4rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
@@ -192,7 +192,7 @@ export default function TshirtTrendPage() {
             }}
           >
             {sortiment.map((kat) => (
-              <div key={kat.kategorie} style={{ background: "#EBEBEB", padding: "2.5rem" }}>
+              <div key={kat.kategorie} style={{ background: "#FFFFFF", padding: "2.5rem" }}>
                 <h3
                   style={{
                     fontSize: "1.125rem",

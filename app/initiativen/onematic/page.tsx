@@ -263,7 +263,7 @@ export default function OnematicPage() {
       </section>
 
       {/* Expertise Badge */}
-      <section style={{ padding: "4rem 2rem", background: "#EBEBEB" }}>
+      <section style={{ padding: "4rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, maxWidth: "600px", margin: "0 auto" }}>
             Entwickelt von einem BVDW-Fokusgruppen-Experten mit 15+ Jahren Programmatic-Erfahrung.

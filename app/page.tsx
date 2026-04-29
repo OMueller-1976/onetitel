@@ -116,7 +116,7 @@ export default function Home() {
           {/* Expertise card */}
           <div
             style={{
-              background: "#EBEBEB",
+              background: "#F0F0F0",
               padding: "3rem",
               borderRadius: "2px",
             }}
@@ -217,7 +217,7 @@ export default function Home() {
         <div
           style={{
             background: "#0A0A0A",
-            color: "#F5F5F5",
+            color: "#F0F0F0",
             padding: "3rem",
             display: "flex",
             flexDirection: "column",
@@ -410,7 +410,7 @@ export default function Home() {
         className="reveal reveal-delay-1"
         style={{
           background: "#0A0A0A",
-          color: "#F5F5F5",
+          color: "#F0F0F0",
           padding: "5rem 2rem",
           position: "relative",
           overflow: "hidden",
@@ -479,7 +479,7 @@ export default function Home() {
         className="reveal"
         style={{
           padding: "5rem 2rem",
-          background: "#EBEBEB",
+          background: "#F0F0F0",
         }}
       >
         <div

@@ -212,7 +212,7 @@ export default function AdhasiPage() {
       </section>
 
       {/* Status */}
-      <section style={{ padding: "5rem 2rem", background: "#EBEBEB" }}>
+      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div
             style={{
