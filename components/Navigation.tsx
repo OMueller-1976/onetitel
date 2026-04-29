@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -83,13 +82,6 @@ export default function Navigation() {
         }}
       >
         <Link href="/" style={{ textDecoration: "none", textAlign: "center", display: "inline-flex", alignItems: "center", gap: "0.75rem" }}>
-          <Image
-            src="/images/logo-symbol.webp"
-            alt=""
-            width={36}
-            height={36}
-            style={{ opacity: 0.12, flexShrink: 0 }}
-          />
           <div>
           <div
             style={{
