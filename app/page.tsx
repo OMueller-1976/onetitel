@@ -126,7 +126,7 @@ export default function Home() {
             >
               Expertise
             </h2>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.75, opacity: 0.75, marginBottom: "2rem" }}>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.65, opacity: 0.75, marginBottom: "2rem" }}>
               Als erfahrener Berater begleite ich Ihr Unternehmen auch durch anspruchsvolle
               Veränderungsprozesse und Krisen. Mit frischen Perspektiven und innovativen Lösungen
               helfe ich dabei, Lösungen und neue Wachstumschancen zu identifizieren.
@@ -164,7 +164,7 @@ export default function Home() {
             >
               AI/KI Automatisierung
             </h2>
-            <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.75, margin: 0 }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.75, margin: 0 }}>
               Kompetenzen im Bereich Agentic AI sowie KI-basierter Vertriebsoptimierung mit Fokus
               auf Leadgenerierung und Funnel-Performance. Einsatz intelligenter Automatisierung,
               datengetriebener Analysen und KI-gestützter Entscheidungsprozesse zur Identifikation
@@ -218,7 +218,7 @@ export default function Home() {
             >
               Interim-Management und Beratung für Sales und Digital-Marketing
             </h2>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.75, opacity: 0.6, marginBottom: "2rem" }}>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.65, opacity: 0.6, marginBottom: "2rem" }}>
               Herausragende Transformationen geschehen nicht von selbst — sie brauchen kompetente
               Impulse. Als Interim Manager bringe ich Erfahrung, Unparteilichkeit und eine
               Hands-on-Mentalität mit, die Ihre Organisation nach vorne bringt.
@@ -362,7 +362,7 @@ export default function Home() {
               >
                 {s.title}
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.65, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.65, margin: 0 }}>
                 {s.description}
               </p>
             </div>
@@ -397,7 +397,7 @@ export default function Home() {
             >
               Strategie
             </h3>
-            <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
               Unsere Strategie vereint fundierte Analyse, leidenschaftliches Engagement und
               praxisnahe Umsetzung. Durch Aneignung von Branchenkenntnissen entwickeln wir
               maßgeschneiderte Strategien, die perfekt auf Ihre Bedürfnisse abgestimmt sind.
@@ -414,7 +414,7 @@ export default function Home() {
             >
               Ausführung
             </h3>
-            <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
               Wir sind nicht nur Theoretiker, sondern Praktiker mit einer ausgeprägten
               Hands-on-Mentalität. Als Experte bringe ich mich ein, packe mit an und setze Ideen in
               die Tat um. Diese praxisnahe Herangehensweise ermöglicht es, flexibel und effizient
@@ -492,7 +492,7 @@ export default function Home() {
             Zeitraum die angestrebten Ziele erreicht, sehr viel positiv bewegt und somit maßgeblich
             zum weiteren Erfolg des Unternehmens beigetragen."
           </blockquote>
-          <p style={{ fontSize: "0.8rem", fontWeight: 500, letterSpacing: "0.05em", margin: 0 }}>
+          <p style={{ fontSize: "1.1rem", fontWeight: 500, letterSpacing: "0.05em", margin: 0 }}>
             Tanja Bittner
           </p>
           <p style={{ fontSize: "0.75rem", opacity: 0.5, margin: "0.25rem 0 0" }}>
@@ -522,7 +522,7 @@ export default function Home() {
           <br />
           nächste Level?
         </h2>
-        <p style={{ fontSize: "0.9rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.05rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Vereinbaren Sie ein kostenloses Erstgespräch und lassen Sie uns gemeinsam
           herausfinden, wie OneTitel Ihrem Unternehmen helfen kann.
         </p>

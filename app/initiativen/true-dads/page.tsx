@@ -159,7 +159,7 @@ export default function TrueDadsPage() {
               Die Initiative kämpft für mehr Gerechtigkeit im deutschen Familienrecht — überparteilich,
               faktenbasiert und mit dem Kindeswohl im Mittelpunkt.
             </p>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
               Väter, die nach einer Trennung den Kontakt zu ihren Kindern verlieren, stehen oft
               vor einem System, das strukturell benachteiligt. True Dads macht dieses Schweigen
               sichtbar — und gibt Vätern und Kindern eine Stimme.
@@ -223,7 +223,7 @@ export default function TrueDadsPage() {
                 >
                   {s.zahl}
                 </div>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.7, opacity: 0.6, margin: "0 0 0.5rem" }}>
+                <p style={{ fontSize: "1rem", lineHeight: 1.7, opacity: 0.6, margin: "0 0 0.5rem" }}>
                   {s.label}
                 </p>
                 <p style={{ fontSize: "0.65rem", opacity: 0.35, margin: 0, letterSpacing: "0.05em" }}>
@@ -280,7 +280,7 @@ export default function TrueDadsPage() {
               </span>
               <h3
                 style={{
-                  fontSize: "0.95rem",
+                  fontSize: "1.1rem",
                   fontWeight: 400,
                   letterSpacing: "-0.01em",
                   margin: 0,
@@ -288,7 +288,7 @@ export default function TrueDadsPage() {
               >
                 {p.titel}
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
                 {p.text}
               </p>
             </div>
@@ -341,7 +341,7 @@ export default function TrueDadsPage() {
                 >
                   {u.title}
                 </h3>
-                <p style={{ fontSize: "0.83rem", lineHeight: 1.75, opacity: 0.65, margin: 0 }}>
+                <p style={{ fontSize: "0.83rem", lineHeight: 1.65, opacity: 0.65, margin: 0 }}>
                   {u.description}
                 </p>
               </div>
@@ -372,7 +372,7 @@ export default function TrueDadsPage() {
             >
               Folgen für Kinder
             </p>
-            <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6 }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6 }}>
               Elterliche Entfremdung gilt in der Fachliteratur als Form
               der{" "}
               <strong style={{ fontWeight: 500 }}>psychologischen Kindesmisshandlung</strong>.
@@ -401,7 +401,7 @@ export default function TrueDadsPage() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span style={{ fontSize: "0.9rem", lineHeight: 1.7, opacity: 0.75 }}>{f}</span>
+                <span style={{ fontSize: "1.05rem", lineHeight: 1.7, opacity: 0.75 }}>{f}</span>
               </li>
             ))}
           </ul>
@@ -446,7 +446,7 @@ export default function TrueDadsPage() {
             hinzunehmende Folge der Trennung, sondern eine schwerwiegende Verletzung der
             Kindesrechte."
           </blockquote>
-          <p style={{ fontSize: "0.8rem", fontWeight: 500, letterSpacing: "0.04em", margin: 0 }}>
+          <p style={{ fontSize: "1.1rem", fontWeight: 500, letterSpacing: "0.04em", margin: 0 }}>
             OLG Karlsruhe, Beschluss vom 12.07.2013
           </p>
           <p style={{ fontSize: "0.75rem", opacity: 0.5, margin: "0.25rem 0 0" }}>
@@ -477,7 +477,7 @@ export default function TrueDadsPage() {
         </h2>
         <p
           style={{
-            fontSize: "0.9rem",
+            fontSize: "1.05rem",
             opacity: 0.55,
             marginBottom: "2.5rem",
             lineHeight: 1.7,
@@ -497,7 +497,7 @@ export default function TrueDadsPage() {
             padding: "0.75rem 1.75rem",
             background: "var(--bg)",
             color: "var(--fg)",
-            fontSize: "0.8rem",
+            fontSize: "1.1rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",

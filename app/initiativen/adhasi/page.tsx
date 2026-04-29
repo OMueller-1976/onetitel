@@ -125,7 +125,7 @@ export default function AdhasiPage() {
               style={{
                 fontSize: "clamp(1rem, 2vw, 1.25rem)",
                 fontWeight: 300,
-                lineHeight: 1.75,
+                lineHeight: 1.65,
                 opacity: 0.8,
                 marginBottom: "1.5rem",
               }}
@@ -202,7 +202,7 @@ export default function AdhasiPage() {
                 >
                   {f.title}
                 </h3>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                   {f.description}
                 </p>
               </div>
@@ -258,7 +258,7 @@ export default function AdhasiPage() {
                 In Entwicklung
               </div>
             </div>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.8, opacity: 0.7 }}>
+            <p style={{ fontSize: "1.1rem", lineHeight: 1.8, opacity: 0.7 }}>
               ADHASI befindet sich in aktiver Entwicklung. Ein Early Access ist in Planung —
               tragen Sie sich ein und erfahren Sie als Erste, wann die App verfügbar ist.
             </p>
@@ -278,7 +278,7 @@ export default function AdhasiPage() {
         >
           Auf dem Laufenden bleiben
         </h2>
-        <p style={{ fontSize: "0.9rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.05rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Early Access, Updates und Launch-Informationen — direkt in Ihr Postfach.
         </p>
         <Link href="/kontakt" className="btn-primary">

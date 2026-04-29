@@ -104,7 +104,7 @@ export default function BeitraegePage() {
               >
                 {b.titel}
               </h2>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
                 {b.teaser}
               </p>
             </article>

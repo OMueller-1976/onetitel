@@ -23,7 +23,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: 'Jost', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -49,6 +49,10 @@ hr {
   border: none;
   border-top: 1px solid var(--border);
 }
+
+.body-lg { font-size: 1.125rem; line-height: 1.65; }
+.body-sm { font-size: 0.875rem; line-height: 1.6; }
+.label   { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; }
 
 .btn-primary {
   display: inline-flex;

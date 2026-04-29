@@ -202,7 +202,7 @@ export default function InitiativenPage() {
                     >
                       {item.title}
                     </h3>
-                    <span style={{ fontSize: "0.9rem", opacity: 0.35, flexShrink: 0 }}>→</span>
+                    <span style={{ fontSize: "1.05rem", opacity: 0.35, flexShrink: 0 }}>→</span>
                   </div>
                   <p
                     style={{

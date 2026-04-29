@@ -116,7 +116,7 @@ export default function MedienberishtePage() {
                 <blockquote
                   style={{
                     fontStyle: "italic",
-                    fontSize: "0.9rem",
+                    fontSize: "1.05rem",
                     lineHeight: 1.8,
                     opacity: 0.7,
                     borderLeft: "2px solid var(--fg)",
@@ -127,7 +127,7 @@ export default function MedienberishtePage() {
                   „{b.zitat}"
                 </blockquote>
               )}
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                 {b.beschreibung}
               </p>
             </div>
@@ -153,7 +153,7 @@ export default function MedienberishtePage() {
           >
             Digital Marketing Kompetenz
           </p>
-          <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+          <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
             Bis 2019 Mitglied in der Fokusgruppe "Programmatic Advertising" des Bundesverbandes der
             digitalen Werbewirtschaft e. V. und Mitwirkender am Leitfaden "Daten-Strategie" im
             Programmatic Advertising.

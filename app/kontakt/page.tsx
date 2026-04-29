@@ -89,7 +89,7 @@ export default function KontaktPage() {
           </p>
           <address
             style={{
-              fontSize: "0.85rem",
+              fontSize: "1rem",
               fontStyle: "normal",
               lineHeight: 1.8,
               opacity: 0.65,

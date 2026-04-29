@@ -132,7 +132,7 @@ export default function OnematicPage() {
               style={{
                 fontSize: "clamp(1rem, 2vw, 1.25rem)",
                 fontWeight: 300,
-                lineHeight: 1.75,
+                lineHeight: 1.65,
                 opacity: 0.8,
                 marginBottom: "1.5rem",
               }}
@@ -141,7 +141,7 @@ export default function OnematicPage() {
               KI-gestützte Kampagnensteuerung — entwickelt von einem BVDW-Fokusgruppen-Experten mit
               über 15 Jahren Programmatic-Erfahrung.
             </p>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
               Zielgruppe: Marketing-Teams, Agenturen, Publisher und KMU mit Digital-Marketing-Bedarf.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function OnematicPage() {
               >
                 {f.title}
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                 {f.description}
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function OnematicPage() {
       {/* Expertise Badge */}
       <section style={{ padding: "4rem 2rem", background: "#EBEBEB" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.7, maxWidth: "600px", margin: "0 auto" }}>
+          <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, maxWidth: "600px", margin: "0 auto" }}>
             Entwickelt von einem BVDW-Fokusgruppen-Experten mit 15+ Jahren Programmatic-Erfahrung.
             Praxiswissen, das in jedes Feature einfließt.
           </p>
@@ -292,7 +292,7 @@ export default function OnematicPage() {
         >
           Platform entdecken
         </h2>
-        <p style={{ fontSize: "0.9rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.05rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Programmatic Advertising auf dem nächsten Level — mit KI, Daten und Erfahrung.
         </p>
         <a
@@ -305,7 +305,7 @@ export default function OnematicPage() {
             padding: "0.75rem 1.75rem",
             background: "var(--bg)",
             color: "var(--fg)",
-            fontSize: "0.8rem",
+            fontSize: "1.1rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",

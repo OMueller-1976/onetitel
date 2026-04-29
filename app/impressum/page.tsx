@@ -19,7 +19,7 @@ export default function ImpressumPage() {
         Impressum
       </h1>
 
-      <div style={{ fontSize: "0.875rem", lineHeight: 1.9, opacity: 0.75 }}>
+      <div style={{ fontSize: "1rem", lineHeight: 1.9, opacity: 0.75 }}>
         <h2 style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
           Angaben gem. § 5 TMG
         </h2>

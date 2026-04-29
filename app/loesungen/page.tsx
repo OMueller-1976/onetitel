@@ -109,7 +109,7 @@ export default function LoesungenPage() {
           >
             Die richtigen Entscheidungen treffen.
           </p>
-          <p style={{ fontSize: "0.9rem", lineHeight: 1.8, opacity: 0.65, maxWidth: "680px" }}>
+          <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.65, maxWidth: "680px" }}>
             Interim Manager haben in der Regel einen hohen Grad an Erfahrung und sind sofort
             einsatzbereit. Sie sind oft Experten in ihrem Fachgebiet und können schnell und effizient
             Ergebnisse liefern. Nach Beendigung ihres Einsatzes verlassen sie das Unternehmen wieder.
@@ -151,7 +151,7 @@ export default function LoesungenPage() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.7, margin: 0 }}>
+                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
                   {g}
                 </p>
               </div>
@@ -207,7 +207,7 @@ export default function LoesungenPage() {
               >
                 {l.title}
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.65, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.65, margin: 0 }}>
                 {l.description}
               </p>
             </div>
@@ -246,7 +246,7 @@ export default function LoesungenPage() {
               >
                 Scrum Master
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
                 Als erfahrene Scrum Master moderieren wir Ihre Scrum-Prozesse, beseitigen Hindernisse
                 und fördern eine offene Kommunikation im Team. Unser Ziel ist es, ein effizientes
                 und motiviertes Arbeitsumfeld zu schaffen.
@@ -263,7 +263,7 @@ export default function LoesungenPage() {
               >
                 Product Owner
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
                 In der Rolle des Product Owners verantworten wir die Produktvision und das
                 Backlog-Management. Wir priorisieren Anforderungen, sorgen für klare Zielsetzungen
                 und stellen sicher, dass das Entwicklungsteam die Kundenanforderungen optimal umsetzt.

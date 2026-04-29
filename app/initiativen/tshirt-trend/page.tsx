@@ -153,7 +153,7 @@ export default function TshirtTrendPage() {
               style={{
                 fontSize: "clamp(1rem, 2vw, 1.25rem)",
                 fontWeight: 300,
-                lineHeight: 1.75,
+                lineHeight: 1.65,
                 opacity: 0.8,
                 marginBottom: "1.5rem",
               }}
@@ -162,7 +162,7 @@ export default function TshirtTrendPage() {
               gestalteten Print-on-Demand Produkten. Kein Lager, kein Risiko — Produkte werden
               erst auf Bestellung gedruckt und direkt versendet.
             </p>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
               Fulfillment via Spreadshirt. Lieferung europaweit. Kein Mindestbestellwert.
             </p>
           </div>
@@ -237,7 +237,7 @@ export default function TshirtTrendPage() {
         >
           Jetzt shoppen
         </h2>
-        <p style={{ fontSize: "0.9rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.05rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Entdecke individuelle Designs — Print-on-Demand, ohne Mindestbestellwert.
         </p>
         <a

@@ -132,7 +132,7 @@ export default function EritajPage() {
               style={{
                 fontSize: "clamp(1rem, 2vw, 1.25rem)",
                 fontWeight: 300,
-                lineHeight: 1.75,
+                lineHeight: 1.65,
                 opacity: 0.8,
                 marginBottom: "1.5rem",
               }}
@@ -141,7 +141,7 @@ export default function EritajPage() {
               Privatpersonen, die vorausdenken. Wir machen ein komplexes, oft verdrängtes Thema
               zugänglich: strukturiert, verständlich und sicher.
             </p>
-            <p style={{ fontSize: "0.9rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
               Zielgruppe: Privatpersonen ab 40, Familien, Selbständige.
               Beratungsleistungen sind ggf. über die BAFA förderbar.
             </p>
@@ -197,7 +197,7 @@ export default function EritajPage() {
                 >
                   {f.title}
                 </h3>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                   {f.description}
                 </p>
               </div>
@@ -291,7 +291,7 @@ export default function EritajPage() {
               >
                 {p.name}
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                 {p.beschreibung}
               </p>
             </div>
@@ -319,7 +319,7 @@ export default function EritajPage() {
         >
           Jetzt kostenlos starten
         </h2>
-        <p style={{ fontSize: "0.9rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.05rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Vorausdenken zahlt sich aus — starten Sie heute mit ERITAJ.
         </p>
         <a
@@ -333,7 +333,7 @@ export default function EritajPage() {
             padding: "0.75rem 1.75rem",
             background: "var(--bg)",
             color: "var(--fg)",
-            fontSize: "0.8rem",
+            fontSize: "1.1rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",

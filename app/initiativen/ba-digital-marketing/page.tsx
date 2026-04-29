@@ -228,7 +228,7 @@ export default function BaDigitalMarketingPage() {
                 >
                   {f.title}
                 </h3>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                   {f.description}
                 </p>
               </div>
@@ -270,7 +270,7 @@ export default function BaDigitalMarketingPage() {
               >
                 {a.format}
               </h3>
-              <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.65, margin: 0 }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.65, margin: 0 }}>
                 {a.beschreibung}
               </p>
             </div>
@@ -314,7 +314,7 @@ export default function BaDigitalMarketingPage() {
               >
                 <h3
                   style={{
-                    fontSize: "0.9rem",
+                    fontSize: "1.05rem",
                     fontWeight: 400,
                     letterSpacing: "-0.01em",
                     margin: 0,
@@ -355,7 +355,7 @@ export default function BaDigitalMarketingPage() {
         </h2>
         <p
           style={{
-            fontSize: "0.9rem",
+            fontSize: "1.05rem",
             opacity: 0.6,
             marginBottom: "2.5rem",
             lineHeight: 1.7,

@@ -128,7 +128,7 @@ export default function LersiPage() {
               style={{
                 fontSize: "clamp(1rem, 2vw, 1.25rem)",
                 fontWeight: 300,
-                lineHeight: 1.75,
+                lineHeight: 1.65,
                 opacity: 0.8,
                 marginBottom: "1.5rem",
               }}
@@ -211,7 +211,7 @@ export default function LersiPage() {
                 >
                   {f.title}
                 </h3>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.75, opacity: 0.6, margin: 0 }}>
+                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                   {f.description}
                 </p>
               </div>
@@ -264,7 +264,7 @@ export default function LersiPage() {
         >
           Lersi entdecken
         </h2>
-        <p style={{ fontSize: "0.9rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.05rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Lernen, das Spaß macht — für Kinder, Eltern und Pädagogen gemeinsam.
         </p>
         <a
