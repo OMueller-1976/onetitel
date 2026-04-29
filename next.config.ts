@@ -12,6 +12,17 @@ const nextConfig: NextConfig = {
       { source: "/cookies",       destination: "/datenschutz", permanent: true },
     ];
   },
+  async headers() {
+    return [
+      {
+        source: "/:path*.pdf",
+        headers: [
+          { key: "Content-Type", value: "application/pdf" },
+          { key: "Content-Disposition", value: "inline" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
