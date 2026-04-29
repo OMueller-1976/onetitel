@@ -491,13 +491,6 @@ export default function Home() {
           }}
         >
           <div>
-            <Image
-              src="/images/logo-symbol.png"
-              alt=""
-              width={80}
-              height={79}
-              style={{ marginBottom: "1rem", opacity: 0.7 }}
-            />
             <h3
               style={{
                 fontSize: "1.5rem",
