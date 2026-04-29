@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
             <div
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
                 opacity: 0.5,
@@ -45,7 +45,7 @@ export default function Footer() {
             >
               Sales. Consulting. Interim-Management
             </div>
-            <p style={{ fontSize: "0.8rem", opacity: 0.6, lineHeight: 1.7, margin: 0 }}>
+            <p style={{ fontSize: "1.25rem", opacity: 0.6, lineHeight: 1.7, margin: 0 }}>
               Oliver M. Müller<br />
               Am Bruchborn 6<br />
               54570 Kirchweiler<br />
@@ -62,7 +62,7 @@ export default function Footer() {
           <div>
             <div
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -83,7 +83,7 @@ export default function Footer() {
                   <Link
                     href={l.href}
                     style={{
-                      fontSize: "0.8rem",
+                      fontSize: "1.25rem",
                       color: "inherit",
                       opacity: 0.7,
                       textDecoration: "none",
@@ -101,7 +101,7 @@ export default function Footer() {
           <div>
             <div
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -114,8 +114,6 @@ export default function Footer() {
               {[
                 { href: "https://www.eritaj.de", label: "Eritaj" },
                 { href: "https://www.lersi.de", label: "Lersi" },
-                { href: "https://www.dschinn.online", label: "Dschinn" },
-                { href: "https://omm-default.wixsite.com/coaching-group", label: "Coaching Group" },
               ].map((l) => (
                 <li key={l.href}>
                   <a
@@ -123,7 +121,7 @@ export default function Footer() {
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                     style={{
-                      fontSize: "0.8rem",
+                      fontSize: "1.25rem",
                       color: "inherit",
                       opacity: 0.7,
                       textDecoration: "none",
@@ -141,7 +139,7 @@ export default function Footer() {
           <div>
             <div
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -156,7 +154,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/oliver-m-mueller/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ fontSize: "0.8rem", color: "inherit", opacity: 0.7, textDecoration: "none" }}
+                  style={{ fontSize: "1.25rem", color: "inherit", opacity: 0.7, textDecoration: "none" }}
                 >
                   LinkedIn
                 </a>
@@ -166,7 +164,7 @@ export default function Footer() {
                   href="https://www.xing.com/profile/OliverMarkus_Mueller/web_profiles"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ fontSize: "0.8rem", color: "inherit", opacity: 0.7, textDecoration: "none" }}
+                  style={{ fontSize: "1.25rem", color: "inherit", opacity: 0.7, textDecoration: "none" }}
                 >
                   XING
                 </a>
@@ -186,7 +184,7 @@ export default function Footer() {
             paddingTop: "1.5rem",
           }}
         >
-          <p style={{ fontSize: "0.7rem", opacity: 0.4, margin: 0 }}>
+          <p style={{ fontSize: "0.8rem", opacity: 0.4, margin: 0 }}>
             © {new Date().getFullYear()} OneTitel – Oliver M. Müller
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
@@ -198,7 +196,7 @@ export default function Footer() {
                 key={l.href}
                 href={l.href}
                 style={{
-                  fontSize: "0.7rem",
+                  fontSize: "0.8rem",
                   color: "inherit",
                   opacity: 0.4,
                   textDecoration: "none",

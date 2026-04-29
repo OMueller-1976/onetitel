@@ -40,7 +40,7 @@ export default function FaktenRechtPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.4)",
@@ -68,7 +68,7 @@ export default function FaktenRechtPage() {
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: NAVY,
@@ -88,7 +88,7 @@ export default function FaktenRechtPage() {
             <p
               key={i}
               style={{
-                fontSize: "1.05rem",
+                fontSize: "1.2rem",
                 lineHeight: 1.8,
                 color: "#444",
                 fontWeight: 300,
@@ -141,10 +141,10 @@ export default function FaktenRechtPage() {
                 >
                   {s.zahl}
                 </div>
-                <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.5, margin: "0 0 0.35rem" }}>
+                <p style={{ fontSize: "1.125rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.5, margin: "0 0 0.35rem" }}>
                   {s.label}
                 </p>
-                <p style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.35)", margin: 0, letterSpacing: "0.04em" }}>
+                <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)", margin: 0, letterSpacing: "0.04em" }}>
                   {s.detail}
                 </p>
               </div>
@@ -179,7 +179,7 @@ export default function FaktenRechtPage() {
               >
                 <h3
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "1.25rem",
                     fontWeight: 600,
                     color: NAVY,
                     marginBottom: "1rem",
@@ -188,7 +188,7 @@ export default function FaktenRechtPage() {
                 >
                   {d.titel}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.75, color: "#444", margin: 0, fontWeight: 300 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "#444", margin: 0, fontWeight: 300 }}>
                   {d.text}
                 </p>
               </div>
@@ -218,7 +218,7 @@ export default function FaktenRechtPage() {
           ].map((absatz, i) => (
             <p
               key={i}
-              style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "#444", fontWeight: 300, marginBottom: "1.25rem" }}
+              style={{ fontSize: "1.2rem", lineHeight: 1.8, color: "#444", fontWeight: 300, marginBottom: "1.25rem" }}
             >
               {absatz}
             </p>
@@ -241,7 +241,7 @@ export default function FaktenRechtPage() {
         </h2>
         <p
           style={{
-            fontSize: "1.05rem",
+            fontSize: "1.2rem",
             color: "rgba(255,255,255,0.65)",
             maxWidth: "560px",
             margin: "0 auto 2rem",

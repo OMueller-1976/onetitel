@@ -31,7 +31,7 @@ export default function SituationPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.4)",
@@ -77,7 +77,7 @@ export default function SituationPage() {
         >
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: NAVY,
@@ -98,7 +98,7 @@ export default function SituationPage() {
             <p
               key={i}
               style={{
-                fontSize: "1.05rem",
+                fontSize: "1.2rem",
                 lineHeight: 1.8,
                 color: i === 0 ? "#222" : "#444",
                 fontWeight: i === 0 ? 400 : 300,
@@ -125,7 +125,7 @@ export default function SituationPage() {
             <div>
               <p
                 style={{
-                  fontSize: "0.65rem",
+                  fontSize: "0.75rem",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: NAVY,
@@ -163,10 +163,10 @@ export default function SituationPage() {
                   { label: "Initiative", wert: "True Dads Deutschland (Gründer)" },
                 ].map((item) => (
                   <div key={item.label} style={{ background: "#F5F5F5", padding: "1.5rem" }}>
-                    <p style={{ fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", margin: "0 0 0.35rem" }}>
+                    <p style={{ fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", margin: "0 0 0.35rem" }}>
                       {item.label}
                     </p>
-                    <p style={{ fontSize: "1rem", color: "#222", fontWeight: 400, margin: 0 }}>
+                    <p style={{ fontSize: "1.125rem", color: "#222", fontWeight: 400, margin: 0 }}>
                       {item.wert}
                     </p>
                   </div>
@@ -175,7 +175,7 @@ export default function SituationPage() {
 
               <p
                 style={{
-                  fontSize: "0.65rem",
+                  fontSize: "0.75rem",
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
                   color: "#888",
@@ -201,7 +201,7 @@ export default function SituationPage() {
                   "WESER-KURIER Mediengruppe (Interim Manager)",
                   "iq digital media marketing GmbH",
                 ].map((station) => (
-                  <li key={station} style={{ fontSize: "1rem", color: "#444", display: "flex", gap: "0.75rem" }}>
+                  <li key={station} style={{ fontSize: "1.125rem", color: "#444", display: "flex", gap: "0.75rem" }}>
                     <span style={{ color: NAVY, fontWeight: 600, flexShrink: 0 }}>—</span>
                     {station}
                   </li>
@@ -210,7 +210,7 @@ export default function SituationPage() {
 
               <p
                 style={{
-                  fontSize: "0.65rem",
+                  fontSize: "0.75rem",
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
                   color: "#888",
@@ -225,7 +225,7 @@ export default function SituationPage() {
                   <li
                     key={b.titel}
                     style={{
-                      fontSize: "1rem",
+                      fontSize: "1.125rem",
                       color: "#333",
                       padding: "0.6rem 0",
                       borderBottom: "1px solid #E0E0E0",
@@ -235,7 +235,7 @@ export default function SituationPage() {
                     }}
                   >
                     <span>{b.titel}</span>
-                    <span style={{ fontSize: "0.8rem", color: "#999", flexShrink: 0 }}>{b.jahr}</span>
+                    <span style={{ fontSize: "1.25rem", color: "#999", flexShrink: 0 }}>{b.jahr}</span>
                   </li>
                 ))}
               </ul>
@@ -263,7 +263,7 @@ export default function SituationPage() {
         >
           Du willst Dich austauschen?
         </h2>
-        <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.65)", marginBottom: "2rem" }}>
+        <p style={{ fontSize: "1.125rem", color: "rgba(255,255,255,0.65)", marginBottom: "2rem" }}>
           Schreib uns:{" "}
           <a
             href="mailto:truedads@onetitel.de"

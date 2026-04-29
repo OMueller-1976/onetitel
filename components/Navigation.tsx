@@ -8,10 +8,10 @@ import { useState } from "react";
 const navLinks = [
   { href: "/", label: "Start" },
   { href: "/loesungen", label: "Service" },
-  { href: "/initiativen", label: "Initiativen & Ventures" },
   { href: "/medienberichte", label: "Medienberichte" },
   { href: "/beitraege", label: "Beiträge" },
   { href: "/kontakt", label: "Kontakt" },
+  { href: "/initiativen", label: "Initiativen & Ventures" },
 ];
 
 const externalLinks: { href: string; label: string }[] = [];
@@ -45,7 +45,7 @@ export default function Navigation() {
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            fontSize: "0.7rem",
+            fontSize: "0.8rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
@@ -60,7 +60,7 @@ export default function Navigation() {
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            fontSize: "0.7rem",
+            fontSize: "0.8rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
@@ -161,7 +161,7 @@ export default function Navigation() {
               href={link.href}
               style={{
                 padding: "0.375rem 1rem",
-                fontSize: "0.75rem",
+                fontSize: "0.875rem",
                 fontWeight: active ? 500 : 400,
                 letterSpacing: "0.06em",
                 textTransform: "uppercase",
@@ -182,7 +182,7 @@ export default function Navigation() {
             rel="noopener noreferrer"
             style={{
               padding: "0.375rem 1rem",
-              fontSize: "0.75rem",
+              fontSize: "0.875rem",
               fontWeight: 400,
               letterSpacing: "0.06em",
               textTransform: "uppercase",

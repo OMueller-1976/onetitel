@@ -21,7 +21,7 @@ export default function KontaktForm() {
     padding: "0.75rem 0",
     color: "var(--bg)",
     fontFamily: "'Jost', sans-serif",
-    fontSize: "0.875rem",
+    fontSize: "1.125rem",
     fontWeight: 300,
     outline: "none",
     marginBottom: "1.75rem",
@@ -29,7 +29,7 @@ export default function KontaktForm() {
 
   const labelStyle = {
     display: "block",
-    fontSize: "0.65rem",
+    fontSize: "0.75rem",
     letterSpacing: "0.12em",
     textTransform: "uppercase" as const,
     opacity: 0.5,
@@ -54,7 +54,7 @@ export default function KontaktForm() {
         <p style={{ fontSize: "1.2rem", fontWeight: 300, marginBottom: "0.75rem" }}>
           Vielen Dank!
         </p>
-        <p style={{ fontSize: "0.85rem", opacity: 0.6 }}>
+        <p style={{ fontSize: "1.125rem", opacity: 0.6 }}>
           Ihr E-Mail-Programm sollte sich geöffnet haben. Alternativ schreiben Sie uns direkt an{" "}
           <a href="mailto:info@onetitel.de" style={{ color: "inherit" }}>
             info@onetitel.de

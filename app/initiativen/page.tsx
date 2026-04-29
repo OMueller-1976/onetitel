@@ -55,7 +55,7 @@ export default function InitiativenPage() {
       <section style={{ padding: "5rem 2rem 3rem", maxWidth: "1200px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -193,7 +193,7 @@ export default function InitiativenPage() {
                   >
                     <h3
                       style={{
-                        fontSize: "1rem",
+                        fontSize: "1.125rem",
                         fontWeight: 400,
                         letterSpacing: "-0.01em",
                         color: "var(--fg)",
@@ -202,7 +202,7 @@ export default function InitiativenPage() {
                     >
                       {item.title}
                     </h3>
-                    <span style={{ fontSize: "1.05rem", opacity: 0.35, flexShrink: 0 }}>→</span>
+                    <span style={{ fontSize: "1.2rem", opacity: 0.35, flexShrink: 0 }}>→</span>
                   </div>
                   <p
                     style={{

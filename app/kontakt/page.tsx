@@ -52,7 +52,7 @@ export default function KontaktPage() {
         <div style={{ paddingTop: "1rem" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -65,7 +65,7 @@ export default function KontaktPage() {
             href="mailto:info@onetitel.de"
             style={{
               display: "block",
-              fontSize: "1rem",
+              fontSize: "1.125rem",
               fontWeight: 400,
               color: "var(--fg)",
               textDecoration: "none",
@@ -78,7 +78,7 @@ export default function KontaktPage() {
 
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -89,7 +89,7 @@ export default function KontaktPage() {
           </p>
           <address
             style={{
-              fontSize: "1rem",
+              fontSize: "1.125rem",
               fontStyle: "normal",
               lineHeight: 1.8,
               opacity: 0.65,
@@ -106,7 +106,7 @@ export default function KontaktPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
-              style={{ fontSize: "0.7rem", padding: "0.5rem 1rem" }}
+              style={{ fontSize: "0.8rem", padding: "0.5rem 1rem" }}
             >
               LinkedIn
             </a>
@@ -115,7 +115,7 @@ export default function KontaktPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline"
-              style={{ fontSize: "0.7rem", padding: "0.5rem 1rem" }}
+              style={{ fontSize: "0.8rem", padding: "0.5rem 1rem" }}
             >
               XING
             </a>

@@ -69,7 +69,7 @@ export default function TrueDadsHomePage() {
           <Link
             href="/initiativen"
             style={{
-              fontSize: "0.7rem",
+              fontSize: "0.8rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.45)",
@@ -82,7 +82,7 @@ export default function TrueDadsHomePage() {
           </Link>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.4)",
@@ -116,7 +116,7 @@ export default function TrueDadsHomePage() {
           </p>
           <p
             style={{
-              fontSize: "1.05rem",
+              fontSize: "1.2rem",
               fontWeight: 300,
               color: "rgba(255,255,255,0.75)",
               maxWidth: "680px",
@@ -188,7 +188,7 @@ export default function TrueDadsHomePage() {
               Vater — nicht, weil er sie im Stich lässt, sondern weil Gesetze, Behörden und
               Gerichte ihre Bindung nicht ausreichend schützen.
             </p>
-            <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "#555" }}>
+            <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#555" }}>
               True Dads Deutschland setzt sich dafür ein, dass soziale Väter rechtlich gestärkt,
               in ihrem Engagement unterstützt und in ihrer Rolle sichtbar wertgeschätzt werden.
               Das Kindeswohl steht dabei immer im Mittelpunkt — denn ein Kind braucht beide
@@ -241,7 +241,7 @@ export default function TrueDadsHomePage() {
                 >
                   {p.para}
                 </p>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, color: "#444", margin: 0 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#444", margin: 0 }}>
                   {p.text}
                 </p>
               </div>
@@ -258,7 +258,7 @@ export default function TrueDadsHomePage() {
           >
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
                 color: NAVY,
@@ -271,7 +271,7 @@ export default function TrueDadsHomePage() {
             <blockquote
               style={{
                 fontStyle: "italic",
-                fontSize: "1.05rem",
+                fontSize: "1.2rem",
                 lineHeight: 1.75,
                 color: "#333",
                 margin: 0,
@@ -329,10 +329,10 @@ export default function TrueDadsHomePage() {
                 >
                   {s.zahl}
                 </div>
-                <p style={{ fontSize: "1rem", lineHeight: 1.55, color: "rgba(255,255,255,0.7)", margin: "0 0 0.5rem" }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.55, color: "rgba(255,255,255,0.7)", margin: "0 0 0.5rem" }}>
                   {s.label}
                 </p>
-                <p style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.35)", margin: 0, letterSpacing: "0.05em" }}>
+                <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)", margin: 0, letterSpacing: "0.05em" }}>
                   {s.quelle}
                 </p>
               </div>
@@ -373,7 +373,7 @@ export default function TrueDadsHomePage() {
               >
                 <span
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.75rem",
                     fontWeight: 700,
                     color: NAVY,
                     letterSpacing: "0.1em",
@@ -385,7 +385,7 @@ export default function TrueDadsHomePage() {
                 </span>
                 <h3
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "1.25rem",
                     fontWeight: 500,
                     color: "#1a1a1a",
                     marginBottom: "0.75rem",
@@ -394,7 +394,7 @@ export default function TrueDadsHomePage() {
                 >
                   {h.title}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, color: "#555", margin: 0 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#555", margin: 0 }}>
                   {h.text}
                 </p>
               </div>
@@ -424,7 +424,7 @@ export default function TrueDadsHomePage() {
         </h2>
         <p
           style={{
-            fontSize: "1.05rem",
+            fontSize: "1.2rem",
             color: "rgba(255,255,255,0.65)",
             marginBottom: "2.5rem",
             lineHeight: 1.65,

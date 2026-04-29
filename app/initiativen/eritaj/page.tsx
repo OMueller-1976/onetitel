@@ -54,7 +54,7 @@ export default function EritajPage() {
           <Link
             href="/initiativen"
             style={{
-              fontSize: "0.7rem",
+              fontSize: "0.8rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -68,7 +68,7 @@ export default function EritajPage() {
           </Link>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.35,
@@ -117,7 +117,7 @@ export default function EritajPage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -141,7 +141,7 @@ export default function EritajPage() {
               Privatpersonen, die vorausdenken. Wir machen ein komplexes, oft verdrängtes Thema
               zugänglich: strukturiert, verständlich und sicher.
             </p>
-            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.2rem", lineHeight: 1.8, opacity: 0.6 }}>
               Zielgruppe: Privatpersonen ab 40, Familien, Selbständige.
               Beratungsleistungen sind ggf. über die BAFA förderbar.
             </p>
@@ -154,7 +154,7 @@ export default function EritajPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.35,
@@ -183,12 +183,12 @@ export default function EritajPage() {
                   alignItems: "start",
                 }}
               >
-                <span style={{ fontSize: "0.7rem", opacity: 0.3, fontWeight: 500 }}>
+                <span style={{ fontSize: "0.8rem", opacity: 0.3, fontWeight: 500 }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.125rem",
                     fontWeight: 400,
                     letterSpacing: "-0.01em",
                     margin: 0,
@@ -197,7 +197,7 @@ export default function EritajPage() {
                 >
                   {f.title}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                   {f.description}
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function EritajPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -233,7 +233,7 @@ export default function EritajPage() {
                 key={s.label}
                 style={{ background: "#EBEBEB", padding: "2rem" }}
               >
-                <p style={{ fontSize: "0.75rem", opacity: 0.5, marginBottom: "0.75rem", margin: "0 0 0.5rem" }}>
+                <p style={{ fontSize: "0.875rem", opacity: 0.5, marginBottom: "0.75rem", margin: "0 0 0.5rem" }}>
                   {s.label}
                 </p>
                 <p
@@ -259,7 +259,7 @@ export default function EritajPage() {
       <section style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -291,7 +291,7 @@ export default function EritajPage() {
               >
                 {p.name}
               </h3>
-              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                 {p.beschreibung}
               </p>
             </div>
@@ -319,7 +319,7 @@ export default function EritajPage() {
         >
           Jetzt kostenlos starten
         </h2>
-        <p style={{ fontSize: "1.05rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.2rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Vorausdenken zahlt sich aus — starten Sie heute mit ERITAJ.
         </p>
         <a
@@ -333,7 +333,7 @@ export default function EritajPage() {
             padding: "0.75rem 1.75rem",
             background: "var(--bg)",
             color: "var(--fg)",
-            fontSize: "1.1rem",
+            fontSize: "1.25rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",

@@ -50,7 +50,7 @@ export default function UeberUnsPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.4)",
@@ -113,7 +113,7 @@ export default function UeberUnsPage() {
             </p>
             <p
               style={{
-                fontSize: "1rem",
+                fontSize: "1.125rem",
                 lineHeight: 1.7,
                 color: "#555",
                 marginBottom: "1.75rem",
@@ -135,7 +135,7 @@ export default function UeberUnsPage() {
             >
               <p
                 style={{
-                  fontSize: "0.65rem",
+                  fontSize: "0.75rem",
                   fontWeight: 700,
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
@@ -145,7 +145,7 @@ export default function UeberUnsPage() {
               >
                 Unser Ziel
               </p>
-              <p style={{ fontSize: "1.05rem", lineHeight: 1.7, color: "#333", margin: 0, fontStyle: "italic" }}>
+              <p style={{ fontSize: "1.2rem", lineHeight: 1.7, color: "#333", margin: 0, fontStyle: "italic" }}>
                 „Eine Gesellschaft und ein Rechtssystem, das gelebte Verantwortung, Fürsorge und
                 kontinuierliche Elternschaft als gleichwertig zu biologischen Verbindungen
                 anerkennt — und die Diskriminierung sozialer Väter beendet."
@@ -185,7 +185,7 @@ export default function UeberUnsPage() {
               >
                 <span
                   style={{
-                    fontSize: "0.7rem",
+                    fontSize: "0.8rem",
                     fontWeight: 700,
                     color: NAVY,
                     letterSpacing: "0.08em",
@@ -195,7 +195,7 @@ export default function UeberUnsPage() {
                 </span>
                 <h3
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.125rem",
                     fontWeight: 600,
                     color: "#1a1a1a",
                     margin: 0,
@@ -204,7 +204,7 @@ export default function UeberUnsPage() {
                 >
                   {v.title}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, color: "#555", margin: 0 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#555", margin: 0 }}>
                   {v.text}
                 </p>
               </div>
@@ -223,7 +223,7 @@ export default function UeberUnsPage() {
       >
         <p
           style={{
-            fontSize: "1.05rem",
+            fontSize: "1.2rem",
             color: "rgba(255,255,255,0.7)",
             marginBottom: "2rem",
             lineHeight: 1.65,

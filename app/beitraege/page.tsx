@@ -36,7 +36,7 @@ export default function BeitraegePage() {
       <section style={{ padding: "5rem 2rem 4rem", maxWidth: "1200px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -84,7 +84,7 @@ export default function BeitraegePage() {
                   display: "flex",
                   gap: "1.5rem",
                   marginBottom: "1rem",
-                  fontSize: "0.7rem",
+                  fontSize: "0.8rem",
                   opacity: 0.45,
                   letterSpacing: "0.04em",
                 }}
@@ -104,7 +104,7 @@ export default function BeitraegePage() {
               >
                 {b.titel}
               </h2>
-              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
                 {b.teaser}
               </p>
             </article>

@@ -19,28 +19,20 @@ export default function ImpressumPage() {
         Impressum
       </h1>
 
-      <div style={{ fontSize: "1rem", lineHeight: 1.9, opacity: 0.75 }}>
-        <h2 style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
+      <div style={{ fontSize: "1.125rem", lineHeight: 1.9, opacity: 0.75 }}>
+        <h2 style={{ fontSize: "1.125rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
           Angaben gem. § 5 TMG
         </h2>
         <p>
+          OneTitel – Digital &amp; Business Solutions<br />
           Oliver M. Müller<br />
           Am Bruchborn 6<br />
           54570 Kirchweiler<br />
-          E-Mail: <a href="mailto:om@onetitel.de" style={{ color: "inherit" }}>om@onetitel.de</a>
+          Deutschland<br />
+          E-Mail: <a href="mailto:info@onetitel.de" style={{ color: "inherit" }}>info@onetitel.de</a>
         </p>
 
-        <p style={{ marginTop: "1rem" }}>
-          Weitere Profile im Netz:<br />
-          <a href="http://www.coaching-group.online" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
-            www.coaching-group.online
-          </a><br />
-          <a href="https://www.dschinn.online" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
-            www.dschinn.online
-          </a>
-        </p>
-
-        <h2 style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
+        <h2 style={{ fontSize: "1.125rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
           Haftungsausschluss
         </h2>
         <p>
@@ -50,7 +42,7 @@ export default function ImpressumPage() {
           allgemeinen Gesetzen verantwortlich.
         </p>
 
-        <h2 style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
+        <h2 style={{ fontSize: "1.125rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
           Haftungsbeschränkung für externe Links
         </h2>
         <p>
@@ -59,7 +51,7 @@ export default function ImpressumPage() {
           die jeweiligen Anbieter oder Betreiber der Seiten verantwortlich.
         </p>
 
-        <h2 style={{ fontSize: "1rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
+        <h2 style={{ fontSize: "1.125rem", fontWeight: 500, marginBottom: "0.5rem", marginTop: "2rem", opacity: 1 }}>
           Urheberrecht
         </h2>
         <p>

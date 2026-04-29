@@ -77,7 +77,7 @@ export default function LoesungenPage() {
         >
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -109,7 +109,7 @@ export default function LoesungenPage() {
           >
             Die richtigen Entscheidungen treffen.
           </p>
-          <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.65, maxWidth: "680px" }}>
+          <p style={{ fontSize: "1.2rem", lineHeight: 1.8, opacity: 0.65, maxWidth: "680px" }}>
             Interim Manager haben in der Regel einen hohen Grad an Erfahrung und sind sofort
             einsatzbereit. Sie sind oft Experten in ihrem Fachgebiet und können schnell und effizient
             Ergebnisse liefern. Nach Beendigung ihres Einsatzes verlassen sie das Unternehmen wieder.
@@ -122,7 +122,7 @@ export default function LoesungenPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -142,7 +142,7 @@ export default function LoesungenPage() {
               <div key={i} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
                 <span
                   style={{
-                    fontSize: "0.7rem",
+                    fontSize: "0.8rem",
                     opacity: 0.3,
                     fontWeight: 500,
                     flexShrink: 0,
@@ -151,7 +151,7 @@ export default function LoesungenPage() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
                   {g}
                 </p>
               </div>
@@ -164,7 +164,7 @@ export default function LoesungenPage() {
       <section style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -199,7 +199,7 @@ export default function LoesungenPage() {
             >
               <h3
                 style={{
-                  fontSize: "1.1rem",
+                  fontSize: "1.25rem",
                   fontWeight: 400,
                   letterSpacing: "-0.01em",
                   margin: 0,
@@ -207,7 +207,7 @@ export default function LoesungenPage() {
               >
                 {l.title}
               </h3>
-              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.65, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.65, margin: 0 }}>
                 {l.description}
               </p>
             </div>
@@ -238,7 +238,7 @@ export default function LoesungenPage() {
             <div>
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "1.125rem",
                   fontWeight: 500,
                   marginBottom: "0.75rem",
                   letterSpacing: "0.02em",
@@ -246,7 +246,7 @@ export default function LoesungenPage() {
               >
                 Scrum Master
               </h3>
-              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
                 Als erfahrene Scrum Master moderieren wir Ihre Scrum-Prozesse, beseitigen Hindernisse
                 und fördern eine offene Kommunikation im Team. Unser Ziel ist es, ein effizientes
                 und motiviertes Arbeitsumfeld zu schaffen.
@@ -255,7 +255,7 @@ export default function LoesungenPage() {
             <div>
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "1.125rem",
                   fontWeight: 500,
                   marginBottom: "0.75rem",
                   letterSpacing: "0.02em",
@@ -263,7 +263,7 @@ export default function LoesungenPage() {
               >
                 Product Owner
               </h3>
-              <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
                 In der Rolle des Product Owners verantworten wir die Produktvision und das
                 Backlog-Management. Wir priorisieren Anforderungen, sorgen für klare Zielsetzungen
                 und stellen sicher, dass das Entwicklungsteam die Kundenanforderungen optimal umsetzt.

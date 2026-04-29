@@ -54,7 +54,7 @@ export default function OnematicPage() {
           <Link
             href="/initiativen"
             style={{
-              fontSize: "0.7rem",
+              fontSize: "0.8rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -68,7 +68,7 @@ export default function OnematicPage() {
           </Link>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.35,
@@ -117,7 +117,7 @@ export default function OnematicPage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -141,7 +141,7 @@ export default function OnematicPage() {
               KI-gestützte Kampagnensteuerung — entwickelt von einem BVDW-Fokusgruppen-Experten mit
               über 15 Jahren Programmatic-Erfahrung.
             </p>
-            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.2rem", lineHeight: 1.8, opacity: 0.6 }}>
               Zielgruppe: Marketing-Teams, Agenturen, Publisher und KMU mit Digital-Marketing-Bedarf.
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function OnematicPage() {
             <div>
               <p
                 style={{
-                  fontSize: "0.65rem",
+                  fontSize: "0.75rem",
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   opacity: 0.35,
@@ -212,7 +212,7 @@ export default function OnematicPage() {
       <section style={{ padding: "5rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -241,12 +241,12 @@ export default function OnematicPage() {
                 alignItems: "start",
               }}
             >
-              <span style={{ fontSize: "0.7rem", opacity: 0.3, fontWeight: 500 }}>
+              <span style={{ fontSize: "0.8rem", opacity: 0.3, fontWeight: 500 }}>
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "1.125rem",
                   fontWeight: 400,
                   letterSpacing: "-0.01em",
                   margin: 0,
@@ -254,7 +254,7 @@ export default function OnematicPage() {
               >
                 {f.title}
               </h3>
-              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                 {f.description}
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function OnematicPage() {
       {/* Expertise Badge */}
       <section style={{ padding: "4rem 2rem", background: "#EBEBEB" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, maxWidth: "600px", margin: "0 auto" }}>
+          <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, maxWidth: "600px", margin: "0 auto" }}>
             Entwickelt von einem BVDW-Fokusgruppen-Experten mit 15+ Jahren Programmatic-Erfahrung.
             Praxiswissen, das in jedes Feature einfließt.
           </p>
@@ -292,7 +292,7 @@ export default function OnematicPage() {
         >
           Platform entdecken
         </h2>
-        <p style={{ fontSize: "1.05rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.2rem", opacity: 0.55, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Programmatic Advertising auf dem nächsten Level — mit KI, Daten und Erfahrung.
         </p>
         <a
@@ -305,7 +305,7 @@ export default function OnematicPage() {
             padding: "0.75rem 1.75rem",
             background: "var(--bg)",
             color: "var(--fg)",
-            fontSize: "1.1rem",
+            fontSize: "1.25rem",
             fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",

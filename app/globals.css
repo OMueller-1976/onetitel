@@ -23,6 +23,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: 'Jost', sans-serif;
+  font-size: 18px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }

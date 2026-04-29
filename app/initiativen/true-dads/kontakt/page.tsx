@@ -12,7 +12,7 @@ const inputStyle: React.CSSProperties = {
   padding: "0.75rem 0",
   color: "#1a1a1a",
   fontFamily: "'Jost', sans-serif",
-  fontSize: "1rem",
+  fontSize: "1.125rem",
   fontWeight: 300,
   outline: "none",
   marginBottom: "1.75rem",
@@ -20,7 +20,7 @@ const inputStyle: React.CSSProperties = {
 
 const labelStyle: React.CSSProperties = {
   display: "block",
-  fontSize: "0.65rem",
+  fontSize: "0.75rem",
   letterSpacing: "0.12em",
   textTransform: "uppercase",
   color: NAVY,
@@ -51,7 +51,7 @@ export default function TrueDadsKontaktPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.4)",
@@ -106,13 +106,13 @@ export default function TrueDadsKontaktPage() {
                 marginBottom: "2rem",
               }}
             >
-              <p style={{ fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", margin: "0 0 0.35rem", fontWeight: 600 }}>
+              <p style={{ fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", margin: "0 0 0.35rem", fontWeight: 600 }}>
                 E-Mail
               </p>
               <a
                 href="mailto:truedads@onetitel.de"
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "1.125rem",
                   color: NAVY,
                   fontWeight: 500,
                   textDecoration: "none",
@@ -122,7 +122,7 @@ export default function TrueDadsKontaktPage() {
                 truedads@onetitel.de
               </a>
             </div>
-            <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "#666", fontWeight: 300 }}>
+            <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#666", fontWeight: 300 }}>
               Ob persönliche Betroffenheit, Kooperationsanfragen oder Rückmeldung zum
               Leitfaden — wir freuen uns über jede Nachricht.
             </p>
@@ -135,7 +135,7 @@ export default function TrueDadsKontaktPage() {
                 <p style={{ fontSize: "1.3rem", fontWeight: 300, color: NAVY, marginBottom: "0.75rem" }}>
                   Vielen Dank!
                 </p>
-                <p style={{ fontSize: "1rem", color: "#666", fontWeight: 300 }}>
+                <p style={{ fontSize: "1.125rem", color: "#666", fontWeight: 300 }}>
                   Dein E-Mail-Programm sollte sich geöffnet haben. Alternativ schreib uns direkt:{" "}
                   <a href="mailto:truedads@onetitel.de" style={{ color: NAVY, fontWeight: 500 }}>
                     truedads@onetitel.de

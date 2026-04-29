@@ -40,7 +40,7 @@ export default function BaLayout({ children }: { children: React.ReactNode }) {
             <Link
               href="/initiativen/ba-digital-marketing"
               style={{
-                fontSize: "0.75rem",
+                fontSize: "0.875rem",
                 fontWeight: 500,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
@@ -65,7 +65,7 @@ export default function BaLayout({ children }: { children: React.ReactNode }) {
                   href={link.href}
                   style={{
                     padding: "0.8rem 1rem",
-                    fontSize: "0.75rem",
+                    fontSize: "0.875rem",
                     fontWeight: active ? 500 : 300,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
@@ -87,7 +87,7 @@ export default function BaLayout({ children }: { children: React.ReactNode }) {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              fontSize: "0.7rem",
+              fontSize: "0.8rem",
               fontWeight: 400,
               letterSpacing: "0.1em",
               textTransform: "uppercase",

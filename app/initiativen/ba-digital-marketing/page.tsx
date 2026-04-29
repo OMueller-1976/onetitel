@@ -73,7 +73,7 @@ export default function BaHomePage() {
         <Link
           href="/initiativen"
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.15em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -102,7 +102,7 @@ export default function BaHomePage() {
         </h1>
         <p
           style={{
-            fontSize: "1.1rem",
+            fontSize: "1.25rem",
             fontWeight: 300,
             fontStyle: "italic",
             color: "#777",
@@ -129,7 +129,7 @@ export default function BaHomePage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -158,7 +158,7 @@ export default function BaHomePage() {
               <p
                 key={i}
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "1.125rem",
                   lineHeight: 1.75,
                   color: "rgba(255,255,255,0.7)",
                   marginBottom: "1.25rem",
@@ -213,7 +213,7 @@ export default function BaHomePage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -234,7 +234,7 @@ export default function BaHomePage() {
               <div key={item.titel} style={{ background: "#fff", padding: "2.5rem" }}>
                 <h3
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "1.25rem",
                     fontWeight: 500,
                     color: DARK,
                     letterSpacing: "-0.01em",
@@ -245,7 +245,7 @@ export default function BaHomePage() {
                 >
                   {item.titel}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "#555", margin: 0, fontWeight: 300 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#555", margin: 0, fontWeight: 300 }}>
                   {item.text}
                 </p>
               </div>
@@ -259,7 +259,7 @@ export default function BaHomePage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.35)",
@@ -283,7 +283,7 @@ export default function BaHomePage() {
               >
                 <span
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.75rem",
                     fontWeight: 700,
                     color: "rgba(255,255,255,0.3)",
                     letterSpacing: "0.1em",
@@ -295,7 +295,7 @@ export default function BaHomePage() {
                 </span>
                 <h3
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "1.25rem",
                     fontWeight: 400,
                     color: "#fff",
                     letterSpacing: "-0.01em",
@@ -304,7 +304,7 @@ export default function BaHomePage() {
                 >
                   {item.titel}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "rgba(255,255,255,0.6)", margin: 0, fontWeight: 300 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "rgba(255,255,255,0.6)", margin: 0, fontWeight: 300 }}>
                   {item.text}
                 </p>
               </div>
@@ -318,7 +318,7 @@ export default function BaHomePage() {
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: DARK,
@@ -349,7 +349,7 @@ export default function BaHomePage() {
             <p
               key={i}
               style={{
-                fontSize: "1.05rem",
+                fontSize: "1.2rem",
                 lineHeight: 1.8,
                 color: i === 0 ? "#222" : "#555",
                 fontWeight: i === 0 ? 400 : 300,
@@ -420,7 +420,7 @@ export default function BaHomePage() {
               <div key={artikel.titel} style={{ background: CREAM, padding: "2.5rem" }}>
                 <h3
                   style={{
-                    fontSize: "1.05rem",
+                    fontSize: "1.2rem",
                     fontWeight: 500,
                     color: DARK,
                     letterSpacing: "-0.01em",
@@ -432,7 +432,7 @@ export default function BaHomePage() {
                 </h3>
                 <p
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.125rem",
                     lineHeight: 1.65,
                     color: "#666",
                     marginBottom: "1.25rem",

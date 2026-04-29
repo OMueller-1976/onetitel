@@ -92,7 +92,7 @@ export default function BlogPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.35)",
@@ -131,7 +131,7 @@ export default function BlogPage() {
               <div key={a.nr} style={{ background: CREAM, padding: "2.5rem" }}>
                 <span
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.75rem",
                     fontWeight: 700,
                     color: "#aaa",
                     letterSpacing: "0.1em",
@@ -143,7 +143,7 @@ export default function BlogPage() {
                 </span>
                 <h2
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "1.25rem",
                     fontWeight: 500,
                     color: DARK,
                     letterSpacing: "-0.01em",
@@ -155,7 +155,7 @@ export default function BlogPage() {
                 </h2>
                 <p
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.125rem",
                     lineHeight: 1.65,
                     color: "#666",
                     fontWeight: 300,
@@ -180,7 +180,7 @@ export default function BlogPage() {
                 >
                   <span
                     style={{
-                      fontSize: "0.65rem",
+                      fontSize: "0.75rem",
                       fontWeight: 700,
                       color: "#aaa",
                       letterSpacing: "0.1em",
@@ -216,7 +216,7 @@ export default function BlogPage() {
                     <p
                       key={i}
                       style={{
-                        fontSize: "1.05rem",
+                        fontSize: "1.2rem",
                         lineHeight: 1.8,
                         color: "#555",
                         fontWeight: 300,

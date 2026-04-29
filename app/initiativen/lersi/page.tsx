@@ -52,7 +52,7 @@ export default function LersiPage() {
         <Link
           href="/initiativen"
           style={{
-            fontSize: "0.7rem",
+            fontSize: "0.8rem",
             letterSpacing: "0.15em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -66,7 +66,7 @@ export default function LersiPage() {
         </Link>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -113,7 +113,7 @@ export default function LersiPage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -164,7 +164,7 @@ export default function LersiPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.35,
@@ -191,7 +191,7 @@ export default function LersiPage() {
               >
                 <span
                   style={{
-                    fontSize: "0.65rem",
+                    fontSize: "0.75rem",
                     opacity: 0.3,
                     fontWeight: 500,
                     display: "block",
@@ -202,7 +202,7 @@ export default function LersiPage() {
                 </span>
                 <h3
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.125rem",
                     fontWeight: 400,
                     letterSpacing: "-0.01em",
                     marginBottom: "0.75rem",
@@ -211,7 +211,7 @@ export default function LersiPage() {
                 >
                   {f.title}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                   {f.description}
                 </p>
               </div>
@@ -225,7 +225,7 @@ export default function LersiPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -239,7 +239,7 @@ export default function LersiPage() {
               <span
                 key={plat}
                 style={{
-                  fontSize: "1.1rem",
+                  fontSize: "1.25rem",
                   fontWeight: 300,
                   letterSpacing: "-0.01em",
                   opacity: 0.75,
@@ -264,7 +264,7 @@ export default function LersiPage() {
         >
           Lersi entdecken
         </h2>
-        <p style={{ fontSize: "1.05rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.2rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Lernen, das Spaß macht — für Kinder, Eltern und Pädagogen gemeinsam.
         </p>
         <a

@@ -23,7 +23,7 @@ export default function KontaktPage() {
   const inputStyle: React.CSSProperties = {
     width: "100%",
     padding: "0.85rem 1rem",
-    fontSize: "1rem",
+    fontSize: "1.125rem",
     fontFamily: "inherit",
     fontWeight: 300,
     color: DARK,
@@ -36,7 +36,7 @@ export default function KontaktPage() {
 
   const labelStyle: React.CSSProperties = {
     display: "block",
-    fontSize: "0.65rem",
+    fontSize: "0.75rem",
     fontWeight: 700,
     letterSpacing: "0.12em",
     textTransform: "uppercase",
@@ -57,7 +57,7 @@ export default function KontaktPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.35)",
@@ -95,7 +95,7 @@ export default function KontaktPage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 color: "#aaa",
@@ -109,7 +109,7 @@ export default function KontaktPage() {
             <div style={{ marginBottom: "2.5rem" }}>
               <p
                 style={{
-                  fontSize: "0.7rem",
+                  fontSize: "0.8rem",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
@@ -119,7 +119,7 @@ export default function KontaktPage() {
               >
                 Adresse
               </p>
-              <p style={{ fontSize: "1rem", lineHeight: 1.7, color: DARK, fontWeight: 300, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: DARK, fontWeight: 300, margin: 0 }}>
                 Am Bruchborn 6<br />
                 54570 Kirchweiler<br />
                 Deutschland
@@ -129,7 +129,7 @@ export default function KontaktPage() {
             <div style={{ marginBottom: "2.5rem" }}>
               <p
                 style={{
-                  fontSize: "0.7rem",
+                  fontSize: "0.8rem",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
@@ -141,7 +141,7 @@ export default function KontaktPage() {
               </p>
               <a
                 href="mailto:BA@onetitel.de"
-                style={{ fontSize: "1rem", color: DARK, textDecoration: "none", fontWeight: 400 }}
+                style={{ fontSize: "1.125rem", color: DARK, textDecoration: "none", fontWeight: 400 }}
               >
                 BA@onetitel.de
               </a>
@@ -156,7 +156,7 @@ export default function KontaktPage() {
             >
               <p
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "1.125rem",
                   lineHeight: 1.75,
                   color: "#555",
                   fontWeight: 300,
@@ -172,7 +172,7 @@ export default function KontaktPage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 color: "#aaa",

@@ -58,7 +58,7 @@ export default function MedienberishtePage() {
       <section style={{ padding: "5rem 2rem 4rem", maxWidth: "1200px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -93,7 +93,7 @@ export default function MedienberishtePage() {
             >
               <p
                 style={{
-                  fontSize: "0.65rem",
+                  fontSize: "0.75rem",
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   opacity: 0.4,
@@ -116,7 +116,7 @@ export default function MedienberishtePage() {
                 <blockquote
                   style={{
                     fontStyle: "italic",
-                    fontSize: "1.05rem",
+                    fontSize: "1.2rem",
                     lineHeight: 1.8,
                     opacity: 0.7,
                     borderLeft: "2px solid var(--fg)",
@@ -127,7 +127,7 @@ export default function MedienberishtePage() {
                   „{b.zitat}"
                 </blockquote>
               )}
-              <p style={{ fontSize: "1rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
+              <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.6, margin: 0 }}>
                 {b.beschreibung}
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function MedienberishtePage() {
         >
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -153,7 +153,7 @@ export default function MedienberishtePage() {
           >
             Digital Marketing Kompetenz
           </p>
-          <p style={{ fontSize: "1rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
+          <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
             Bis 2019 Mitglied in der Fokusgruppe "Programmatic Advertising" des Bundesverbandes der
             digitalen Werbewirtschaft e. V. und Mitwirkender am Leitfaden "Daten-Strategie" im
             Programmatic Advertising.

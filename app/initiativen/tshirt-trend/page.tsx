@@ -47,7 +47,7 @@ export default function TshirtTrendPage() {
         <Link
           href="/initiativen"
           style={{
-            fontSize: "0.7rem",
+            fontSize: "0.8rem",
             letterSpacing: "0.15em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -61,7 +61,7 @@ export default function TshirtTrendPage() {
         </Link>
         <p
           style={{
-            fontSize: "0.65rem",
+            fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             opacity: 0.4,
@@ -113,10 +113,10 @@ export default function TshirtTrendPage() {
                 key={h.label}
                 style={{ background: "rgba(242,240,235,0.03)", padding: "2rem" }}
               >
-                <p style={{ fontSize: "0.65rem", opacity: 0.4, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.5rem", margin: "0 0 0.5rem" }}>
+                <p style={{ fontSize: "0.75rem", opacity: 0.4, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.5rem", margin: "0 0 0.5rem" }}>
                   {h.label}
                 </p>
-                <p style={{ fontSize: "1.1rem", fontWeight: 300, color: "var(--bg)", margin: 0 }}>
+                <p style={{ fontSize: "1.25rem", fontWeight: 300, color: "var(--bg)", margin: 0 }}>
                   {h.detail}
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function TshirtTrendPage() {
           <div>
             <p
               style={{
-                fontSize: "0.65rem",
+                fontSize: "0.75rem",
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 opacity: 0.4,
@@ -162,7 +162,7 @@ export default function TshirtTrendPage() {
               gestalteten Print-on-Demand Produkten. Kein Lager, kein Risiko — Produkte werden
               erst auf Bestellung gedruckt und direkt versendet.
             </p>
-            <p style={{ fontSize: "1.05rem", lineHeight: 1.8, opacity: 0.6 }}>
+            <p style={{ fontSize: "1.2rem", lineHeight: 1.8, opacity: 0.6 }}>
               Fulfillment via Spreadshirt. Lieferung europaweit. Kein Mindestbestellwert.
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function TshirtTrendPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               opacity: 0.4,
@@ -195,7 +195,7 @@ export default function TshirtTrendPage() {
               <div key={kat.kategorie} style={{ background: "#EBEBEB", padding: "2.5rem" }}>
                 <h3
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.125rem",
                     fontWeight: 500,
                     letterSpacing: "0.02em",
                     marginBottom: "1.25rem",
@@ -237,7 +237,7 @@ export default function TshirtTrendPage() {
         >
           Jetzt shoppen
         </h2>
-        <p style={{ fontSize: "1.05rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
+        <p style={{ fontSize: "1.2rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
           Entdecke individuelle Designs — Print-on-Demand, ohne Mindestbestellwert.
         </p>
         <a

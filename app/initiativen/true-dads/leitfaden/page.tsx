@@ -45,7 +45,7 @@ export default function LeitfadenPage() {
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.4)",
@@ -70,7 +70,7 @@ export default function LeitfadenPage() {
           </h1>
           <p
             style={{
-              fontSize: "1.05rem",
+              fontSize: "1.2rem",
               color: "rgba(255,255,255,0.65)",
               maxWidth: "600px",
               lineHeight: 1.65,
@@ -88,7 +88,7 @@ export default function LeitfadenPage() {
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "0.65rem",
+              fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: NAVY,
@@ -112,7 +112,7 @@ export default function LeitfadenPage() {
             eine evidenzbasierte Grundlage schaffen, die Entscheidungen in Fällen mit sozialen
             Vätern und Kontaktverweigerung transparenter und kindeswohlorientierter macht.
           </p>
-          <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "#555", fontWeight: 300 }}>
+          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#555", fontWeight: 300 }}>
             Der Leitfaden verknüpft aktuelle Erkenntnisse der Bindungspsychologie mit dem
             geltenden Familienrecht und gibt konkrete Handlungsempfehlungen — ohne dabei
             einseitig zu sein oder Schuldzuweisungen vorzunehmen.
@@ -147,13 +147,13 @@ export default function LeitfadenPage() {
                   alignItems: "start",
                 }}
               >
-                <span style={{ fontSize: "0.7rem", fontWeight: 700, color: NAVY, letterSpacing: "0.08em" }}>
+                <span style={{ fontSize: "0.8rem", fontWeight: 700, color: NAVY, letterSpacing: "0.08em" }}>
                   {k.nr}
                 </span>
-                <h3 style={{ fontSize: "1rem", fontWeight: 600, color: "#1a1a1a", margin: 0 }}>
+                <h3 style={{ fontSize: "1.125rem", fontWeight: 600, color: "#1a1a1a", margin: 0 }}>
                   {k.titel}
                 </h3>
-                <p style={{ fontSize: "1rem", lineHeight: 1.65, color: "#555", margin: 0, fontWeight: 300 }}>
+                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#555", margin: 0, fontWeight: 300 }}>
                   {k.text}
                 </p>
               </div>
@@ -208,7 +208,7 @@ export default function LeitfadenPage() {
           >
             Der vollständige Leitfaden wird in Kürze veröffentlicht.
           </h2>
-          <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "#666", marginBottom: "2.5rem", fontWeight: 300 }}>
+          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#666", marginBottom: "2.5rem", fontWeight: 300 }}>
             Möchtest Du informiert werden, wenn der Leitfaden verfügbar ist?
             Hinterlasse uns eine kurze Nachricht — wir melden uns, sobald er fertig ist.
           </p>
