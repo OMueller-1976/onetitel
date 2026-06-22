@@ -21,7 +21,7 @@ export default function KontaktForm() {
     padding: "0.75rem 0",
     color: "var(--bg)",
     fontFamily: "'Jost', sans-serif",
-    fontSize: "1.125rem",
+    fontSize: "1rem", // min 16px — verhindert iOS-Zoom beim Fokus
     fontWeight: 300,
     outline: "none",
     marginBottom: "1.75rem",

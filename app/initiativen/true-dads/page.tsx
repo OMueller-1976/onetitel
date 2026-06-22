@@ -62,7 +62,7 @@ export default function TrueDadsHomePage() {
         style={{
           background: NAVY,
           color: "#fff",
-          padding: "5rem 2rem 5rem",
+          padding: "clamp(2rem, 6vw, 5rem) 1.25rem",
         }}
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
@@ -93,7 +93,7 @@ export default function TrueDadsHomePage() {
           </p>
           <h1
             style={{
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
+              fontSize: "clamp(1.8rem, 8vw, 5rem)",
               fontWeight: 300,
               letterSpacing: "-0.02em",
               lineHeight: 1.05,
@@ -116,7 +116,7 @@ export default function TrueDadsHomePage() {
           </p>
           <p
             style={{
-              fontSize: "1.2rem",
+              fontSize: "clamp(0.95rem, 3vw, 1.3rem)",
               fontWeight: 300,
               color: "rgba(255,255,255,0.75)",
               maxWidth: "680px",
@@ -301,9 +301,10 @@ export default function TrueDadsHomePage() {
             Zahlen &amp; Fakten
           </h2>
           <div
+            className="stats-2col"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
               gap: "1px",
               background: "rgba(255,255,255,0.1)",
             }}

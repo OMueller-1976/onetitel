@@ -121,7 +121,7 @@ export default function BlogPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "1px",
               background: "#E0E0E0",
               marginBottom: "5rem",

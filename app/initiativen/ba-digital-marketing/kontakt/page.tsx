@@ -23,7 +23,7 @@ export default function KontaktPage() {
   const inputStyle: React.CSSProperties = {
     width: "100%",
     padding: "0.85rem 1rem",
-    fontSize: "1.125rem",
+    fontSize: "1rem", // min 16px — verhindert iOS-Zoom beim Fokus
     fontFamily: "inherit",
     fontWeight: 300,
     color: DARK,

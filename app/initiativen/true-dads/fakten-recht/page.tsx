@@ -117,9 +117,10 @@ export default function FaktenRechtPage() {
             Fakten &amp; Zahlen
           </h2>
           <div
+            className="stats-2col"
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
               gap: "1px",
               background: "rgba(255,255,255,0.1)",
             }}

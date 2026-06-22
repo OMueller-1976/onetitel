@@ -157,18 +157,70 @@ hr {
   /* Basis */
   body { font-size: 16px; }
 
+  /* Abstände auf Mobile halbieren */
+  section {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
   /* Display-Texte verkleinern */
   .display {
     font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
     line-height: 1.05 !important;
   }
 
-  /* Buttons full-width auf Mobile */
+  /* Alle inline-grids auf 1 Spalte zwingen */
+  [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tabellen horizontal scrollbar */
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Bilder nie breiter als Viewport */
+  img { max-width: 100% !important; height: auto !important; }
+
+  /* Buttons immer full-width */
   .btn-primary, .btn-outline, .btn-white {
-    width: 100%;
+    width: 100% !important;
+    text-align: center;
     justify-content: center;
     padding: 1rem 1.5rem;
     font-size: 0.9rem;
+  }
+
+  /* Große Headlines verkleinern */
+  h1 { font-size: clamp(1.8rem, 8vw, 3rem) !important; }
+  h2 { font-size: clamp(1.4rem, 6vw, 2.2rem) !important; }
+
+  /* Sub-Navigationen scrollbar machen */
+  .sub-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    padding-bottom: 0.5rem;
+  }
+  .sub-nav a {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Stats: 2-spaltig auf Mobile (statt 1 Spalte) */
+  .stats-2col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Footer Bottom Bar: vertikal auf Mobile */
+  .footer-bottom-bar {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    text-align: center !important;
+    align-items: center !important;
   }
 
   /* Marquee-Animation verlangsamen auf Mobile */

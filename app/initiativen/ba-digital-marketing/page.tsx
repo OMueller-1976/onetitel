@@ -66,7 +66,7 @@ export default function BaHomePage() {
       <section
         style={{
           background: CREAM,
-          padding: "7rem 2rem 6rem",
+          padding: "clamp(3rem, 8vw, 7rem) 1.25rem clamp(3rem, 8vw, 6rem)",
           textAlign: "center",
         }}
       >
@@ -87,7 +87,7 @@ export default function BaHomePage() {
         </Link>
         <h1
           style={{
-            fontSize: "clamp(2.5rem, 6vw, 5.5rem)",
+            fontSize: "clamp(1.6rem, 7vw, 5.5rem)",
             fontWeight: 200,
             letterSpacing: "-0.03em",
             lineHeight: 1.05,
@@ -102,7 +102,7 @@ export default function BaHomePage() {
         </h1>
         <p
           style={{
-            fontSize: "1.25rem",
+            fontSize: "clamp(0.85rem, 3vw, 1.25rem)",
             fontWeight: 300,
             fontStyle: "italic",
             color: "#777",

@@ -178,6 +178,7 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div
+          className="footer-bottom-bar"
           style={{
             display: "flex",
             flexWrap: "wrap",

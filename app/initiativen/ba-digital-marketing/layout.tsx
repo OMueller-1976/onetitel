@@ -38,7 +38,7 @@ export default function BaLayout({ children }: { children: React.ReactNode }) {
           }}
         >
           {/* Logo + Links */}
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "0" }}>
+          <div className="sub-nav" style={{ display: "flex", flexWrap: "nowrap", overflowX: "auto", alignItems: "center", gap: "0" }}>
             <Link
               href="/initiativen/ba-digital-marketing"
               style={{

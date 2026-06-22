@@ -12,7 +12,7 @@ const inputStyle: React.CSSProperties = {
   padding: "0.75rem 0",
   color: "#1a1a1a",
   fontFamily: "'Jost', sans-serif",
-  fontSize: "1.125rem",
+  fontSize: "1rem", // min 16px — verhindert iOS-Zoom beim Fokus
   fontWeight: 300,
   outline: "none",
   marginBottom: "1.75rem",

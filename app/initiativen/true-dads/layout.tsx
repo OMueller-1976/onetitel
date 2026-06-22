@@ -25,10 +25,11 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
           background: NAVY,
           color: "#fff",
           textAlign: "center",
-          padding: "0.6rem 1.5rem",
-          fontSize: "0.82rem",
+          padding: "0.5rem 1rem",
+          fontSize: "0.8rem",
           letterSpacing: "0.02em",
           lineHeight: 1.5,
+          whiteSpace: "normal",
         }}
       >
         Bitte unterstützt unsere Petition mit einer virtuellen Unterschrift —{" "}
@@ -70,7 +71,7 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
           }}
         >
           {/* Nav links */}
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <div className="sub-nav" style={{ display: "flex", flexWrap: "nowrap", overflowX: "auto" }}>
             {subLinks.map((link) => {
               const active = pathname === link.href;
               return (
