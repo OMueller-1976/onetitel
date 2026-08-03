@@ -117,6 +117,7 @@ export default function Footer() {
               {[
                 { href: "https://www.eritaj.de", label: "Eritaj" },
                 { href: "https://www.lersi.de", label: "Lersi" },
+                { href: "https://www.vaeterstrategie.de", label: "Väterstrategie" },
               ].map((l) => (
                 <li key={l.href}>
                   <a

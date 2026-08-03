@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import VaeterstrategieCard from "./VaeterstrategieCard";
 
 export const metadata: Metadata = {
   title: "True Dads Deutschland – Väter bleiben Väter!",
@@ -128,27 +129,24 @@ export default function TrueDadsHomePage() {
             sozial-familiärer Väter stärken, ihre rechtliche Stellung ausbauen und
             Diskriminierung im Umgangsrecht abbauen will.
           </p>
-          <a
-            href="https://omm-default.wixsite.com/true-dads"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/initiativen/true-dads/kontakt"
             style={{
               display: "inline-flex",
               alignItems: "center",
               padding: "0.85rem 2rem",
-              background: "#fff",
-              color: NAVY,
+              border: "2px solid rgba(255,255,255,0.5)",
+              color: "#fff",
               fontSize: "0.82rem",
-              fontWeight: 600,
+              fontWeight: 400,
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               textDecoration: "none",
-              border: "2px solid #fff",
               transition: "background 0.2s",
             }}
           >
-            Petition unterzeichnen →
-          </a>
+            Kontakt aufnehmen
+          </Link>
         </div>
       </section>
 
@@ -404,56 +402,73 @@ export default function TrueDadsHomePage() {
         </div>
       </section>
 
-      {/* Section 6 — CTA */}
-      <section
-        style={{
-          padding: "5rem 2rem",
-          background: NAVY,
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "clamp(1.8rem, 4vw, 3rem)",
-            fontWeight: 300,
-            letterSpacing: "-0.02em",
-            color: "#fff",
-            marginBottom: "1.25rem",
-          }}
-        >
-          Unterstütze die Initiative
-        </h2>
-        <p
-          style={{
-            fontSize: "1.2rem",
-            color: "rgba(255,255,255,0.65)",
-            marginBottom: "2.5rem",
-            lineHeight: 1.65,
-            maxWidth: "480px",
-            margin: "0 auto 2.5rem",
-          }}
-        >
-          Jede Unterschrift ist ein Zeichen — für Kinder und Väter, die nicht vergessen werden wollen.
-        </p>
-        <a
-          href="https://omm-default.wixsite.com/true-dads"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            padding: "0.85rem 2rem",
-            background: "#fff",
-            color: NAVY,
-            fontSize: "0.82rem",
-            fontWeight: 700,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            textDecoration: "none",
-          }}
-        >
-          Jetzt Petition unterschreiben →
-        </a>
+      {/* Section 6 — Empfohlene Anlaufstellen */}
+      <section style={{
+        padding: 'clamp(3rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem)',
+        background: '#FFFFFF',
+        borderTop: '1px solid #E0E0E0',
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <p style={{
+            fontSize: '0.75rem', letterSpacing: '0.18em',
+            textTransform: 'uppercase', opacity: 0.4,
+            marginBottom: '0.75rem', fontWeight: 400,
+          }}>
+            Empfohlene Anlaufstellen
+          </p>
+          <h2 style={{
+            fontSize: 'clamp(1.6rem, 4vw, 2.5rem)',
+            fontWeight: 300, letterSpacing: '-0.02em',
+            marginBottom: '2.5rem',
+          }}>
+            Unterstützung &amp; Beratung für Väter
+          </h2>
+
+          <VaeterstrategieCard />
+
+          <p style={{
+            fontSize: '0.8rem', opacity: 0.4, marginTop: '1.25rem',
+            fontStyle: 'italic',
+          }}>
+            * Diese Empfehlung erfolgt ohne kommerzielle Vereinbarung —
+            wir empfehlen diese Anlaufstelle aufgrund ihrer fachlichen Expertise.
+          </p>
+        </div>
+      </section>
+
+      {/* Section 7 — CTA */}
+      <section style={{
+        padding: 'clamp(3rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem)',
+        background: '#1B3A6B', textAlign: 'center',
+      }}>
+        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+          <h2 style={{
+            fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', fontWeight: 300,
+            color: '#FFFFFF', marginBottom: '1rem', letterSpacing: '-0.02em',
+          }}>
+            Unterstütze die Initiative
+          </h2>
+          <p style={{
+            fontSize: '1rem', lineHeight: 1.75, opacity: 0.75,
+            color: '#FFFFFF', marginBottom: '2rem',
+          }}>
+            Jedes Bewusstsein, das wir schaffen, ist ein Zeichen —
+            für Kinder und Väter, die nicht vergessen werden wollen.
+          </p>
+          <Link href="/initiativen/true-dads/kontakt"
+            style={{
+              display: 'inline-flex', alignItems: 'center',
+              padding: '0.875rem 2rem',
+              border: '1px solid rgba(255,255,255,0.5)',
+              color: '#FFFFFF', textDecoration: 'none',
+              fontFamily: "'Jost', sans-serif",
+              fontSize: '0.85rem', fontWeight: 400,
+              letterSpacing: '0.1em', textTransform: 'uppercase',
+              transition: 'background 0.2s',
+            }}>
+            Kontakt aufnehmen
+          </Link>
+        </div>
       </section>
     </>
   );

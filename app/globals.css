@@ -233,6 +233,13 @@ hr {
   .hero-arrow { display: none !important; }
 }
 
+/* ─── VÄTERSTRATEGIE CARD — Mobile: 1-Spalten-Layout ─── */
+@media (max-width: 520px) {
+  .vaeterstrategie-card {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* ─── MOBILE BURGER MENU ─── */
 @media (max-width: 900px) {
   .mobile-nav-links { display: none !important; }

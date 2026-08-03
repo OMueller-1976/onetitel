@@ -251,26 +251,24 @@ export default function FaktenRechtPage() {
         >
           Ein Rechtssystem, das gelebte Elternschaft schützt. Jede Unterschrift bringt uns näher.
         </p>
-        <a
-          href="https://omm-default.wixsite.com/true-dads"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/initiativen/true-dads/kontakt"
           style={{
             display: "inline-flex",
             alignItems: "center",
             padding: "0.85rem 2rem",
-            background: "#fff",
-            color: NAVY,
+            border: "1px solid rgba(255,255,255,0.5)",
+            color: "#fff",
             fontSize: "0.82rem",
-            fontWeight: 700,
+            fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
             textDecoration: "none",
             marginRight: "1rem",
           }}
         >
-          Petition unterschreiben →
-        </a>
+          Kontakt aufnehmen
+        </Link>
         <Link
           href="/initiativen/true-dads/leitfaden"
           style={{

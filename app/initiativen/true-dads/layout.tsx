@@ -19,35 +19,6 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
 
   return (
     <>
-      {/* Petition Banner */}
-      <div
-        style={{
-          background: NAVY,
-          color: "#fff",
-          textAlign: "center",
-          padding: "0.5rem 1rem",
-          fontSize: "0.8rem",
-          letterSpacing: "0.02em",
-          lineHeight: 1.5,
-          whiteSpace: "normal",
-        }}
-      >
-        Bitte unterstützt unsere Petition mit einer virtuellen Unterschrift —{" "}
-        <a
-          href="https://omm-default.wixsite.com/true-dads"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: "#fff",
-            fontWeight: 600,
-            textDecoration: "underline",
-            textUnderlineOffset: "3px",
-          }}
-        >
-          Jetzt unterschreiben →
-        </a>
-      </div>
-
       {/* Sub-Navigation */}
       <nav
         style={{

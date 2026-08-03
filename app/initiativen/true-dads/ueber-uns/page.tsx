@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Über uns – True Dads Deutschland",
@@ -231,25 +232,24 @@ export default function UeberUnsPage() {
         >
           Gemeinsam können wir das System verändern.
         </p>
-        <a
-          href="https://omm-default.wixsite.com/true-dads"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/initiativen/true-dads/kontakt"
           style={{
             display: "inline-flex",
             alignItems: "center",
             padding: "0.85rem 2rem",
-            background: "#fff",
-            color: NAVY,
+            border: "1px solid rgba(255,255,255,0.5)",
+            color: "#fff",
             fontSize: "0.82rem",
-            fontWeight: 700,
+            fontWeight: 400,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
             textDecoration: "none",
+            alignSelf: "flex-start",
           }}
         >
-          Petition unterzeichnen →
-        </a>
+          Kontakt aufnehmen
+        </Link>
       </section>
     </>
   );
