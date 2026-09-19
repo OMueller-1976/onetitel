@@ -231,6 +231,9 @@ hr {
 
   /* Hero 3-Spalten-Grid auf Mobile ausblenden (Pfeil) */
   .hero-arrow { display: none !important; }
+
+  /* Hero-Grid (Expertise / Pfeil / AI-Karte) auf Mobile einspaltig stapeln */
+  .hero-grid { grid-template-columns: 1fr !important; }
 }
 
 /* ─── VÄTERSTRATEGIE CARD — Mobile: 1-Spalten-Layout ─── */

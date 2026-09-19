@@ -105,9 +105,10 @@ export default function Home() {
         </h1>
 
         <div
+          className="hero-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))",
+            gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
             gap: "2rem",
             marginTop: "3rem",
             alignItems: "stretch",
