@@ -13,6 +13,14 @@ export const metadata: Metadata = {
 
 const beitraege = [
   {
+    datum: "31. Juli 2026",
+    lesezeit: "2 Min. Lesezeit",
+    titel: "ERITAJ erhält BSFZ-Bescheinigung für digitale Nachlassplanung",
+    teaser:
+      "Die Bescheinigungsstelle Forschungszulage (BSFZ) hat ERITAJ, dem digitalen Vorsorge- und Nachlassplanungs-Venture von OneTitel, eine positive Bescheinigung nach dem Forschungszulagengesetz (FZulG) erteilt — die unabhängige, vom Bund beauftragte Prüfstelle bestätigt damit, dass die KI-gestützte Weiterentwicklung der Plattform als förderfähige Forschung und Entwicklung gilt.",
+    link: "https://www.openpr.de/pressemitteilungen/eritaj-0235463/",
+  },
+  {
     datum: "24. Mai 2024",
     lesezeit: "2 Min. Lesezeit",
     titel: "Fachkräftemangel führt laut Studie in 2022 zu Besorgnis im Marketing-Sektor",
@@ -113,6 +121,23 @@ export default function BeitraegePage() {
               <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.6, margin: 0 }}>
                 {b.teaser}
               </p>
+              {"link" in b && b.link && (
+                <a
+                  href={b.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    marginTop: "1.25rem",
+                    fontSize: "0.9rem",
+                    fontWeight: 600,
+                    color: "var(--accent)",
+                    textDecoration: "none",
+                  }}
+                >
+                  Zur Pressemitteilung →
+                </a>
+              )}
             </article>
           ))}
         </div>
