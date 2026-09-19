@@ -301,7 +301,7 @@ export default function Home() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fit, minmax(min(160px, 100%), 1fr))",
                 gap: "1px",
                 background: "rgba(242,240,235,0.1)",
               }}
@@ -318,17 +318,19 @@ export default function Home() {
                   style={{
                     padding: "2rem",
                     background: "rgba(242,240,235,0.04)",
+                    minWidth: 0,
                   }}
                 >
                   <div
                     className="font-serif"
                     style={{
-                      fontSize: "2.5rem",
+                      fontSize: "clamp(1.5rem, 3.2vw, 2.5rem)",
                       fontWeight: 700,
                       letterSpacing: "-0.02em",
                       lineHeight: 1,
                       marginBottom: "0.5rem",
                       color: "var(--accent)",
+                      overflowWrap: "break-word",
                     }}
                   >
                     {stat.num}

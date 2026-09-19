@@ -86,7 +86,8 @@ export default function InterimManagementPage() {
               fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              opacity: 0.4,
+              color: "var(--accent)",
+              opacity: 0.9,
               marginBottom: "1.5rem",
             }}
           >

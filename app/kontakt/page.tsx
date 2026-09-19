@@ -60,7 +60,8 @@ export default function KontaktPage() {
               fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
-              opacity: 0.4,
+              color: "var(--accent)",
+              opacity: 0.9,
               marginBottom: "1.5rem",
             }}
           >
@@ -86,7 +87,8 @@ export default function KontaktPage() {
               fontSize: "0.75rem",
               letterSpacing: "0.15em",
               textTransform: "uppercase",
-              opacity: 0.4,
+              color: "var(--accent)",
+              opacity: 0.9,
               marginBottom: "1rem",
             }}
           >

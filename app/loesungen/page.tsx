@@ -85,7 +85,8 @@ export default function LoesungenPage() {
               fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              opacity: 0.4,
+              color: "var(--accent)",
+              opacity: 0.9,
               marginBottom: "1rem",
             }}
           >
@@ -130,7 +131,8 @@ export default function LoesungenPage() {
               fontSize: "0.75rem",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
-              opacity: 0.4,
+              color: "var(--accent)",
+              opacity: 0.9,
               marginBottom: "2rem",
             }}
           >
@@ -148,8 +150,9 @@ export default function LoesungenPage() {
                 <span
                   style={{
                     fontSize: "0.8rem",
-                    opacity: 0.3,
-                    fontWeight: 500,
+                    color: "var(--accent)",
+                    opacity: 0.9,
+                    fontWeight: 600,
                     flexShrink: 0,
                     paddingTop: "0.2rem",
                   }}
@@ -172,7 +175,8 @@ export default function LoesungenPage() {
             fontSize: "0.75rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
-            opacity: 0.4,
+            color: "var(--accent)",
+            opacity: 0.9,
             marginBottom: "1rem",
           }}
         >
