@@ -117,17 +117,19 @@ export default function Home() {
           {/* Expertise card */}
           <div
             style={{
-              background: "#F0F0F0",
+              background: "var(--bg)",
+              border: "1px solid var(--border)",
               padding: "3rem",
               borderRadius: "2px",
             }}
           >
             <h2
+              className="font-serif"
               style={{
                 fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-                fontWeight: 300,
+                fontWeight: 600,
                 marginBottom: "1.25rem",
-                letterSpacing: "-0.02em",
+                letterSpacing: "-0.01em",
               }}
             >
               Expertise
@@ -137,7 +139,7 @@ export default function Home() {
               Veränderungsprozesse und Krisen. Mit frischen Perspektiven und innovativen Lösungen
               helfe ich dabei, Lösungen und neue Wachstumschancen zu identifizieren.
             </p>
-            <Link href="/kontakt" className="btn-outline">
+            <Link href="/kontakt" className="btn-accent">
               Kostenlose Beratung vereinbaren
             </Link>
           </div>
@@ -149,7 +151,8 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              background: "#E0E0E0",
+              background: "var(--bg)",
+              border: "1px solid var(--border)",
               borderRadius: "12px",
               width: "72px",
             }}
@@ -172,11 +175,12 @@ export default function Home() {
             }}
           >
             <h2
+              className="font-serif"
               style={{
                 fontSize: "clamp(1.2rem, 2.5vw, 2rem)",
-                fontWeight: 300,
+                fontWeight: 600,
                 marginBottom: "1.25rem",
-                letterSpacing: "-0.02em",
+                letterSpacing: "-0.01em",
                 color: "var(--bg)",
               }}
             >
@@ -226,7 +230,7 @@ export default function Home() {
             justifyContent: "center",
           }}
         >
-          <h2 style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 300, marginBottom: "1rem", letterSpacing: "-0.02em" }}>
+          <h2 className="font-serif" style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 600, marginBottom: "1rem", letterSpacing: "-0.01em" }}>
             Erfolg
           </h2>
           <p style={{ fontSize: "1.125rem", lineHeight: 1.7, opacity: 0.75, marginBottom: "2rem" }}>
@@ -272,10 +276,11 @@ export default function Home() {
               Beratung & Vertrieb
             </p>
             <h2
+              className="font-serif"
               style={{
                 fontSize: "clamp(1.8rem, 4vw, 3.5rem)",
-                fontWeight: 300,
-                letterSpacing: "-0.02em",
+                fontWeight: 600,
+                letterSpacing: "-0.01em",
                 lineHeight: 1.1,
                 color: "var(--bg)",
                 marginBottom: "1.5rem",
@@ -302,7 +307,8 @@ export default function Home() {
               }}
             >
               {[
-                { num: "15+", label: "Jahre Erfahrung" },
+                { num: "20+", label: "Jahre Erfahrung" },
+                { num: "€8 Mio.", label: "P&L-Verantwortung" },
                 { num: "3", label: "Kernbereiche" },
                 { num: "BAFA", label: "Förderbar" },
                 { num: "100%", label: "Hands-on" },
@@ -315,18 +321,19 @@ export default function Home() {
                   }}
                 >
                   <div
+                    className="font-serif"
                     style={{
                       fontSize: "2.5rem",
-                      fontWeight: 200,
-                      letterSpacing: "-0.03em",
+                      fontWeight: 700,
+                      letterSpacing: "-0.02em",
                       lineHeight: 1,
                       marginBottom: "0.5rem",
-                      color: "var(--bg)",
+                      color: "var(--accent)",
                     }}
                   >
                     {stat.num}
                   </div>
-                  <div style={{ fontSize: "0.8rem", opacity: 0.5, letterSpacing: "0.05em" }}>
+                  <div style={{ fontSize: "0.8rem", opacity: 0.5, letterSpacing: "0.05em", color: "var(--bg)" }}>
                     {stat.label}
                   </div>
                 </div>
@@ -354,10 +361,11 @@ export default function Home() {
             Leistungen
           </p>
           <h2
+            className="font-serif"
             style={{
               fontSize: "clamp(2rem, 4vw, 3rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
+              fontWeight: 600,
+              letterSpacing: "-0.01em",
             }}
           >
             Unser Angebot
@@ -481,7 +489,9 @@ export default function Home() {
         className="reveal"
         style={{
           padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
-          background: "#F0F0F0",
+          background: "var(--bg)",
+          borderTop: "1px solid var(--border)",
+          borderBottom: "1px solid var(--border)",
         }}
       >
         <div

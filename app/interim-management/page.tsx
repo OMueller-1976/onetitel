@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const DARK = "#0A0A0A";
 const GRAY = "#FFFFFF";
-const ACCENT = "#2D5A3D";
+const ACCENT = "#E2622A";
 
 const einsatzfelder = [
   {

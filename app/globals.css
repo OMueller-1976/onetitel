@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
 
 :root {
   --bg: #FFFFFF;
@@ -8,7 +9,8 @@
   --border: #E0E0E0;
   --black: #0A0A0A;
   --white: #FFFFFF;
-  --accent: #2D5A3D;
+  --accent: #E2622A;
+  --accent-dark: #C24E1C;
 }
 
 * {
@@ -97,6 +99,33 @@ hr {
 .btn-outline:hover {
   background: var(--fg);
   color: var(--bg);
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--accent);
+  color: var(--white);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-accent:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.font-serif {
+  font-family: 'Source Serif 4', Georgia, serif;
 }
 
 /* ── Animations ── */
