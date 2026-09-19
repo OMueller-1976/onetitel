@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Initiativen & Ventures – ERITAJ, Lersi, True Dads, BA Digital Marketing",
+  title: "Initiativen & Ventures – Canada EU Entry, ERITAJ, Lersi, True Dads",
   description:
-    "Initiativen und Ventures von Oliver M. Müller: ERITAJ (Erbrecht), Lersi App, ONEmatic, ADHASI, True Dads Deutschland und BA Digital Marketing.",
+    "Initiativen und Ventures von Oliver M. Müller: Canada EU Entry, ERITAJ (Erbrecht), Lersi App, ONEmatic, ADHASI, True Dads Deutschland und BA Digital Marketing.",
   alternates: { canonical: "https://www.onetitel.de/initiativen" },
   openGraph: {
     url: "https://www.onetitel.de/initiativen",
@@ -13,6 +13,11 @@ export const metadata: Metadata = {
 };
 
 const initiativen = [
+  {
+    href: "https://www.canadaeuentry.com",
+    title: "Canada EU Entry",
+    description: "Markteintritts-Beratung für kanadische B2B-Unternehmen in Deutschland und der Europäischen Union.",
+  },
   {
     href: "/initiativen/true-dads",
     title: "True Dads Deutschland",
@@ -155,7 +160,13 @@ export default function InitiativenPage() {
                   >
                     {item.description}
                   </p>
-                  <Link href={item.href} className="btn-outline">
+                  <Link
+                    href={item.href}
+                    className="btn-outline"
+                    {...(item.href.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                  >
                     Mehr erfahren
                   </Link>
                 </div>
