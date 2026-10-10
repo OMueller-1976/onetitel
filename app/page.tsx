@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: "Coaching",
+    title: "Sales — operativ im Tagesgeschäft",
     description:
-      "Als Coach unterstütze ich dabei, Ihre Ziele zu definieren, Hindernisse zu überwinden und Ihre persönliche und berufliche Performance zu steigern. Mit einem ganzheitlichen Ansatz begleite ich auf Ihrem Weg zum Erfolg.",
+      "Ich berate nicht nur, sondern übernehme operative Vertriebsverantwortung im Tagesgeschäft — von der Ansprache bis zum Abschluss. Durch bewährte Methoden und Hands-on-Umsetzung maximieren wir Ihre Verkaufsergebnisse und optimieren Ihre Kundenbindung nachhaltig.",
     bafa: false,
   },
   {
@@ -33,9 +33,9 @@ const services = [
     bafa: false,
   },
   {
-    title: "Sales",
+    title: "Coaching",
     description:
-      "Maßgeschneiderte Lösungen helfen Ihnen, Ihre Verkaufsziele zu erreichen und Ihren Umsatz zu steigern. Durch innovative Strategien und bewährte Methoden maximieren wir Ihre Verkaufsergebnisse und optimieren Ihre Kundenbindung.",
+      "Als Coach unterstütze ich dabei, Ihre Ziele zu definieren, Hindernisse zu überwinden und Ihre persönliche und berufliche Performance zu steigern. Mit einem ganzheitlichen Ansatz begleite ich auf Ihrem Weg zum Erfolg.",
     bafa: false,
   },
   {
@@ -55,6 +55,12 @@ const services = [
     description:
       "Förderung von Beratungskosten über die BAFA von bis zu 3.500 Euro. Bis 31. Dezember 2026 kann jedes förderfähige Unternehmen maximal fünf Beratungen gefördert bekommen.",
     bafa: true,
+  },
+  {
+    title: "Forschungszulage (F&E-Zertifizierung)",
+    description:
+      "Für ein KI-gestütztes Projekt wurde OneTitel die Forschungszulage-Bescheinigung (BSFZ) nach dem Forschungszulagengesetz erteilt — die unabhängige, vom Bund beauftragte Prüfstelle bestätigt damit förderfähige Forschung und Entwicklung.",
+    bafa: false,
   },
 ];
 
@@ -110,8 +116,9 @@ export default function Home() {
           </h1>
           <p className="mt-7 max-w-2xl text-xl leading-relaxed text-graphite">
             Als erfahrener Berater begleite ich Ihr Unternehmen durch anspruchsvolle
-            Veränderungsprozesse. Mit frischen Perspektiven und innovativen Lösungen helfe ich
-            dabei, neue Wachstumschancen zu identifizieren.
+            Veränderungsprozesse — inklusive operativer Vertriebstätigkeit im Tagesgeschäft, nicht
+            nur Strategie auf dem Papier. Mit frischen Perspektiven und innovativen Lösungen helfe
+            ich dabei, neue Wachstumschancen zu identifizieren.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <PrimaryButton href="/kontakt">Kostenlose Beratung vereinbaren</PrimaryButton>
@@ -235,9 +242,9 @@ export default function Home() {
         </div>
         <Container className="relative">
           <SectionHeading eyebrow="Fachgebiete" title="Themenfelder" light />
-          <ul className="mt-8 columns-1 gap-x-10 sm:columns-2">
+          <ul className="mt-8 grid max-w-xl grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
             {topics.map((t) => (
-              <li key={t} className="mb-2 flex items-center gap-3 text-lg text-offwhite/80 break-inside-avoid">
+              <li key={t} className="flex items-center gap-3 text-lg text-offwhite/80">
                 <span className="text-accent">·</span> {t}
               </li>
             ))}
