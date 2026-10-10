@@ -12,54 +12,27 @@ const subLinks = [
   { href: "/initiativen/true-dads/kontakt", label: "Kontakt" },
 ];
 
-const NAVY = "#1B3A6B";
-
 export default function TrueDadsLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   return (
     <>
       {/* Sub-Navigation */}
-      <nav
-        style={{
-          background: NAVY,
-          borderTop: "1px solid rgba(255,255,255,0.12)",
-          position: "sticky",
-          top: "var(--header-h, 120px)",
-          zIndex: 40,
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            padding: "0 clamp(0.5rem, 3vw, 2rem)",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            overflowX: "auto",
-            alignItems: "center",
-          }}
-        >
-          {/* Nav links */}
-          <div className="sub-nav" style={{ display: "flex", flexWrap: "nowrap", overflowX: "auto" }}>
+      <nav className="sticky top-[var(--header-h,120px)] z-40 border-t border-white/10 bg-td-navy">
+        <div className="mx-auto flex max-w-content items-center justify-between gap-4 overflow-x-auto px-3 md:px-8">
+          <div className="flex flex-nowrap items-center overflow-x-auto">
             {subLinks.map((link) => {
               const active = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  style={{
-                    padding: "0.7rem 1rem",
-                    fontSize: "0.7rem",
-                    fontWeight: active ? 600 : 400,
-                    letterSpacing: "0.06em",
-                    textTransform: "uppercase",
-                    color: active ? "#fff" : "rgba(255,255,255,0.65)",
-                    textDecoration: "none",
-                    borderBottom: active ? "2px solid #fff" : "2px solid transparent",
-                    transition: "color 0.15s",
-                  }}
+                  className={
+                    "whitespace-nowrap border-b-2 px-4 py-3 text-[0.7rem] uppercase tracking-wider transition-colors " +
+                    (active
+                      ? "border-white font-semibold text-white"
+                      : "border-transparent font-normal text-white/65 hover:text-white")
+                  }
                 >
                   {link.label}
                 </Link>
@@ -67,14 +40,13 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
             })}
           </div>
 
-          {/* Social icons (placeholder) */}
-          <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+          <div className="flex items-center gap-4">
             <a
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.72rem", letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}
+              className="text-[0.72rem] uppercase tracking-wider text-white/60 hover:text-white"
             >
               IG
             </a>
@@ -83,7 +55,7 @@ export default function TrueDadsLayout({ children }: { children: React.ReactNode
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.72rem", letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}
+              className="text-[0.72rem] uppercase tracking-wider text-white/60 hover:text-white"
             >
               FB
             </a>

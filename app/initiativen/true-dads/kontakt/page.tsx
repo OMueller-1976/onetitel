@@ -1,33 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Container from "@/components/ui/Container";
 
-const NAVY = "#1B3A6B";
-
-const inputStyle: React.CSSProperties = {
-  width: "100%",
-  background: "transparent",
-  border: "none",
-  borderBottom: `1px solid rgba(27,58,107,0.25)`,
-  padding: "0.75rem 0",
-  color: "#1a1a1a",
-  fontFamily: "'Jost', sans-serif",
-  fontSize: "1rem", // min 16px — verhindert iOS-Zoom beim Fokus
-  fontWeight: 300,
-  outline: "none",
-  marginBottom: "1.75rem",
-};
-
-const labelStyle: React.CSSProperties = {
-  display: "block",
-  fontSize: "0.75rem",
-  letterSpacing: "0.12em",
-  textTransform: "uppercase",
-  color: NAVY,
-  fontWeight: 600,
-  opacity: 0.7,
-  marginBottom: "0.25rem",
-};
+const inputClass =
+  "mb-7 w-full border-0 border-b border-td-navy/25 bg-transparent py-3 text-base font-light text-ink outline-none";
+const labelClass = "mb-1 block text-xs font-semibold uppercase tracking-wider text-td-navy/70";
 
 export default function TrueDadsKontaktPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
@@ -47,82 +25,37 @@ export default function TrueDadsKontaktPage() {
   return (
     <>
       {/* Hero */}
-      <section style={{ background: NAVY, color: "#fff", padding: "4rem 2rem" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              marginBottom: "1.25rem",
-            }}
-          >
+      <section className="bg-td-navy px-8 py-16 text-white">
+        <Container>
+          <p className="mb-5 text-xs uppercase tracking-[0.2em] text-white/40">
             True Dads Deutschland · Kontakt
           </p>
-          <h1
-            style={{
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-              color: "#fff",
-            }}
-          >
+          <h1 className="text-4xl font-light leading-[1.05] tracking-tight text-white md:text-7xl">
             Kontakt aufnehmen
           </h1>
-        </div>
+        </Container>
       </section>
 
       {/* Kontakt-Inhalt */}
-      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "1fr 2fr",
-            gap: "5rem",
-            alignItems: "start",
-          }}
-        >
+      <section className="bg-white py-20">
+        <Container className="grid gap-12 md:grid-cols-[1fr_2fr] md:gap-20">
           {/* Links: Kontaktinfos */}
           <div>
-            <h2
-              style={{
-                fontSize: "1.3rem",
-                fontWeight: 300,
-                color: NAVY,
-                letterSpacing: "-0.02em",
-                marginBottom: "2rem",
-              }}
-            >
+            <h2 className="mb-8 text-2xl font-light tracking-tight text-td-navy">
               Schreib uns
             </h2>
-            <div
-              style={{
-                borderLeft: `3px solid ${NAVY}`,
-                paddingLeft: "1.25rem",
-                marginBottom: "2rem",
-              }}
-            >
-              <p style={{ fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#888", margin: "0 0 0.35rem", fontWeight: 600 }}>
+            <div className="mb-8 border-l-[3px] border-td-navy pl-5">
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-[#888]">
                 E-Mail
               </p>
               <a
                 href="mailto:truedads@onetitel.de"
-                style={{
-                  fontSize: "1.125rem",
-                  color: NAVY,
-                  fontWeight: 500,
-                  textDecoration: "none",
-                  letterSpacing: "-0.01em",
-                }}
+                className="text-lg font-medium tracking-tight text-td-navy no-underline"
               >
                 truedads@onetitel.de
               </a>
             </div>
-            <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#666", fontWeight: 300 }}>
+            <p className="text-lg font-light leading-relaxed text-[#666]">
               Ob persönliche Betroffenheit, Kooperationsanfragen oder Rückmeldung zum
               Leitfaden — wir freuen uns über jede Nachricht.
             </p>
@@ -131,88 +64,68 @@ export default function TrueDadsKontaktPage() {
           {/* Rechts: Formular */}
           <div>
             {status === "sent" ? (
-              <div style={{ textAlign: "center", padding: "3rem 0" }}>
-                <p style={{ fontSize: "1.3rem", fontWeight: 300, color: NAVY, marginBottom: "0.75rem" }}>
-                  Vielen Dank!
-                </p>
-                <p style={{ fontSize: "1.125rem", color: "#666", fontWeight: 300 }}>
+              <div className="py-12 text-center">
+                <p className="mb-3 text-xl font-light text-td-navy">Vielen Dank!</p>
+                <p className="text-lg font-light text-[#666]">
                   Dein E-Mail-Programm sollte sich geöffnet haben. Alternativ schreib uns direkt:{" "}
-                  <a href="mailto:truedads@onetitel.de" style={{ color: NAVY, fontWeight: 500 }}>
+                  <a href="mailto:truedads@onetitel.de" className="font-medium text-td-navy">
                     truedads@onetitel.de
                   </a>
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0 2rem" }}>
+                <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
                   <div>
-                    <label style={labelStyle}>Vorname *</label>
+                    <label className={labelClass}>Vorname *</label>
                     <input
                       required
                       type="text"
                       value={form.vorname}
                       onChange={(e) => setForm({ ...form, vorname: e.target.value })}
-                      style={inputStyle}
+                      className={inputClass}
                     />
                   </div>
                   <div>
-                    <label style={labelStyle}>Nachname *</label>
+                    <label className={labelClass}>Nachname *</label>
                     <input
                       required
                       type="text"
                       value={form.nachname}
                       onChange={(e) => setForm({ ...form, nachname: e.target.value })}
-                      style={inputStyle}
+                      className={inputClass}
                     />
                   </div>
                 </div>
 
-                <label style={labelStyle}>E-Mail-Adresse *</label>
+                <label className={labelClass}>E-Mail-Adresse *</label>
                 <input
                   required
                   type="email"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  style={inputStyle}
+                  className={inputClass}
                 />
 
-                <label style={labelStyle}>Nachricht</label>
+                <label className={labelClass}>Nachricht</label>
                 <textarea
                   value={form.nachricht}
                   onChange={(e) => setForm({ ...form, nachricht: e.target.value })}
                   rows={5}
-                  style={{
-                    ...inputStyle,
-                    resize: "vertical",
-                    fontFamily: "'Jost', sans-serif",
-                  }}
+                  className={`${inputClass} resize-y`}
                 />
 
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  style={{
-                    marginTop: "0.5rem",
-                    display: "inline-flex",
-                    alignItems: "center",
-                    padding: "0.85rem 2rem",
-                    background: NAVY,
-                    color: "#fff",
-                    fontSize: "0.82rem",
-                    fontWeight: 700,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    border: "none",
-                    cursor: "pointer",
-                    fontFamily: "'Jost', sans-serif",
-                  }}
+                  className="mt-2 inline-flex items-center bg-td-navy px-8 py-3 text-sm font-bold uppercase tracking-wider text-white"
                 >
                   {status === "sending" ? "Wird geöffnet…" : "Absenden"}
                 </button>
               </form>
             )}
           </div>
-        </div>
+        </Container>
       </section>
     </>
   );

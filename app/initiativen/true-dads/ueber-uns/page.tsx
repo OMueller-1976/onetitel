@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Container from "@/components/ui/Container";
 
 export const metadata: Metadata = {
   title: "Über uns – True Dads Deutschland",
   description:
     "Mission und Vision von True Dads Deutschland — für ein Rechtssystem, das soziale Väter und das Recht der Kinder auf beide Elternteile schützt.",
 };
-
-const NAVY = "#1B3A6B";
 
 const vision = [
   {
@@ -41,85 +40,32 @@ export default function UeberUnsPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        style={{
-          background: NAVY,
-          color: "#fff",
-          padding: "4rem 2rem",
-        }}
-      >
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              marginBottom: "1.25rem",
-            }}
-          >
+      <section className="bg-td-navy px-8 py-16 text-white">
+        <Container>
+          <p className="mb-5 text-xs uppercase tracking-[0.2em] text-white/40">
             True Dads Deutschland · Über uns
           </p>
-          <h1
-            style={{
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-              color: "#fff",
-            }}
-          >
+          <h1 className="text-4xl font-light leading-[1.05] tracking-tight text-white md:text-7xl">
             Das sind wir
           </h1>
-        </div>
+        </Container>
       </section>
 
       {/* Mission */}
-      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "1fr 2fr",
-            gap: "4rem",
-            alignItems: "start",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "clamp(1.4rem, 2.5vw, 2rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              color: NAVY,
-            }}
-          >
+      <section className="bg-white py-20">
+        <Container className="grid gap-16 md:grid-cols-[1fr_2fr]">
+          <h2 className="text-2xl font-light tracking-tight text-td-navy md:text-3xl">
             Unsere Mission
           </h2>
           <div>
-            <p
-              style={{
-                fontSize: "1.125rem",
-                fontWeight: 300,
-                lineHeight: 1.75,
-                color: "#333",
-                marginBottom: "1.75rem",
-              }}
-            >
+            <p className="mb-7 text-lg font-light leading-relaxed text-[#333]">
               In Deutschland verlieren jedes Jahr tausende Kinder den Kontakt zu ihrem sozialen
               Vater — nicht durch sein Versagen, sondern durch ein System, das gelebte
               Elternschaft nicht ausreichend schützt. Gerichte, Jugendämter und Gesetze spiegeln
               noch immer ein überholtes Bild von Familie wider, das biologische Abstammung über
               gelebte Fürsorge stellt.
             </p>
-            <p
-              style={{
-                fontSize: "1.125rem",
-                lineHeight: 1.7,
-                color: "#555",
-                marginBottom: "1.75rem",
-              }}
-            >
+            <p className="mb-7 text-lg leading-relaxed text-[#555]">
               True Dads Deutschland ist aus der persönlichen Betroffenheit entstanden. Wir
               kennen die Ohnmacht, die Bürokratie und den Schmerz — und wir wissen, dass wir
               damit nicht allein sind. Deshalb machen wir das Schweigen sichtbar und schaffen
@@ -127,126 +73,51 @@ export default function UeberUnsPage() {
             </p>
 
             {/* Ziel-Box */}
-            <div
-              style={{
-                background: "#FFFFFF",
-                borderLeft: `4px solid ${NAVY}`,
-                padding: "1.75rem 2rem",
-              }}
-            >
-              <p
-                style={{
-                  fontSize: "0.75rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.15em",
-                  textTransform: "uppercase",
-                  color: NAVY,
-                  marginBottom: "0.75rem",
-                }}
-              >
+            <div className="border-l-4 border-td-navy bg-white py-7 px-8">
+              <p className="mb-3 text-xs font-bold uppercase tracking-wider text-td-navy">
                 Unser Ziel
               </p>
-              <p style={{ fontSize: "1.2rem", lineHeight: 1.7, color: "#333", margin: 0, fontStyle: "italic" }}>
+              <p className="text-xl italic leading-relaxed text-[#333]">
                 „Eine Gesellschaft und ein Rechtssystem, das gelebte Verantwortung, Fürsorge und
                 kontinuierliche Elternschaft als gleichwertig zu biologischen Verbindungen
                 anerkennt — und die Diskriminierung sozialer Väter beendet."
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Vision */}
-      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.4rem, 2.5vw, 2rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              color: NAVY,
-              marginBottom: "2.5rem",
-            }}
-          >
+      <section className="bg-white py-20">
+        <Container>
+          <h2 className="mb-10 text-2xl font-light tracking-tight text-td-navy md:text-3xl">
             Unsere Vision — 5 Forderungen
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <div className="flex flex-col gap-4">
             {vision.map((v) => (
               <div
                 key={v.nr}
-                style={{
-                  background: "#fff",
-                  borderLeft: `4px solid ${NAVY}`,
-                  padding: "2rem 2.5rem",
-                  display: "grid",
-                  gridTemplateColumns: "3rem 1fr 3fr",
-                  gap: "1.5rem",
-                  alignItems: "start",
-                }}
+                className="grid grid-cols-[2.5rem_1fr] items-start gap-4 border-l-4 border-td-navy bg-white px-6 py-8 md:grid-cols-[3rem_1fr_3fr] md:gap-6 md:px-10"
               >
-                <span
-                  style={{
-                    fontSize: "0.8rem",
-                    fontWeight: 700,
-                    color: NAVY,
-                    letterSpacing: "0.08em",
-                  }}
-                >
-                  {v.nr}
-                </span>
-                <h3
-                  style={{
-                    fontSize: "1.125rem",
-                    fontWeight: 600,
-                    color: "#1a1a1a",
-                    margin: 0,
-                    letterSpacing: "-0.01em",
-                  }}
-                >
-                  {v.title}
-                </h3>
-                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#555", margin: 0 }}>
+                <span className="text-sm font-bold tracking-wider text-td-navy">{v.nr}</span>
+                <h3 className="text-lg font-semibold tracking-tight text-[#1a1a1a]">{v.title}</h3>
+                <p className="col-span-2 text-lg leading-relaxed text-[#555] md:col-span-1">
                   {v.text}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* CTA */}
-      <section
-        style={{
-          padding: "4rem 2rem",
-          background: NAVY,
-          textAlign: "center",
-        }}
-      >
-        <p
-          style={{
-            fontSize: "1.2rem",
-            color: "rgba(255,255,255,0.7)",
-            marginBottom: "2rem",
-            lineHeight: 1.65,
-          }}
-        >
+      <section className="bg-td-navy px-8 py-16 text-center">
+        <p className="mb-8 text-xl leading-relaxed text-white/70">
           Gemeinsam können wir das System verändern.
         </p>
         <Link
           href="/initiativen/true-dads/kontakt"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            padding: "0.85rem 2rem",
-            border: "1px solid rgba(255,255,255,0.5)",
-            color: "#fff",
-            fontSize: "0.82rem",
-            fontWeight: 400,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            textDecoration: "none",
-            alignSelf: "flex-start",
-          }}
+          className="inline-flex items-center border border-white/50 px-8 py-3 text-sm uppercase tracking-wider text-white"
         >
           Kontakt aufnehmen
         </Link>

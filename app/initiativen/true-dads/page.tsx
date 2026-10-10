@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Container from "@/components/ui/Container";
 import VaeterstrategieCard from "./VaeterstrategieCard";
 
 export const metadata: Metadata = {
@@ -7,8 +8,6 @@ export const metadata: Metadata = {
   description:
     "True Dads Deutschland setzt sich für das Recht des Kindes auf seinen sozialen Vater ein — unabhängig, überparteilich, faktenbasiert.",
 };
-
-const NAVY = "#1B3A6B";
 
 const paragraphen = [
   {
@@ -59,416 +58,167 @@ export default function TrueDadsHomePage() {
   return (
     <>
       {/* Hero — navy */}
-      <section
-        style={{
-          background: NAVY,
-          color: "#fff",
-          padding: "clamp(2rem, 6vw, 5rem) 1.25rem",
-        }}
-      >
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+      <section className="bg-td-navy px-5 py-16 text-white md:py-24">
+        <Container>
           <Link
             href="/initiativen"
-            style={{
-              fontSize: "0.8rem",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.45)",
-              textDecoration: "none",
-              display: "inline-block",
-              marginBottom: "2.5rem",
-            }}
+            className="mb-10 inline-block text-sm uppercase tracking-widest text-white/45"
           >
             ← Initiativen &amp; Ventures
           </Link>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              marginBottom: "1.5rem",
-            }}
-          >
+          <p className="mb-6 text-xs uppercase tracking-[0.2em] text-white/40">
             Initiative · Väterrechte
           </p>
-          <h1
-            style={{
-              fontSize: "clamp(1.8rem, 8vw, 5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-              color: "#fff",
-              marginBottom: "1.25rem",
-            }}
-          >
+          <h1 className="mb-5 text-4xl font-light leading-[1.05] tracking-tight text-white md:text-7xl">
             True Dads Deutschland
           </h1>
-          <p
-            style={{
-              fontSize: "1.3rem",
-              fontWeight: 600,
-              color: "#fff",
-              marginBottom: "1.5rem",
-              letterSpacing: "-0.01em",
-            }}
-          >
+          <p className="mb-6 text-xl font-semibold tracking-tight text-white md:text-2xl">
             Väter bleiben Väter!
           </p>
-          <p
-            style={{
-              fontSize: "clamp(0.95rem, 3vw, 1.3rem)",
-              fontWeight: 300,
-              color: "rgba(255,255,255,0.75)",
-              maxWidth: "680px",
-              lineHeight: 1.7,
-              marginBottom: "3rem",
-            }}
-          >
+          <p className="mb-12 max-w-2xl text-base font-light leading-relaxed text-white/75 md:text-xl">
             Eine unabhängige, überparteiliche Initiative, die das Bewusstsein für die Bedeutung
             sozial-familiärer Väter stärken, ihre rechtliche Stellung ausbauen und
             Diskriminierung im Umgangsrecht abbauen will.
           </p>
           <Link
             href="/initiativen/true-dads/kontakt"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0.85rem 2rem",
-              border: "2px solid rgba(255,255,255,0.5)",
-              color: "#fff",
-              fontSize: "0.82rem",
-              fontWeight: 400,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              textDecoration: "none",
-              transition: "background 0.2s",
-            }}
+            className="inline-flex items-center border-2 border-white/50 px-8 py-3 text-sm uppercase tracking-wider text-white transition-colors hover:bg-white/10"
           >
             Kontakt aufnehmen
           </Link>
-        </div>
+        </Container>
       </section>
 
       {/* Section 2 — Die Initiative */}
-      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "1fr 2fr",
-            gap: "4rem",
-            alignItems: "start",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              color: NAVY,
-            }}
-          >
+      <section className="bg-white py-20">
+        <Container className="grid gap-16 md:grid-cols-[1fr_2fr]">
+          <h2 className="text-3xl font-light tracking-tight text-td-navy md:text-4xl">
             Die Initiative
           </h2>
           <div>
-            <p
-              style={{
-                fontSize: "1.125rem",
-                fontWeight: 300,
-                lineHeight: 1.75,
-                color: "#333",
-                marginBottom: "1.5rem",
-              }}
-            >
+            <p className="mb-6 text-lg font-light leading-relaxed text-[#333]">
               In Deutschland verlieren jedes Jahr tausende Kinder den Kontakt zu ihrem sozialen
               Vater — nicht, weil er sie im Stich lässt, sondern weil Gesetze, Behörden und
               Gerichte ihre Bindung nicht ausreichend schützen.
             </p>
-            <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#555" }}>
+            <p className="text-lg leading-relaxed text-[#555]">
               True Dads Deutschland setzt sich dafür ein, dass soziale Väter rechtlich gestärkt,
               in ihrem Engagement unterstützt und in ihrer Rolle sichtbar wertgeschätzt werden.
               Das Kindeswohl steht dabei immer im Mittelpunkt — denn ein Kind braucht beide
               Elternteile.
             </p>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Section 3 — Rechtlicher Rahmen */}
-      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              color: NAVY,
-              marginBottom: "2.5rem",
-            }}
-          >
+      <section className="bg-white py-20">
+        <Container>
+          <h2 className="mb-10 text-3xl font-light tracking-tight text-td-navy md:text-4xl">
             Der rechtliche Rahmen
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "1.5rem",
-              marginBottom: "3rem",
-            }}
-          >
+          <div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {paragraphen.map((p) => (
-              <div
-                key={p.para}
-                style={{
-                  background: "#fff",
-                  borderLeft: `4px solid ${NAVY}`,
-                  padding: "2rem 2rem 2rem 1.75rem",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "0.72rem",
-                    fontWeight: 700,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    color: NAVY,
-                    marginBottom: "0.75rem",
-                  }}
-                >
+              <div key={p.para} className="border-l-4 border-td-navy bg-white py-8 pl-7 pr-8">
+                <p className="mb-3 text-xs font-bold uppercase tracking-wider text-td-navy">
                   {p.para}
                 </p>
-                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#444", margin: 0 }}>
-                  {p.text}
-                </p>
+                <p className="text-lg leading-relaxed text-[#444]">{p.text}</p>
               </div>
             ))}
           </div>
 
           {/* Zitat OLG Karlsruhe */}
-          <div
-            style={{
-              background: "#fff",
-              borderLeft: `4px solid ${NAVY}`,
-              padding: "2rem 2.5rem",
-            }}
-          >
-            <p
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                color: NAVY,
-                marginBottom: "1rem",
-                fontWeight: 600,
-              }}
-            >
+          <div className="border-l-4 border-td-navy bg-white px-10 py-8">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-td-navy">
               OLG Karlsruhe, 12.07.2013 · Az. 16 UF 138/13
             </p>
-            <blockquote
-              style={{
-                fontStyle: "italic",
-                fontSize: "1.2rem",
-                lineHeight: 1.75,
-                color: "#333",
-                margin: 0,
-                fontWeight: 300,
-              }}
-            >
+            <blockquote className="text-xl font-light italic leading-relaxed text-[#333]">
               „Der Kontaktabbruch zu einer sozial engen Bezugsperson kann für das Kind eine
               erhebliche seelische Belastung darstellen, die dem Kindeswohl widerspricht."
             </blockquote>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Section 4 — Statistiken */}
-      <section style={{ padding: "5rem 2rem", background: NAVY }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              color: "#fff",
-              marginBottom: "3rem",
-              textAlign: "center",
-            }}
-          >
+      <section className="bg-td-navy py-20">
+        <Container>
+          <h2 className="mb-12 text-center text-3xl font-light tracking-tight text-white md:text-4xl">
             Zahlen &amp; Fakten
           </h2>
-          <div
-            className="stats-2col"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-              gap: "1px",
-              background: "rgba(255,255,255,0.1)",
-            }}
-          >
+          <div className="grid grid-cols-2 gap-px bg-white/10 md:grid-cols-4">
             {stats.map((s) => (
-              <div
-                key={s.zahl}
-                style={{
-                  background: "rgba(255,255,255,0.04)",
-                  padding: "2.5rem 2rem",
-                  textAlign: "center",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "clamp(2.5rem, 5vw, 4rem)",
-                    fontWeight: 200,
-                    letterSpacing: "-0.03em",
-                    color: "#fff",
-                    lineHeight: 1,
-                    marginBottom: "0.75rem",
-                  }}
-                >
+              <div key={s.zahl} className="bg-white/[0.04] px-6 py-10 text-center">
+                <div className="mb-3 text-4xl font-extralight leading-none tracking-tight text-white md:text-6xl">
                   {s.zahl}
                 </div>
-                <p style={{ fontSize: "1.125rem", lineHeight: 1.55, color: "rgba(255,255,255,0.7)", margin: "0 0 0.5rem" }}>
-                  {s.label}
-                </p>
-                <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.35)", margin: 0, letterSpacing: "0.05em" }}>
-                  {s.quelle}
-                </p>
+                <p className="mb-2 text-lg leading-snug text-white/70">{s.label}</p>
+                <p className="text-xs tracking-wide text-white/35">{s.quelle}</p>
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Section 5 — Hintergründe der Entfremdung */}
-      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              color: NAVY,
-              marginBottom: "2.5rem",
-            }}
-          >
+      <section className="bg-white py-20">
+        <Container>
+          <h2 className="mb-10 text-3xl font-light tracking-tight text-td-navy md:text-4xl">
             Mögliche Hintergründe für gezielte Entfremdung
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: "1.5rem",
-            }}
-          >
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {hintergruende.map((h) => (
-              <div
-                key={h.nr}
-                style={{
-                  background: "#FFFFFF",
-                  padding: "2.5rem",
-                  borderTop: `3px solid ${NAVY}`,
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: "0.75rem",
-                    fontWeight: 700,
-                    color: NAVY,
-                    letterSpacing: "0.1em",
-                    display: "block",
-                    marginBottom: "0.75rem",
-                  }}
-                >
+              <div key={h.nr} className="border-t-[3px] border-td-navy bg-white p-10">
+                <span className="mb-3 block text-xs font-bold tracking-wider text-td-navy">
                   {h.nr}
                 </span>
-                <h3
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: 500,
-                    color: "#1a1a1a",
-                    marginBottom: "0.75rem",
-                    letterSpacing: "-0.01em",
-                  }}
-                >
+                <h3 className="mb-3 text-xl font-medium tracking-tight text-[#1a1a1a]">
                   {h.title}
                 </h3>
-                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#555", margin: 0 }}>
-                  {h.text}
-                </p>
+                <p className="text-lg leading-relaxed text-[#555]">{h.text}</p>
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Section 6 — Empfohlene Anlaufstellen */}
-      <section style={{
-        padding: 'clamp(3rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem)',
-        background: '#FFFFFF',
-        borderTop: '1px solid #E0E0E0',
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <p style={{
-            fontSize: '0.75rem', letterSpacing: '0.18em',
-            textTransform: 'uppercase', opacity: 0.4,
-            marginBottom: '0.75rem', fontWeight: 400,
-          }}>
+      <section className="border-t border-border bg-white py-16 md:py-20">
+        <Container>
+          <p className="mb-3 text-xs uppercase tracking-[0.18em] text-ink/40">
             Empfohlene Anlaufstellen
           </p>
-          <h2 style={{
-            fontSize: 'clamp(1.6rem, 4vw, 2.5rem)',
-            fontWeight: 300, letterSpacing: '-0.02em',
-            marginBottom: '2.5rem',
-          }}>
+          <h2 className="mb-10 text-3xl font-light tracking-tight text-ink md:text-4xl">
             Unterstützung &amp; Beratung für Väter
           </h2>
 
           <VaeterstrategieCard />
 
-          <p style={{
-            fontSize: '0.8rem', opacity: 0.4, marginTop: '1.25rem',
-            fontStyle: 'italic',
-          }}>
+          <p className="mt-5 text-sm italic text-ink/40">
             * Diese Empfehlung erfolgt ohne kommerzielle Vereinbarung —
             wir empfehlen diese Anlaufstelle aufgrund ihrer fachlichen Expertise.
           </p>
-        </div>
+        </Container>
       </section>
 
       {/* Section 7 — CTA */}
-      <section style={{
-        padding: 'clamp(3rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem)',
-        background: '#1B3A6B', textAlign: 'center',
-      }}>
-        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-          <h2 style={{
-            fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', fontWeight: 300,
-            color: '#FFFFFF', marginBottom: '1rem', letterSpacing: '-0.02em',
-          }}>
+      <section className="bg-td-navy py-16 text-center md:py-20">
+        <Container className="max-w-2xl">
+          <h2 className="mb-4 text-3xl font-light tracking-tight text-white md:text-4xl">
             Unterstütze die Initiative
           </h2>
-          <p style={{
-            fontSize: '1rem', lineHeight: 1.75, opacity: 0.75,
-            color: '#FFFFFF', marginBottom: '2rem',
-          }}>
+          <p className="mb-8 text-base leading-relaxed text-white/75">
             Jedes Bewusstsein, das wir schaffen, ist ein Zeichen —
             für Kinder und Väter, die nicht vergessen werden wollen.
           </p>
-          <Link href="/initiativen/true-dads/kontakt"
-            style={{
-              display: 'inline-flex', alignItems: 'center',
-              padding: '0.875rem 2rem',
-              border: '1px solid rgba(255,255,255,0.5)',
-              color: '#FFFFFF', textDecoration: 'none',
-              fontFamily: "'Jost', sans-serif",
-              fontSize: '0.85rem', fontWeight: 400,
-              letterSpacing: '0.1em', textTransform: 'uppercase',
-              transition: 'background 0.2s',
-            }}>
+          <Link
+            href="/initiativen/true-dads/kontakt"
+            className="inline-flex items-center border border-white/50 px-8 py-3.5 text-sm uppercase tracking-wider text-white transition-colors hover:bg-white/10"
+          >
             Kontakt aufnehmen
           </Link>
-        </div>
+        </Container>
       </section>
     </>
   );

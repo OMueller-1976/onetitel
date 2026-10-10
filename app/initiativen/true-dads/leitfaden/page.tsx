@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Container from "@/components/ui/Container";
 
 export const metadata: Metadata = {
   title: "Leitfaden Jugendämter – True Dads Deutschland",
   description:
     "True Dads Deutschland erarbeitet einen praxisnahen Leitfaden für Jugendämter — bindungspsychologisch fundiert, rechtlich verankert.",
 };
-
-const NAVY = "#1B3A6B";
 
 const kapitel = [
   {
@@ -41,78 +40,36 @@ export default function LeitfadenPage() {
   return (
     <>
       {/* Hero */}
-      <section style={{ background: NAVY, color: "#fff", padding: "4rem 2rem" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.4)",
-              marginBottom: "1.25rem",
-            }}
-          >
+      <section className="bg-td-navy px-8 py-16 text-white">
+        <Container>
+          <p className="mb-5 text-xs uppercase tracking-[0.2em] text-white/40">
             True Dads Deutschland · Leitfaden
           </p>
-          <h1
-            style={{
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
-              fontWeight: 300,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-              color: "#fff",
-              marginBottom: "1rem",
-            }}
-          >
+          <h1 className="mb-4 text-4xl font-light leading-[1.05] tracking-tight text-white md:text-7xl">
             Arbeitsentwurf
             <br />
-            <span style={{ opacity: 0.45 }}>für Jugendämter</span>
+            <span className="opacity-45">für Jugendämter</span>
           </h1>
-          <p
-            style={{
-              fontSize: "1.2rem",
-              color: "rgba(255,255,255,0.65)",
-              maxWidth: "600px",
-              lineHeight: 1.65,
-              fontWeight: 300,
-            }}
-          >
+          <p className="max-w-xl text-xl font-light leading-relaxed text-white/65">
             True Dads Deutschland erarbeitet einen praxisnahen Leitfaden für Jugendämter,
             der bindungspsychologische Erkenntnisse mit dem rechtlichen Rahmen verknüpft.
           </p>
-        </div>
+        </Container>
       </section>
 
       {/* Einleitung */}
-      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
-        <div style={{ maxWidth: "780px", margin: "0 auto" }}>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: NAVY,
-              fontWeight: 600,
-              marginBottom: "2rem",
-            }}
-          >
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-3xl px-6 md:px-8">
+          <p className="mb-8 text-xs font-semibold uppercase tracking-[0.2em] text-td-navy">
             Ziel des Leitfadens
           </p>
-          <p
-            style={{
-              fontSize: "1.125rem",
-              fontWeight: 300,
-              lineHeight: 1.75,
-              color: "#333",
-              marginBottom: "1.5rem",
-            }}
-          >
+          <p className="mb-6 text-lg font-light leading-relaxed text-[#333]">
             Fachkräfte in Jugendämtern stehen täglich vor hochkomplexen Situationen — mit
             wenig Zeit, unklaren Informationen und großer Verantwortung. Unser Leitfaden soll
             eine evidenzbasierte Grundlage schaffen, die Entscheidungen in Fällen mit sozialen
             Vätern und Kontaktverweigerung transparenter und kindeswohlorientierter macht.
           </p>
-          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#555", fontWeight: 300 }}>
+          <p className="text-lg font-light leading-relaxed text-[#555]">
             Der Leitfaden verknüpft aktuelle Erkenntnisse der Bindungspsychologie mit dem
             geltenden Familienrecht und gibt konkrete Handlungsempfehlungen — ohne dabei
             einseitig zu sein oder Schuldzuweisungen vorzunehmen.
@@ -121,111 +78,45 @@ export default function LeitfadenPage() {
       </section>
 
       {/* Kapitelstruktur */}
-      <section style={{ padding: "5rem 2rem", background: "#FFFFFF" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "clamp(1.3rem, 2.5vw, 2rem)",
-              fontWeight: 300,
-              color: NAVY,
-              letterSpacing: "-0.02em",
-              marginBottom: "2.5rem",
-            }}
-          >
+      <section className="bg-white py-20">
+        <Container>
+          <h2 className="mb-10 text-2xl font-light tracking-tight text-td-navy md:text-3xl">
             Geplante Kapitelstruktur
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1px", background: "#E0E0E0" }}>
+          <div className="flex flex-col gap-px bg-border">
             {kapitel.map((k) => (
               <div
                 key={k.nr}
-                style={{
-                  background: "#fff",
-                  padding: "2rem 2.5rem",
-                  display: "grid",
-                  gridTemplateColumns: "3rem 1fr 3fr",
-                  gap: "1.5rem",
-                  alignItems: "start",
-                }}
+                className="grid grid-cols-[2.5rem_1fr] items-start gap-4 bg-white px-6 py-8 md:grid-cols-[3rem_1fr_3fr] md:gap-6 md:px-10"
               >
-                <span style={{ fontSize: "0.8rem", fontWeight: 700, color: NAVY, letterSpacing: "0.08em" }}>
-                  {k.nr}
-                </span>
-                <h3 style={{ fontSize: "1.125rem", fontWeight: 600, color: "#1a1a1a", margin: 0 }}>
-                  {k.titel}
-                </h3>
-                <p style={{ fontSize: "1.125rem", lineHeight: 1.65, color: "#555", margin: 0, fontWeight: 300 }}>
+                <span className="text-sm font-bold tracking-wider text-td-navy">{k.nr}</span>
+                <h3 className="text-lg font-semibold text-[#1a1a1a]">{k.titel}</h3>
+                <p className="col-span-2 text-lg font-light leading-relaxed text-[#555] md:col-span-1">
                   {k.text}
                 </p>
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Status / Platzhalter */}
-      <section style={{ padding: "5rem 2rem", background: "#fff" }}>
-        <div
-          style={{
-            maxWidth: "780px",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem",
-              padding: "0.5rem 1.25rem",
-              border: `1px solid ${NAVY}`,
-              fontSize: "0.72rem",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: NAVY,
-              fontWeight: 600,
-              marginBottom: "2rem",
-            }}
-          >
-            <span
-              style={{
-                width: 8,
-                height: 8,
-                borderRadius: "50%",
-                background: "#2D5A3D",
-                display: "inline-block",
-              }}
-            />
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-3xl px-6 text-center md:px-8">
+          <div className="mb-8 inline-flex items-center gap-2 border border-td-navy px-5 py-2 text-xs font-semibold uppercase tracking-wider text-td-navy">
+            <span className="inline-block h-2 w-2 rounded-full bg-truedads" />
             In Erarbeitung
           </div>
-          <h2
-            style={{
-              fontSize: "clamp(1.3rem, 2.5vw, 2rem)",
-              fontWeight: 300,
-              color: "#1a1a1a",
-              letterSpacing: "-0.02em",
-              marginBottom: "1rem",
-            }}
-          >
+          <h2 className="mb-4 text-2xl font-light tracking-tight text-[#1a1a1a] md:text-3xl">
             Der vollständige Leitfaden wird in Kürze veröffentlicht.
           </h2>
-          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, color: "#666", marginBottom: "2.5rem", fontWeight: 300 }}>
+          <p className="mb-10 text-lg font-light leading-relaxed text-[#666]">
             Möchtest Du informiert werden, wenn der Leitfaden verfügbar ist?
             Hinterlasse uns eine kurze Nachricht — wir melden uns, sobald er fertig ist.
           </p>
           <Link
             href="/initiativen/true-dads/kontakt"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0.85rem 2rem",
-              background: NAVY,
-              color: "#fff",
-              fontSize: "0.82rem",
-              fontWeight: 700,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              textDecoration: "none",
-            }}
+            className="inline-flex items-center bg-td-navy px-8 py-3 text-sm font-bold uppercase tracking-wider text-white"
           >
             Kontakt aufnehmen →
           </Link>
