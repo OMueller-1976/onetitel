@@ -1,220 +1,117 @@
 import Link from "next/link";
+import Container from "@/components/ui/Container";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
+
+const NAV_LINKS = [
+  { href: "/", label: "Start" },
+  { href: "/loesungen", label: "Service" },
+  { href: "/interim-management", label: "Interim-Management" },
+  { href: "/initiativen", label: "Initiativen & Ventures" },
+  { href: "/medienberichte", label: "Medienberichte" },
+  { href: "/beitraege", label: "Beiträge" },
+  { href: "/kontakt", label: "Kontakt" },
+];
+
+const PARTNER_LINKS = [
+  { href: "https://www.eritaj.de", label: "Eritaj" },
+  { href: "https://www.lersi.de", label: "Lersi" },
+  { href: "https://www.vaeterstrategie.de", label: "Väterstrategie" },
+  { href: "https://www.canadaeuentry.com", label: "Canada EU Entry" },
+];
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        background: "var(--fg)",
-        color: "var(--bg)",
-        padding: "clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem) 1.5rem",
-        marginTop: "6rem",
-      }}
-    >
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Top row */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 200px), 1fr))",
-            gap: "3rem",
-            paddingBottom: "3rem",
-            borderBottom: "1px solid rgba(242,240,235,0.15)",
-          }}
-        >
-          {/* Brand */}
-          <div>
-            <div
-              style={{
-                fontWeight: 300,
-                fontSize: "1.4rem",
-                letterSpacing: "0.25em",
-                textTransform: "uppercase",
-                marginBottom: "0.5rem",
-              }}
-            >
-              OneTitel
-            </div>
-            <div
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                opacity: 0.5,
-                marginBottom: "1.5rem",
-              }}
-            >
-              Sales. Consulting. Interim-Management
-            </div>
-            <p style={{ fontSize: "1.25rem", opacity: 0.6, lineHeight: 1.7, margin: 0 }}>
-              Oliver M. Müller<br />
-              Am Bruchborn 6<br />
-              54570 Kirchweiler<br />
-              <a
-                href="mailto:info@onetitel.de"
-                style={{ color: "inherit", textDecoration: "none", opacity: 1 }}
-              >
-                info@onetitel.de
-              </a>
-            </p>
-          </div>
-
-          {/* Pages */}
-          <div>
-            <div
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                opacity: 0.4,
-                marginBottom: "1rem",
-              }}
-            >
-              Seiten
-            </div>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              {[
-                { href: "/", label: "Start" },
-                { href: "/loesungen", label: "Service" },
-                { href: "/medienberichte", label: "Medienberichte" },
-                { href: "/beitraege", label: "Beiträge" },
-                { href: "/kontakt", label: "Kontakt" },
-                { href: "/interim-management", label: "Interim Management" },
-                { href: "/interim-management-sales-digital", label: "Interim Management Sales & Digital" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    style={{
-                      fontSize: "1.25rem",
-                      color: "inherit",
-                      opacity: 0.7,
-                      textDecoration: "none",
-                      letterSpacing: "0.04em",
-                    }}
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Partner */}
-          <div>
-            <div
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                opacity: 0.4,
-                marginBottom: "1rem",
-              }}
-            >
-              Weitere Partner
-            </div>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              {[
-                { href: "https://www.eritaj.de", label: "Eritaj" },
-                { href: "https://www.lersi.de", label: "Lersi" },
-                { href: "https://www.vaeterstrategie.de", label: "Väterstrategie" },
-                { href: "https://www.canadaeuentry.com", label: "Canada EU Entry" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <a
-                    href={l.href}
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    style={{
-                      fontSize: "1.25rem",
-                      color: "inherit",
-                      opacity: 0.7,
-                      textDecoration: "none",
-                      letterSpacing: "0.04em",
-                    }}
-                  >
-                    {l.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Social */}
-          <div>
-            <div
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                opacity: 0.4,
-                marginBottom: "1rem",
-              }}
-            >
-              Social
-            </div>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/oliver-m-mueller/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: "1.25rem", color: "inherit", opacity: 0.7, textDecoration: "none" }}
-                >
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.xing.com/profile/OliverMarkus_Mueller/web_profiles"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: "1.25rem", color: "inherit", opacity: 0.7, textDecoration: "none" }}
-                >
-                  XING
-                </a>
-              </li>
-            </ul>
-          </div>
+    <footer className="border-t-4 border-accent bg-ink text-offwhite">
+      <Container className="grid gap-10 py-14 md:grid-cols-4">
+        <div className="md:col-span-1">
+          <p className="font-sans text-lg font-light uppercase tracking-[0.2em]">OneTitel</p>
+          <p className="mt-1 text-xs uppercase tracking-wider text-offwhite/50">
+            Sales. Consulting. Interim-Management
+          </p>
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-offwhite/80">
+            Oliver M. Müller
+            <br />
+            Am Bruchborn 6
+            <br />
+            54570 Kirchweiler
+            <br />
+            <a href="mailto:info@onetitel.de" className="hover:text-offwhite">
+              info@onetitel.de
+            </a>
+          </p>
         </div>
 
-        {/* Bottom row */}
-        <div
-          className="footer-bottom-bar"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "1rem",
-            paddingTop: "1.5rem",
-          }}
-        >
-          <p style={{ fontSize: "0.8rem", opacity: 0.4, margin: 0 }}>
-            © {new Date().getFullYear()} OneTitel – Oliver M. Müller
-          </p>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
-            {[
-              { href: "/impressum", label: "Impressum" },
-              { href: "/datenschutz", label: "Datenschutz" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                style={{
-                  fontSize: "0.8rem",
-                  color: "inherit",
-                  opacity: 0.4,
-                  textDecoration: "none",
-                  letterSpacing: "0.04em",
-                }}
-              >
-                {l.label}
-              </Link>
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wider text-offwhite/60">Seiten</p>
+          <ul className="mt-4 space-y-2">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="text-sm text-offwhite/85 hover:text-offwhite">
+                  {link.label}
+                </Link>
+              </li>
             ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wider text-offwhite/60">Weitere Partner</p>
+          <ul className="mt-4 space-y-2">
+            {PARTNER_LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="text-sm text-offwhite/85 hover:text-offwhite"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wider text-offwhite/60">Social</p>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/oliver-m-mueller/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-offwhite/85 hover:text-offwhite"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.xing.com/profile/OliverMarkus_Mueller/web_profiles"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-offwhite/85 hover:text-offwhite"
+              >
+                XING
+              </a>
+            </li>
+          </ul>
+        </div>
+      </Container>
+
+      <div className="border-t border-offwhite/10 py-6">
+        <Container className="flex flex-col gap-3 text-xs text-offwhite/60 md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} OneTitel – Oliver M. Müller</p>
+          <div className="flex items-center gap-5">
+            <Link href="/impressum" className="hover:text-offwhite">
+              Impressum
+            </Link>
+            <Link href="/datenschutz" className="hover:text-offwhite">
+              Datenschutz
+            </Link>
             <CookieSettingsButton />
           </div>
-        </div>
+        </Container>
       </div>
     </footer>
   );

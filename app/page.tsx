@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
-import ScrollRevealProvider from "@/components/ScrollRevealProvider";
+import Link from "next/link";
+import Container from "@/components/ui/Container";
+import SectionHeading from "@/components/ui/SectionHeading";
+import { PrimaryButton, SecondaryButton } from "@/components/ui/Button";
+import CtaBanner from "@/components/ui/CtaBanner";
 
 export const metadata: Metadata = {
   title: "Sales, Consulting & Interim-Management",
@@ -55,6 +58,14 @@ const services = [
   },
 ];
 
+const stats = [
+  { num: "20+", label: "Jahre Erfahrung" },
+  { num: "€8 Mio.", label: "P&L-Verantwortung" },
+  { num: "3", label: "Kernbereiche" },
+  { num: "BAFA", label: "Förderbar" },
+  { num: "100%", label: "Hands-on" },
+];
+
 const topics = [
   "Informationstechnologie",
   "Agentic AI / Automatisierung",
@@ -73,604 +84,237 @@ const topics = [
   "Datenstrategie",
 ];
 
-const referenzLogos = [
-  "Amazon",
-  "Weser Kurier",
-  "Rundschau",
-  "iq digital",
-  "OD Marketing",
-  "AOL/Yahoo!",
-  "BVDW",
-];
+const referenzLogos = ["Amazon", "Weser Kurier", "Rundschau", "iq digital", "OD Marketing", "AOL/Yahoo!", "BVDW"];
 
 export default function Home() {
   return (
     <>
-      <ScrollRevealProvider />
-
-      {/* Hero */}
-      <section
-        style={{
-          padding: "clamp(2rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem) 4rem",
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        <h1 className="display" style={{ marginBottom: "2.5rem", maxWidth: "900px" }}>
-          Sales, Consulting
-          <br />
-          <span style={{ opacity: 0.35 }}>und Coaching</span>
-          <br />
-          mit OneTitel
-        </h1>
-
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-border bg-offwhite">
         <div
-          className="hero-grid"
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 opacity-[0.05]"
           style={{
-            display: "grid",
-            gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
-            gap: "2rem",
-            marginTop: "3rem",
-            alignItems: "stretch",
+            backgroundImage:
+              "linear-gradient(#0A0A0A 1px, transparent 1px), linear-gradient(90deg, #0A0A0A 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
           }}
-        >
-          {/* Expertise card */}
-          <div
-            style={{
-              background: "var(--bg)",
-              border: "1px solid var(--border)",
-              padding: "3rem",
-              borderRadius: "2px",
-            }}
-          >
-            <h2
-              className="font-serif"
-              style={{
-                fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-                fontWeight: 600,
-                marginBottom: "1.25rem",
-                letterSpacing: "-0.01em",
-              }}
-            >
-              Expertise
-            </h2>
-            <p style={{ fontSize: "1.2rem", lineHeight: 1.65, opacity: 0.75, marginBottom: "2rem" }}>
-              Als erfahrener Berater begleite ich Ihr Unternehmen auch durch anspruchsvolle
-              Veränderungsprozesse und Krisen. Mit frischen Perspektiven und innovativen Lösungen
-              helfe ich dabei, Lösungen und neue Wachstumschancen zu identifizieren.
-            </p>
-            <Link href="/kontakt" className="btn-accent">
-              Kostenlose Beratung vereinbaren
-            </Link>
+        />
+        <div aria-hidden="true" className="absolute inset-x-0 top-0 h-2 bg-accent" />
+        <Container className="relative py-20 md:py-28">
+          <p className="text-sm font-bold uppercase tracking-wider text-accent">
+            Sales-Consulting &amp; Interim-Management
+          </p>
+          <h1 className="mt-5 max-w-3xl font-serif text-4xl font-bold leading-[1.08] text-ink sm:text-5xl md:text-6xl">
+            Sales, Consulting und Coaching mit OneTitel
+          </h1>
+          <p className="mt-7 max-w-2xl text-xl leading-relaxed text-graphite">
+            Als erfahrener Berater begleite ich Ihr Unternehmen durch anspruchsvolle
+            Veränderungsprozesse. Mit frischen Perspektiven und innovativen Lösungen helfe ich
+            dabei, neue Wachstumschancen zu identifizieren.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <PrimaryButton href="/kontakt">Kostenlose Beratung vereinbaren</PrimaryButton>
+            <SecondaryButton href="/loesungen">Unsere Leistungen</SecondaryButton>
           </div>
-
-          {/* Animated down-arrow */}
-          <div
-            className="hero-arrow"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              background: "var(--bg)",
-              border: "1px solid var(--border)",
-              borderRadius: "12px",
-              width: "72px",
-            }}
-          >
-            <span
-              className="animate-bounce-down"
-              style={{ fontSize: "3rem", opacity: 0.4, lineHeight: 1 }}
-            >
-              ↓
-            </span>
-          </div>
-
-          {/* AI card */}
-          <div
-            style={{
-              background: "var(--fg)",
-              color: "var(--bg)",
-              padding: "3rem",
-              borderRadius: "2px",
-            }}
-          >
-            <h2
-              className="font-serif"
-              style={{
-                fontSize: "clamp(1.2rem, 2.5vw, 2rem)",
-                fontWeight: 600,
-                marginBottom: "1.25rem",
-                letterSpacing: "-0.01em",
-                color: "var(--bg)",
-              }}
-            >
-              AI/KI Automatisierung
-            </h2>
-            <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.75, margin: 0 }}>
-              Kompetenzen im Bereich Agentic AI sowie KI-basierter Vertriebsoptimierung mit Fokus
-              auf Leadgenerierung und Funnel-Performance. Einsatz intelligenter Automatisierung,
-              datengetriebener Analysen und KI-gestützter Entscheidungsprozesse zur Identifikation
-              hochwertiger Zielkunden. Verbindung von fundierter Vertriebsexpertise mit modernen
-              KI-Technologien zur Entwicklung skalierbarer, effizienter und messbarer
-              Wachstumsstrategien.
-            </p>
-          </div>
-        </div>
+        </Container>
       </section>
 
-      {/* Erfolg / Referenzen — 2-spaltig */}
-      <section
-        className="reveal"
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
-          gap: 0,
-          minHeight: "420px",
-          overflow: "hidden",
-        }}
-      >
-        {/* Linke Spalte: Consulting-Foto */}
-        <div style={{ position: "relative", overflow: "hidden" }}>
-          <Image
-            src="/images/consulting-photo.jpg"
-            alt="Expertise"
-            fill
-            style={{ objectFit: "cover", filter: "grayscale(100%)" }}
-          />
-        </div>
+      {/* EXPERTISE / AI */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="border border-border bg-offwhite p-10">
+              <h2 className="font-serif text-2xl font-bold text-ink md:text-3xl">Expertise</h2>
+              <p className="mt-4 text-lg leading-relaxed text-graphite">
+                Als erfahrener Berater begleite ich Ihr Unternehmen auch durch anspruchsvolle
+                Veränderungsprozesse und Krisen. Mit frischen Perspektiven und innovativen
+                Lösungen helfe ich dabei, Lösungen und neue Wachstumschancen zu identifizieren.
+              </p>
+              <div className="mt-6">
+                <PrimaryButton href="/kontakt">Kostenlose Beratung vereinbaren</PrimaryButton>
+              </div>
+            </div>
+            <div className="bg-ink p-10 text-offwhite">
+              <h2 className="font-serif text-2xl font-bold md:text-3xl">AI/KI Automatisierung</h2>
+              <p className="mt-4 text-lg leading-relaxed text-offwhite/75">
+                Kompetenzen im Bereich Agentic AI sowie KI-basierter Vertriebsoptimierung mit
+                Fokus auf Leadgenerierung und Funnel-Performance. Einsatz intelligenter
+                Automatisierung, datengetriebener Analysen und KI-gestützter
+                Entscheidungsprozesse zur Identifikation hochwertiger Zielkunden.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
 
-        {/* Rechte Spalte: Erfolg-Card */}
-        <div
-          style={{
-            background: "#0A0A0A",
-            color: "#F0F0F0",
-            padding: "3rem",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <h2 className="font-serif" style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 600, marginBottom: "1rem", letterSpacing: "-0.01em" }}>
-            Erfolg
-          </h2>
-          <p style={{ fontSize: "1.125rem", lineHeight: 1.7, opacity: 0.75, marginBottom: "2rem" }}>
+      {/* ERFOLG / REFERENZEN */}
+      <section className="grid min-h-[420px] overflow-hidden sm:grid-cols-2">
+        <div className="relative min-h-[260px]">
+          <Image src="/images/consulting-photo.jpg" alt="Expertise" fill className="object-cover grayscale" />
+        </div>
+        <div className="flex flex-col justify-center bg-ink p-10 text-offwhite md:p-14">
+          <h2 className="font-serif text-2xl font-bold md:text-3xl">Erfolg</h2>
+          <p className="mt-4 text-lg leading-relaxed text-offwhite/75">
             Als proaktiver und ausgewiesener Experte im Vertrieb und für digitales Marketing
-            biete ich meine Expertise sowie Erfahrungen aus unterschiedlichen Branchen.
-            Diese Expertise bringe ich ebenfalls im Bereich Existenzgründung und Start-ups ein.
+            biete ich meine Expertise sowie Erfahrungen aus unterschiedlichen Branchen. Diese
+            Expertise bringe ich ebenfalls im Bereich Existenzgründung und Start-ups ein.
           </p>
-          <Link href="/medienberichte" className="btn-white" style={{ alignSelf: "flex-start" }}>
+          <Link
+            href="/medienberichte"
+            className="mt-6 inline-flex w-fit items-center justify-center rounded-sm border-2 border-white px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-ink"
+          >
             Referenzen
           </Link>
         </div>
       </section>
 
-      {/* Divider section */}
-      <section
-        className="reveal reveal-delay-1"
-        style={{
-          padding: "clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem)",
-          background: "var(--fg)",
-          color: "var(--bg)",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
-            gap: "4rem",
-            alignItems: "center",
-          }}
-        >
-          <div>
-            <p
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                opacity: 0.4,
-                marginBottom: "1rem",
-              }}
-            >
-              Beratung & Vertrieb
-            </p>
-            <h2
-              className="font-serif"
-              style={{
-                fontSize: "clamp(1.8rem, 4vw, 3.5rem)",
-                fontWeight: 600,
-                letterSpacing: "-0.01em",
-                lineHeight: 1.1,
-                color: "var(--bg)",
-                marginBottom: "1.5rem",
-              }}
-            >
-              Interim-Management und Beratung für Sales und Digital-Marketing
-            </h2>
-            <p style={{ fontSize: "1.2rem", lineHeight: 1.65, opacity: 0.6, marginBottom: "2rem" }}>
-              Herausragende Transformationen geschehen nicht von selbst — sie brauchen kompetente
-              Impulse. Als Interim Manager bringe ich Erfahrung, Unparteilichkeit und eine
-              Hands-on-Mentalität mit, die Ihre Organisation nach vorne bringt.
-            </p>
-            <Link href="/loesungen" className="btn-white">
-              Mehr erfahren
-            </Link>
-          </div>
-          <div>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(min(160px, 100%), 1fr))",
-                gap: "1px",
-                background: "rgba(242,240,235,0.1)",
-              }}
-            >
-              {[
-                { num: "20+", label: "Jahre Erfahrung" },
-                { num: "€8 Mio.", label: "P&L-Verantwortung" },
-                { num: "3", label: "Kernbereiche" },
-                { num: "BAFA", label: "Förderbar" },
-                { num: "100%", label: "Hands-on" },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  style={{
-                    padding: "2rem",
-                    background: "rgba(242,240,235,0.04)",
-                    minWidth: 0,
-                  }}
-                >
-                  <div
-                    className="font-serif"
-                    style={{
-                      fontSize: "clamp(1.5rem, 3.2vw, 2.5rem)",
-                      fontWeight: 700,
-                      letterSpacing: "-0.02em",
-                      lineHeight: 1,
-                      marginBottom: "0.5rem",
-                      color: "var(--accent)",
-                      overflowWrap: "break-word",
-                    }}
-                  >
+      {/* INTERIM-MANAGEMENT / STATS */}
+      <section className="bg-ink py-16 text-offwhite md:py-24">
+        <Container>
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wider text-accent">Beratung &amp; Vertrieb</p>
+              <h2 className="mt-3 font-serif text-3xl font-bold leading-tight md:text-4xl">
+                Interim-Management und Beratung für Sales und Digital-Marketing
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-offwhite/70">
+                Herausragende Transformationen geschehen nicht von selbst — sie brauchen
+                kompetente Impulse. Als Interim Manager bringe ich Erfahrung, Unparteilichkeit
+                und eine Hands-on-Mentalität mit, die Ihre Organisation nach vorne bringt.
+              </p>
+              <Link
+                href="/loesungen"
+                className="mt-7 inline-flex w-fit items-center justify-center rounded-sm border-2 border-white px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-ink"
+              >
+                Mehr erfahren
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-px bg-white/10 sm:grid-cols-3">
+              {stats.map((stat) => (
+                <div key={stat.label} className="min-w-0 bg-white/[0.04] p-6">
+                  <div className="font-serif text-2xl font-bold tracking-tight text-accent sm:text-3xl break-words">
                     {stat.num}
                   </div>
-                  <div style={{ fontSize: "0.8rem", opacity: 0.5, letterSpacing: "0.05em", color: "var(--bg)" }}>
-                    {stat.label}
-                  </div>
+                  <div className="mt-2 text-xs tracking-wide text-offwhite/60">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
-      {/* Services grid */}
-      <section
-        className="reveal"
-        style={{ padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)", maxWidth: "1200px", margin: "0 auto" }}
-      >
-        <div style={{ marginBottom: "3rem" }}>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              opacity: 0.4,
-              marginBottom: "0.75rem",
-            }}
-          >
-            Leistungen
-          </p>
-          <h2
-            className="font-serif"
-            style={{
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              fontWeight: 600,
-              letterSpacing: "-0.01em",
-            }}
-          >
-            Unser Angebot
-          </h2>
-        </div>
+      {/* SERVICES */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <SectionHeading eyebrow="Leistungen" title="Unser Angebot" />
+          <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((s) => (
+              <div key={s.title} className="flex h-full flex-col bg-offwhite p-8">
+                {s.bafa && (
+                  <Image
+                    src="/images/bafa-logo.png"
+                    alt="BAFA"
+                    width={110}
+                    height={62}
+                    className="mb-3 opacity-70"
+                  />
+                )}
+                <h3 className="font-serif text-lg font-bold text-ink">{s.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-graphite">{s.description}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "1px",
-            background: "var(--border)",
-          }}
-        >
-          {services.map((s) => (
-            <div
-              key={s.title}
-              style={{
-                background: "var(--bg)",
-                padding: "2.5rem",
-              }}
-            >
-              {s.bafa && (
-                <Image
-                  src="/images/bafa-logo.png"
-                  alt="BAFA"
-                  width={120}
-                  height={67}
-                  style={{ marginBottom: "0.75rem", opacity: 0.6 }}
-                />
-              )}
-              <h3
-                style={{
-                  fontSize: "1.25rem",
-                  fontWeight: 400,
-                  letterSpacing: "-0.01em",
-                  marginBottom: "1rem",
-                }}
-              >
-                {s.title}
-              </h3>
-              <p style={{ fontSize: "1.125rem", lineHeight: 1.65, opacity: 0.65, margin: 0 }}>
-                {s.description}
+      {/* THEMENFELDER */}
+      <section className="relative overflow-hidden bg-ink py-16 text-offwhite md:py-24">
+        <div className="absolute inset-y-0 right-0 hidden w-2/5 md:block">
+          <Image src="/images/city-skyline.jpg" alt="" fill className="object-cover opacity-30" />
+        </div>
+        <Container className="relative">
+          <SectionHeading eyebrow="Fachgebiete" title="Themenfelder" light />
+          <ul className="mt-8 columns-1 gap-x-10 sm:columns-2">
+            {topics.map((t) => (
+              <li key={t} className="mb-2 flex items-center gap-3 text-lg text-offwhite/80 break-inside-avoid">
+                <span className="text-accent">·</span> {t}
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      {/* STRATEGIE / AUSFÜHRUNG */}
+      <section className="border-y border-border py-16 md:py-24">
+        <Container>
+          <div className="grid gap-12 md:grid-cols-2">
+            <div>
+              <h3 className="font-serif text-xl font-bold text-ink">Strategie</h3>
+              <p className="mt-3 text-lg leading-relaxed text-graphite">
+                Unsere Strategie vereint fundierte Analyse, leidenschaftliches Engagement und
+                praxisnahe Umsetzung. Durch Aneignung von Branchenkenntnissen entwickeln wir
+                maßgeschneiderte Strategien, die perfekt auf Ihre Bedürfnisse abgestimmt sind.
               </p>
             </div>
-          ))}
-        </div>
+            <div>
+              <h3 className="font-serif text-xl font-bold text-ink">Ausführung</h3>
+              <p className="mt-3 text-lg leading-relaxed text-graphite">
+                Wir sind nicht nur Theoretiker, sondern Praktiker mit einer ausgeprägten
+                Hands-on-Mentalität. Als Experte bringe ich mich ein, packe mit an und setze
+                Ideen in die Tat um. Diese praxisnahe Herangehensweise ermöglicht es, flexibel
+                und effizient auf Veränderungen zu reagieren.
+              </p>
+            </div>
+          </div>
+        </Container>
       </section>
 
-      {/* Themenfelder — dunkel mit Starburst + Stadtfoto */}
-      <section
-        className="reveal reveal-delay-1"
-        style={{
-          background: "#0A0A0A",
-          color: "#F0F0F0",
-          padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        {/* Stadtfoto oben rechts */}
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            right: 0,
-            width: "40%",
-            height: "200px",
-          }}
-        >
-          <Image
-            src="/images/city-skyline.jpg"
-            alt=""
-            fill
-            style={{ objectFit: "cover", opacity: 0.4 }}
-          />
-        </div>
-
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            position: "relative",
-            zIndex: 1,
-          }}
-        >
-          <div>
-            <h2
-              style={{
-                fontSize: "clamp(2rem, 4vw, 3rem)",
-                fontWeight: 300,
-                letterSpacing: "-0.02em",
-                marginBottom: "2rem",
-              }}
-            >
-              Themenfelder
-            </h2>
-            <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-              {topics.map((t) => (
-                <li
-                  key={t}
-                  style={{
-                    fontSize: "1.125rem",
-                    opacity: 0.75,
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.75rem",
-                  }}
-                >
-                  <span style={{ opacity: 0.4 }}>·</span> {t}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Strategie / Ausführung */}
-      <section
-        className="reveal"
-        style={{
-          padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
-          background: "var(--bg)",
-          borderTop: "1px solid var(--border)",
-          borderBottom: "1px solid var(--border)",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
-            gap: "4rem",
-          }}
-        >
-          <div>
-            <h3
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: 300,
-                letterSpacing: "-0.02em",
-                marginBottom: "1rem",
-              }}
-            >
-              Strategie
-            </h3>
-            <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
-              Unsere Strategie vereint fundierte Analyse, leidenschaftliches Engagement und
-              praxisnahe Umsetzung. Durch Aneignung von Branchenkenntnissen entwickeln wir
-              maßgeschneiderte Strategien, die perfekt auf Ihre Bedürfnisse abgestimmt sind.
-            </p>
-          </div>
-          <div>
-            <h3
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: 300,
-                letterSpacing: "-0.02em",
-                marginBottom: "1rem",
-              }}
-            >
-              Ausführung
-            </h3>
-            <p style={{ fontSize: "1.125rem", lineHeight: 1.8, opacity: 0.7, margin: 0 }}>
-              Wir sind nicht nur Theoretiker, sondern Praktiker mit einer ausgeprägten
-              Hands-on-Mentalität. Als Experte bringe ich mich ein, packe mit an und setze Ideen in
-              die Tat um. Diese praxisnahe Herangehensweise ermöglicht es, flexibel und effizient
-              auf Veränderungen zu reagieren.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Kunden-Logos Marquee */}
-      <section
-        style={{
-          padding: "4rem 0",
-          overflow: "hidden",
-          borderTop: "1px solid var(--border)",
-          borderBottom: "1px solid var(--border)",
-        }}
-      >
-        <p
-          style={{
-            textAlign: "center",
-            fontSize: "0.75rem",
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            opacity: 0.4,
-            marginBottom: "2rem",
-          }}
-        >
+      {/* KUNDEN-LOGOS */}
+      <section className="overflow-hidden border-b border-border py-14">
+        <p className="text-center text-sm font-bold uppercase tracking-wider text-accent">
           Kunden &amp; Referenzen
         </p>
-        <div style={{ overflow: "hidden", width: "100%" }}>
-          <div
-            className="animate-marquee"
-            style={{
-              display: "flex",
-              gap: "4rem",
-              width: "max-content",
-              alignItems: "center",
-            }}
-          >
+        <div className="mt-8 overflow-hidden">
+          <div className="animate-marquee flex w-max items-center gap-16">
             {[...Array(2)].map((_, i) =>
               referenzLogos.map((logo) => (
                 <span
                   key={logo + i}
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: 500,
-                    opacity: 0.35,
-                    whiteSpace: "nowrap",
-                    letterSpacing: "0.05em",
-                    textTransform: "uppercase",
-                    flexShrink: 0,
-                  }}
+                  className="shrink-0 whitespace-nowrap text-xl font-semibold uppercase tracking-wide text-graphite/50"
                 >
                   {logo}
                 </span>
-              ))
+              )),
             )}
           </div>
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section
-        className="reveal reveal-delay-2"
-        style={{
-          padding: "clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem)",
-          borderBottom: "1px solid var(--border)",
-        }}
-      >
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              opacity: 0.4,
-              marginBottom: "2rem",
-            }}
-          >
-            Kundenmeinungen
-          </p>
-          <blockquote
-            style={{
-              fontStyle: "italic",
-              fontSize: "clamp(0.95rem, 2vw, 1.15rem)",
-              lineHeight: 1.9,
-              opacity: 0.75,
-              margin: "0 0 2.5rem",
-              fontWeight: 300,
-            }}
-          >
+      {/* TESTIMONIAL */}
+      <section className="border-b border-border py-16 md:py-24">
+        <Container className="max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-wider text-accent">Kundenmeinungen</p>
+          <blockquote className="mt-6 text-lg italic leading-relaxed text-graphite">
             „Oliver M. Müller war von September 2019 bis Mai 2020 als Interim-Manager Leitung
             Vermarktung Digital für unser Unternehmen tätig, hat proaktiv die Leitung der
             Vermarktung Digital übernommen und hat uns bei der Konzeptionierung eines geplanten
             Relaunches für das Medium WESER-KURIER unterstützt. […] Herr Müller hat in diesem
-            Zeitraum die angestrebten Ziele erreicht, sehr viel positiv bewegt und somit maßgeblich
-            zum weiteren Erfolg des Unternehmens beigetragen."
+            Zeitraum die angestrebten Ziele erreicht, sehr viel positiv bewegt und somit
+            maßgeblich zum weiteren Erfolg des Unternehmens beigetragen."
           </blockquote>
-          <p style={{ fontSize: "1.25rem", fontWeight: 500, letterSpacing: "0.05em", margin: 0 }}>
-            Tanja Bittner
-          </p>
-          <p style={{ fontSize: "0.875rem", opacity: 0.5, margin: "0.25rem 0 0" }}>
+          <p className="mt-6 text-lg font-semibold tracking-wide text-ink">Tanja Bittner</p>
+          <p className="mt-1 text-sm text-graphite/70">
             Leiterin Vermarktung, WESER-KURIER Mediengruppe (BTAG)
           </p>
-        </div>
+        </Container>
       </section>
 
-      {/* CTA */}
-      <section
-        style={{
-          padding: "clamp(3.5rem, 7vw, 6rem) clamp(1rem, 4vw, 2rem)",
-          textAlign: "center",
-          maxWidth: "800px",
-          margin: "0 auto",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "clamp(2rem, 5vw, 4rem)",
-            fontWeight: 200,
-            letterSpacing: "-0.03em",
-            marginBottom: "1.5rem",
-          }}
-        >
-          Bereit für das
-          <br />
-          nächste Level?
-        </h2>
-        <p style={{ fontSize: "1.2rem", opacity: 0.6, marginBottom: "2.5rem", lineHeight: 1.7 }}>
-          Vereinbaren Sie ein kostenloses Erstgespräch und lassen Sie uns gemeinsam
-          herausfinden, wie OneTitel Ihrem Unternehmen helfen kann.
-        </p>
-        <Link href="/kontakt" className="btn-primary">
-          Kontakt aufnehmen
-        </Link>
-      </section>
+      <CtaBanner
+        headline="Bereit für das nächste Level?"
+        body="Vereinbaren Sie ein kostenloses Erstgespräch und lassen Sie uns gemeinsam herausfinden, wie OneTitel Ihrem Unternehmen helfen kann."
+        primary={{ href: "/kontakt", label: "Kontakt aufnehmen" }}
+      />
     </>
   );
 }

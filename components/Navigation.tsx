@@ -1,193 +1,102 @@
-'use client';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
+"use client";
 
-const navLinks = [
-  { href: '/', label: 'Start' },
-  { href: '/loesungen', label: 'Service' },
-  { href: '/medienberichte', label: 'Medienberichte' },
-  { href: '/beitraege', label: 'Beiträge' },
-  { href: '/kontakt', label: 'Kontakt' },
-  { href: '/initiativen', label: 'Initiativen & Ventures' },
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
+const NAV_LINKS = [
+  { href: "/loesungen", label: "Service" },
+  { href: "/interim-management", label: "Interim-Management" },
+  { href: "/initiativen", label: "Initiativen & Ventures" },
+  { href: "/medienberichte", label: "Medienberichte" },
+  { href: "/beitraege", label: "Beiträge" },
 ];
 
 export default function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  // Menü schließen bei Route-Wechsel
-  useEffect(() => { setOpen(false); }, [pathname]);
-  // Scroll sperren wenn Menü offen
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   return (
-    <header style={{
-      position: 'sticky', top: 0, zIndex: 50,
-      background: 'var(--bg)', borderBottom: '1px solid var(--border)'
-    }}>
-      {/* Social Bar — nur Desktop */}
-      <div
-        className="social-bar"
-        style={{
-          borderBottom: '1px solid var(--border)',
-          padding: '0.375rem 2rem',
-          display: 'flex', justifyContent: 'flex-end', gap: '1.5rem'
-        }}
-      >
-        {[
-          { href: 'https://www.linkedin.com/in/oliver-m-mueller/', label: 'LinkedIn' },
-          { href: 'https://www.xing.com/profile/OliverMarkus_Mueller/web_profiles', label: 'XING' },
-        ].map(s => (
-          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-            style={{ fontSize: '0.75rem', fontWeight: 400, letterSpacing: '0.1em',
-              textTransform: 'uppercase', color: 'var(--muted)', textDecoration: 'none' }}>
-            {s.label}
-          </a>
-        ))}
-      </div>
-
-      {/* Logo Row */}
-      <div style={{
-        display: 'flex', justifyContent: 'center', alignItems: 'center',
-        padding: '1rem 1.5rem', position: 'relative'
-      }}>
-        <Link href="/" style={{ textDecoration: 'none', textAlign: 'center' }}>
-          <div style={{
-            fontFamily: "'Jost', sans-serif", fontWeight: 300,
-            fontSize: 'clamp(1.2rem, 4vw, 2rem)', letterSpacing: '0.25em',
-            textTransform: 'uppercase', color: 'var(--fg)', lineHeight: 1
-          }}>
+    <header className="sticky top-0 z-50 border-b border-border bg-offwhite/95 backdrop-blur">
+      <div className="mx-auto flex h-20 max-w-content items-center justify-between gap-4 px-6 md:px-8">
+        <Link href="/" className="flex shrink-0 flex-col leading-tight">
+          <span className="font-sans text-xl font-light uppercase tracking-[0.25em] text-ink">
             OneTitel
-          </div>
-          <div style={{
-            fontSize: '0.5rem', letterSpacing: '0.18em', textTransform: 'uppercase',
-            color: 'var(--muted)', marginTop: '0.2rem', fontWeight: 400
-          }}>
+          </span>
+          <span className="text-[0.6rem] font-normal uppercase tracking-[0.15em] text-graphite">
             Sales. Consulting. Interim-Management
-          </div>
+          </span>
         </Link>
 
-        {/* Burger Button */}
+        <nav aria-label="Primary" className="hidden items-center gap-5 xl:gap-6 lg:flex">
+          {NAV_LINKS.map((link) => {
+            const active = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`whitespace-nowrap text-[13px] font-medium transition-colors hover:text-ink ${
+                  active ? "text-accent" : "text-graphite"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
+          <Link
+            href="/kontakt"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-sm bg-accent px-4 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-accent-600"
+          >
+            Kostenlose Erstberatung
+          </Link>
+        </div>
+
         <button
-          onClick={() => setOpen(!open)}
-          className="mobile-burger"
-          aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
+          type="button"
+          onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          style={{
-            position: 'absolute', right: '1.25rem',
-            background: 'none', border: 'none', cursor: 'pointer',
-            display: 'flex', flexDirection: 'column',
-            gap: '5px', padding: '8px', zIndex: 60
-          }}>
-          <span style={{
-            width: 24, height: 2, background: 'var(--fg)', display: 'block',
-            transition: 'transform 0.25s, opacity 0.25s',
-            transform: open ? 'translateY(7px) rotate(45deg)' : 'none'
-          }} />
-          <span style={{
-            width: 24, height: 2, background: 'var(--fg)', display: 'block',
-            transition: 'opacity 0.25s',
-            opacity: open ? 0 : 1
-          }} />
-          <span style={{
-            width: 24, height: 2, background: 'var(--fg)', display: 'block',
-            transition: 'transform 0.25s, opacity 0.25s',
-            transform: open ? 'translateY(-7px) rotate(-45deg)' : 'none'
-          }} />
+          aria-controls="mobile-nav"
+          aria-label={open ? "Menü schließen" : "Menü öffnen"}
+          className="inline-flex items-center justify-center rounded-sm border border-ink/20 p-2 lg:hidden"
+        >
+          <span className="sr-only">Menu</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="#0A0A0A" strokeWidth="1.75" strokeLinecap="round" />
+          </svg>
         </button>
       </div>
 
-      {/* Desktop Navigation */}
-      <nav className="mobile-nav-links" style={{
-        display: 'flex', justifyContent: 'center',
-        flexWrap: 'wrap', borderTop: '1px solid var(--border)', padding: '0.4rem 1rem'
-      }}>
-        {navLinks.map(link => {
-          const active = pathname === link.href ||
-            (link.href !== '/' && pathname.startsWith(link.href));
-          return (
-            <Link key={link.href} href={link.href} style={{
-              padding: '0.35rem 0.75rem', fontSize: '0.75rem',
-              fontWeight: active ? 500 : 400, letterSpacing: '0.06em',
-              textTransform: 'uppercase',
-              color: active ? 'var(--accent)' : 'var(--fg)',
-              textDecoration: 'none'
-            }}>
-              {link.label}
-            </Link>
-          );
-        })}
-      </nav>
-
-      {/* Mobile Fullscreen Menu Overlay */}
       {open && (
-        <div style={{
-          position: 'fixed', inset: 0, top: 0,
-          background: 'var(--fg)', zIndex: 55,
-          display: 'flex', flexDirection: 'column',
-          justifyContent: 'center', alignItems: 'center',
-          gap: '0.25rem', padding: '2rem'
-        }}>
-          {/* Close X */}
-          <button onClick={() => setOpen(false)}
-            style={{
-              position: 'absolute', top: '1.5rem', right: '1.5rem',
-              background: 'none', border: 'none', cursor: 'pointer',
-              color: 'var(--bg)', fontSize: '1.5rem', lineHeight: 1
-            }}>
-            ✕
-          </button>
-
-          {/* Logo im Overlay */}
-          <div style={{
-            position: 'absolute', top: '1.5rem', left: '50%',
-            transform: 'translateX(-50%)',
-            fontFamily: "'Jost', sans-serif", fontWeight: 300,
-            fontSize: '1.2rem', letterSpacing: '0.3em',
-            textTransform: 'uppercase', color: 'var(--bg)',
-            whiteSpace: 'nowrap'
-          }}>
-            OneTitel
-          </div>
-
-          {navLinks.map((link, i) => (
-            <Link key={link.href} href={link.href}
-              onClick={() => setOpen(false)}
-              style={{
-                color: 'var(--bg)', textDecoration: 'none',
-                fontSize: 'clamp(1.4rem, 5vw, 2rem)',
-                fontWeight: 200, letterSpacing: '-0.01em',
-                padding: '0.6rem 0', opacity: 0.9,
-                textAlign: 'center', width: '100%',
-                borderBottom: i < navLinks.length - 1
-                  ? '1px solid rgba(255,255,255,0.1)' : 'none'
-              }}>
-              {link.label}
-            </Link>
-          ))}
-
-          {/* Social Links im Overlay */}
-          <div style={{
-            marginTop: '2rem', display: 'flex', gap: '2rem'
-          }}>
-            {[
-              { href: 'https://www.linkedin.com/in/oliver-m-mueller/', label: 'LinkedIn' },
-              { href: 'https://www.xing.com/profile/OliverMarkus_Mueller/web_profiles', label: 'XING' },
-            ].map(s => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                style={{
-                  color: 'var(--bg)', textDecoration: 'none', opacity: 0.5,
-                  fontSize: '0.75rem', letterSpacing: '0.12em', textTransform: 'uppercase'
-                }}>
-                {s.label}
-              </a>
+        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-border bg-offwhite lg:hidden">
+          <div className="flex flex-col gap-4 px-6 py-6">
+            {NAV_LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className="text-base font-medium text-ink" onClick={() => setOpen(false)}>
+                {link.label}
+              </Link>
             ))}
+            <Link
+              href="/kontakt"
+              className="mt-2 inline-flex items-center justify-center rounded-sm bg-accent px-5 py-3 text-sm font-semibold text-white"
+              onClick={() => setOpen(false)}
+            >
+              Kostenlose Erstberatung
+            </Link>
           </div>
-        </div>
+        </nav>
       )}
     </header>
   );

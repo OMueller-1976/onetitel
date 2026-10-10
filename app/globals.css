@@ -1,16 +1,26 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
+@import "tailwindcss";
 
-:root {
-  --bg: #FFFFFF;
-  --fg: #0A0A0A;
-  --muted: #6B6B6B;
-  --border: #E0E0E0;
-  --black: #0A0A0A;
-  --white: #FFFFFF;
-  --accent: #E2622A;
-  --accent-dark: #C24E1C;
+@theme {
+  --color-ink: #0A0A0A;
+  --color-ink-700: #1A1A1A;
+  --color-offwhite: #FFFFFF;
+  --color-paper: #FAF9F7;
+  --color-graphite: #4A4A4A;
+  --color-border: #E0E0E0;
+
+  --color-accent: #E2622A;
+  --color-accent-600: #C24E1C;
+  --color-accent-700: #A3410F;
+
+  --color-truedads: #2D5A3D;
+  --color-truedads-600: #234A31;
+
+  --font-sans: 'Jost', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+
+  --max-width-content: 1200px;
 }
 
 * {
@@ -22,262 +32,61 @@ html {
 }
 
 body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: 'Jost', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  background: var(--color-offwhite);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--fg);
-  color: var(--bg);
+  background: var(--color-ink);
+  color: var(--color-offwhite);
 }
 
-h1, h2, h3, h4 {
-  font-weight: 300;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
-}
-
-.display {
-  font-size: clamp(3.5rem, 9vw, 8rem);
-  font-weight: 200;
-  letter-spacing: -0.03em;
-  line-height: 1.0;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-}
-
-.body-lg { font-size: 1.125rem; line-height: 1.65; }
-.body-sm { font-size: 0.875rem; line-height: 1.6; }
-.label   { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; }
-
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
-  background: var(--fg);
-  color: var(--bg);
-  font-family: 'Jost', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid var(--fg);
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-
-.btn-primary:hover {
-  background: transparent;
-  color: var(--fg);
-}
-
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.75rem 1.75rem;
-  background: transparent;
-  color: var(--fg);
-  font-family: 'Jost', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid var(--fg);
-  transition: background 0.2s, color 0.2s;
-}
-
-.btn-outline:hover {
-  background: var(--fg);
-  color: var(--bg);
-}
-
-.btn-accent {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
-  background: var(--accent);
-  color: var(--white);
-  font-family: 'Jost', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 1px solid var(--accent);
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.btn-accent:hover {
-  background: var(--accent-dark);
-  border-color: var(--accent-dark);
+/* Legacy CSS-variable aliases so not-yet-migrated pages keep working during rollout */
+:root {
+  --bg: #FFFFFF;
+  --fg: #0A0A0A;
+  --muted: #6B6B6B;
+  --border: #E0E0E0;
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --accent: #E2622A;
+  --accent-dark: #C24E1C;
 }
 
 .font-serif {
   font-family: 'Source Serif 4', Georgia, serif;
 }
 
-/* ── Animations ── */
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.prose-onetitel {
+  max-width: 68ch;
 }
-
-@keyframes spinSlow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+.prose-onetitel h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 3vw, 1.875rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
-
-@keyframes bounceDown {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(8px); }
+.prose-onetitel p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-graphite);
+  margin-bottom: 1.25rem;
+}
+.prose-onetitel a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-
-.animate-spin-slow {
-  animation: spinSlow 20s linear infinite;
-}
-.animate-bounce-down {
-  animation: bounceDown 1.5s ease-in-out infinite;
-}
 .animate-marquee {
   animation: marquee 30s linear infinite;
-}
-
-/* Scroll-Reveal */
-.reveal {
-  opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-
-/* ─── MOBILE RESET ─── */
-@media (max-width: 768px) {
-
-  /* Basis */
-  body { font-size: 16px; }
-
-  /* Abstände auf Mobile halbieren */
-  section {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-  }
-
-  /* Display-Texte verkleinern */
-  .display {
-    font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
-    line-height: 1.05 !important;
-  }
-
-  /* Alle inline-grids auf 1 Spalte zwingen */
-  [style*="gridTemplateColumns"] {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Tabellen horizontal scrollbar */
-  table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Bilder nie breiter als Viewport */
-  img { max-width: 100% !important; height: auto !important; }
-
-  /* Buttons immer full-width */
-  .btn-primary, .btn-outline, .btn-white {
-    width: 100% !important;
-    text-align: center;
-    justify-content: center;
-    padding: 1rem 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  /* Große Headlines verkleinern */
-  h1 { font-size: clamp(1.8rem, 8vw, 3rem) !important; }
-  h2 { font-size: clamp(1.4rem, 6vw, 2.2rem) !important; }
-
-  /* Sub-Navigationen scrollbar machen */
-  .sub-nav {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start !important;
-    padding-bottom: 0.5rem;
-  }
-  .sub-nav a {
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  /* Stats: 2-spaltig auf Mobile (statt 1 Spalte) */
-  .stats-2col {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
-  /* Footer Bottom Bar: vertikal auf Mobile */
-  .footer-bottom-bar {
-    flex-direction: column !important;
-    gap: 0.75rem !important;
-    text-align: center !important;
-    align-items: center !important;
-  }
-
-  /* Marquee-Animation verlangsamen auf Mobile */
-  .animate-marquee { animation-duration: 20s; }
-
-  /* Social Bar ausblenden */
-  .social-bar { display: none !important; }
-
-  /* Hero 3-Spalten-Grid auf Mobile ausblenden (Pfeil) */
-  .hero-arrow { display: none !important; }
-
-  /* Hero-Grid (Expertise / Pfeil / AI-Karte) auf Mobile einspaltig stapeln */
-  .hero-grid { grid-template-columns: 1fr !important; }
-}
-
-/* ─── VÄTERSTRATEGIE CARD — Mobile: 1-Spalten-Layout ─── */
-@media (max-width: 520px) {
-  .vaeterstrategie-card {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-/* ─── MOBILE BURGER MENU ─── */
-@media (max-width: 900px) {
-  .mobile-nav-links { display: none !important; }
-  .mobile-burger { display: flex !important; }
-}
-
-@media (min-width: 901px) {
-  .mobile-burger { display: none !important; }
 }
