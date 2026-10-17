@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/initiativen/ba-digital-marketing`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/initiativen/ba-digital-marketing/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
     { url: `${base}/initiativen/ba-digital-marketing/kontakt`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${base}/pflegealltag`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/pflegealltag/support`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/initiativen/eritaj`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/initiativen/onematic`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/initiativen/lersi`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },

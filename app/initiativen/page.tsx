@@ -32,6 +32,11 @@ const initiativen = [
 
 const ventures = [
   {
+    href: "/pflegealltag",
+    title: "PflegeAlltag",
+    description: "iOS App für Pflege & Betreuung",
+  },
+  {
     href: "/initiativen/eritaj",
     title: "ERITAJ",
     description: "Erbrecht & Nachlassplanung",
