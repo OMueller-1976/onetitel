@@ -239,8 +239,29 @@ export default function DatenschutzPage() {
           </a>
         </p>
 
-        {/* 10. Aktualität */}
-        <h2 style={h2Style}>10. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+        {/* 10. iOS Apps */}
+        <h2 style={h2Style}>10. Datenschutz unserer iOS Apps</h2>
+        <p>
+          Für unsere iOS Apps gelten separate Datenschutzerklärungen:
+        </p>
+        <ul style={{ paddingLeft: "1.5rem", marginTop: "0.5rem", lineHeight: 2 }}>
+          <li>
+            <a href="/pflegealltag/datenschutz" style={{ color: "inherit" }}>
+              Datenschutzerklärung PflegeAlltag
+            </a>
+          </li>
+          <li>
+            <a href="/lehreralltag/datenschutz" style={{ color: "inherit" }}>
+              Datenschutzerklärung LehrerAlltag
+            </a>
+          </li>
+        </ul>
+        <p style={{ marginTop: "1rem" }}>
+          Beide Apps speichern alle Daten ausschließlich lokal auf dem Gerät. Es gibt keinen eigenen Server, kein Benutzerkonto und kein Tracking.
+        </p>
+
+        {/* 11. Aktualität */}
+        <h2 style={h2Style}>11. Aktualität und Änderung dieser Datenschutzerklärung</h2>
         <p>
           Diese Datenschutzerklärung hat den Stand April 2025. Wir behalten uns vor, diese
           Erklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht

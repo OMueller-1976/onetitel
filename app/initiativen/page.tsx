@@ -37,6 +37,11 @@ const ventures = [
     description: "iOS App für Pflege & Betreuung",
   },
   {
+    href: "/lehreralltag",
+    title: "LehrerAlltag",
+    description: "iOS App für Lehrkräfte",
+  },
+  {
     href: "/initiativen/eritaj",
     title: "ERITAJ",
     description: "Erbrecht & Nachlassplanung",

@@ -14,6 +14,7 @@ const NAV_LINKS = [
 
 const PARTNER_LINKS = [
   { href: "/pflegealltag", label: "PflegeAlltag App" },
+  { href: "/lehreralltag", label: "LehrerAlltag App" },
   { href: "https://www.eritaj.de", label: "Eritaj" },
   { href: "https://www.lersi.de", label: "Lersi" },
   { href: "https://www.vaeterstrategie.de", label: "Väterstrategie" },
